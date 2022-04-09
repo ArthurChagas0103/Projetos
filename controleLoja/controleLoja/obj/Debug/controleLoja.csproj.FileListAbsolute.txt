@@ -1,0 +1,11 @@
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\bin\Debug\controleLoja.exe.config
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\bin\Debug\controleLoja.exe
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\bin\Debug\controleLoja.pdb
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.csproj.AssemblyReference.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.csproj.SuggestedBindingRedirects.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.Form1.resources
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.Properties.Resources.resources
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.csproj.GenerateResource.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.csproj.CoreCompileInputs.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.exe
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Cotemig\Trabalhos e Exercícios\Lógica e Programação\controleLoja\controleLoja\obj\Debug\controleLoja.pdb
