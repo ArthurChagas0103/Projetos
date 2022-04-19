@@ -370,57 +370,71 @@
   right: 13px;
 }
 
+.vejaDetalhes{
+  background-color:#1c658c;
+  border-radius:5px;
+  cursor:pointer;
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight:bold;
+  padding:11px 23px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #1c658c;
+  position: relative;
+  right: 20px;
+}
+
 #vejaDetalhes1{
-  box-shadow:inset 0px 1px 3px 0px #1c658c;
-	background:linear-gradient(to bottom, #1c658c 5%, #1c658c 100%);
-	background-color:#1c658c;
-	border-radius:5px;
-	border:1px solid #1c658c;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #1c658c;
   position: relative;
   right: 20px;
 }
 
 #vejaDetalhes2{
-  box-shadow:inset 0px 1px 3px 0px #1c658c;
-	background:linear-gradient(to bottom, #1c658c 5%, #1c658c 100%);
-	background-color:#1c658c;
-	border-radius:5px;
-	border:1px solid #1c658c;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #1c658c;
+  position: relative;
+  left: 0px;
 }
 
 #vejaDetalhes3{
-  box-shadow:inset 0px 1px 3px 0px #1c658c;
-	background:linear-gradient(to bottom, #1c658c 5%, #1c658c 100%);
-	background-color:#1c658c;
-	border-radius:5px;
-	border:1px solid #1c658c;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #1c658c;
   position: relative;
   left: 15px;
+}
+
+.vejaDetalhes:hover{
+  background-color: #398AB9; 
+}
+
+#tabelaForms{
+  height: 500px;
+}
+
+#imagem7{
+  width: 300px;
+  height: 350px;
+  background-image: linear-gradient(to right, white, silver);
+  padding-right: 800px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
+  top: 50px;
+}
+
+#text1{
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  position: relative;
+  left: 900px;
+  top: -300px;
+  font-size: 30px;
+  color: #909090;
+}
+
+#text2{
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  position: relative;
+  left: 900px;
+  top: -300px;
+
 }
