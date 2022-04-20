@@ -51,10 +51,10 @@
 
 #circulo{
   position: absolute;
-  top: -4px;
-  left: 17px;
-  height: 55px;
-  width: 55px;
+  top: 7px;
+  left: 28px;
+  height: 33px;
+  width: 33px;
 }
 
 #logo{
@@ -295,19 +295,19 @@
 }
 
 #imagem1{
-  width: 114%;
+  width: 1000px;
   height: 490px;
   border: 5px solid black;
 }
 
 #imagem2{
-  width: 130%;
+  width: 1000px;
   height: 490px;
   border: 5px solid black;
 }
 
 #imagem3{
-  width: 135%;
+  width: 1000px;
   height: 490px;
   border: 5px solid black;
 }
@@ -317,6 +317,7 @@
   height: 200px;
   border-radius: 100px;
   margin-top: 60px;
+  border: 5px solid black;
 }
 
 #imagem5{
@@ -324,6 +325,7 @@
   height: 200px;
   border-radius: 100px;
   margin-top: 60px;
+  border: 5px solid black;
 }
 
 #imagem6{
@@ -332,6 +334,7 @@
   border-radius: 100px;
   position: relative;
   margin-top: 60px;
+  border: 5px solid black;
 }
 
 #form2{
@@ -404,8 +407,8 @@
   background-color: #398AB9; 
 }
 
-#tabelaForms{
-  height: 500px;
+.tabela2{
+  background-color: white;
 }
 
 #imagem7{
@@ -425,7 +428,7 @@
   width: 500px;
   position: relative;
   left: 900px;
-  top: -300px;
+  top: -280px;
   font-size: 30px;
   color: #909090;
 }
@@ -433,8 +436,93 @@
 #text2{
   font-family: 'Roboto', sans-serif;
   width: 500px;
+  position: absolute;
+  left: 900px;
+  top: 600px;
+}
+
+#imagem8{
+  width: 350px;
+  height: 350px;
+  background-image: linear-gradient(to left, white, silver);
+  padding-left: 800px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  position: relative;
+  top: 50px;
+}
+
+#text3{
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  position: relative;
+  left: 480px;
+  top: -280px;
+  font-size: 30px;
+  color: #909090;
+}
+
+#text4{
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  position: absolute;
+  left: 480px;
+  top: 1120px;
+}
+
+#text5{
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
   position: relative;
   left: 900px;
-  top: -300px;
+  top: -290px;
+  font-size: 30px;
+  color: #909090;
+}
 
+#text6{
+  font-family: 'Roboto', sans-serif;
+  width: 500px;
+  position: absolute;
+  left: 900px;
+  top: 1630px;
+}
+
+#imagem9{
+  width: 400px;
+  height: 350px;
+  background-image: linear-gradient(to right, white, silver);
+  padding-right: 800px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  position: relative;
+  top: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #1C658C;
+  color: #FFF;
+  width: 100%;
+  height: 200px;    
+  text-align: center;
+  line-height: 100px;
+  top: 2505px;
+}
+
+#circulo2{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+top: 10px;
+}
+
+#imagem10{
+position: absolute;
+  width: 200px;
+  height: 200px;
+top: 10px;
 }
