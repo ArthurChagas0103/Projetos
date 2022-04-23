@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Windows Open Enterprise - Login</title>
+  <link rel="stylesheet" href="Login.css">
+  <!--Alterar isso, logo pequena-->
+  <link rel="icon" type="image/x-icon" href="Imagens/Logo-sem-fundo.ico">
+
+  <form id="form1">
+    <img src="Imagens/Circulo_branco.png" id="circulo">
+    <img src="Imagens/Logo sem fundo.png" id="logo">
+    <span id="Home">
+      <a href="index.html" id="home" target="_blank"><img src="Imagens/Icone_Casa.png" id="iconeCasa">HOME</a>
+      <img src="Imagens/Icone_Linha.png" id="linha1">
+    </span>
+    <span id="Contatos">
+      <a href="Contatos.html" target="_blank" id="contatos"><img src="Imagens/Icone_Contato.png" id="iconeContato">CONTATOS</a>
+      <img src="Imagens/Icone_Linha.png" id="linha2">
+    </span>
+    <span id="dropdown">
+      <a id="servicosprodutos"><img src="Imagens/Icone_carrinho.png" id="iconeCarrinho">SERVIÇOS/PRODUTOS<img
+          src="Imagens/Icone_maior_que.png" id="iconeMaior"></a>
+      <img src="Imagens/Icone_Linha.png" id="linha3">
+      <ul id="Lista">
+        <li><a href="Catalogo_de_Servicos.html" target="_blank" id="Lista1"><img src="Imagens/Icone_engrenagem.png"
+              id="iconeEngrenagem">CATÁLOGO DE SERVIÇOS</a>
+        </li>
+        <hr id="divisoria">
+        <li><a href="Catalogo_de_Produtos.html" target="_blank" id="Lista2"><img src="Imagens/Icone_computador.png" id="iconeComputador">CATÁLOGO DE PRODUTOS</a>
+        </li>
+      </ul>
+    </span>
+    <span id="Login">
+      <a href="" id="login"><img src="Imagens/Icone cadeado.png" id="iconeCadeado">LOGIN</a>
+      <img src="Imagens/Icone_Linha.png" id="linha4">
+    </span>
+  </form>
+
+</head>
+
+<body>
+  <script type="text/javascript" src="Login.js"></script>
+  <table>
+    <tr>
+      <td>
+        <form id="form2">
+          <h1 id="text1">LOGIN</h1>
+          <h3 id="text2">Usuário:</h3>
+          <img src="Imagens/icone_Usuario.png" id="usuario"><input type="text" id="txt1">
+          <h3 id="text3">Senha:</h3>
+          <img src="Imagens/icone_Cadeado.png" id="cadeado"><input type="password" id="txt2">
+          <input type="checkbox" id="check1"> <h4 id="text4">Lembrar de Mim</h4>
+          <input type="checkbox" id="check2" onclick="myFunction()"> <h4 id="text5">Mostrar Senha</h4>
+          <img src="Imagens/icone_LinhaBranca.png" id="linhaBranca">
+          <a href="Contatos.html" target="_blank" id="text6">Esqueci Minha Senha</a>
+          <button id="botão1">ENTRAR</button>
+          <button id="botão2"><a href="index.html" id="text17">SAIR</a></button>
+          <img src="Imagens/Circulo_branco.png" id="circulo3">
+          <img src="Imagens/Logo sem fundo.png" id="logo2">
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
