@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("img/plano_de_fundo.jpg");
+}
+
+.text{
+    color: white;
+    font-size: 48px;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+#divisoria1{
+    width: 100%;
+    text-align: center;
+}
+
+#text1{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 300; 
+}
+
+#text2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+#divisoria2{
+    width: 44%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+#text3{
+    color: #E1E1E1;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#divisoria3{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.lista1{
+    display: inline-block;
+    margin-left: 0.6%;
+    border: solid 1px white;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3.2px 12.8px;
+    border-radius: 2px;
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+#elemento1{
+    background-color: white;
+    color: #212529;
+    cursor: pointer;
+}
+
+.lista1:hover{
+    background-color: white;
+    color: #212529;
+    cursor: pointer;
+}
