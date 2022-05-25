@@ -1,0 +1,11 @@
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\bin\Debug\maiorNumero.exe.config
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\bin\Debug\maiorNumero.exe
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\bin\Debug\maiorNumero.pdb
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.csproj.AssemblyReference.cache
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.Form1.resources
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.Properties.Resources.resources
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.csproj.GenerateResource.cache
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.csproj.CoreCompileInputs.cache
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.exe
+H:\LogP\Segunda Etapa\Ex07Pag27\maiorNumero\maiorNumero\obj\Debug\maiorNumero.pdb
