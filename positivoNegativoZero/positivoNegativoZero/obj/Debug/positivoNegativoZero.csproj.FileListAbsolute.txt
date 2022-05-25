@@ -1,0 +1,11 @@
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\bin\Debug\positivoNegativoZero.exe.config
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\bin\Debug\positivoNegativoZero.exe
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\bin\Debug\positivoNegativoZero.pdb
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.csproj.AssemblyReference.cache
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.Form1.resources
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.Properties.Resources.resources
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.csproj.GenerateResource.cache
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.csproj.CoreCompileInputs.cache
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.exe
+H:\LogP\Segunda Etapa\ExPag25\positivoNegativoZero\positivoNegativoZero\obj\Debug\positivoNegativoZero.pdb
