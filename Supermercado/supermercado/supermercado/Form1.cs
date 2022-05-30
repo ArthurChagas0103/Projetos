@@ -17,7 +17,7 @@ namespace supermercado
             InitializeComponent();
         }
 
-        public double soma { get; set; }
+        /*public double soma { get; set; }*/
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace supermercado
             cod = int.Parse(txtCodigo.Text);
             quantidade = int.Parse(txtQuantidade.Text);
 
-            soma = 0;
+            /*soma = 0;*/
 
             mult1 = quantidade * 32;
             mult2 = quantidade * 26;
@@ -35,25 +35,10 @@ namespace supermercado
             mult4 = quantidade * 17;
             mult5 = quantidade * 25;
 
-            /*while(cod != 10) { 
-            if(cod == 1)
+            switch (cod)
             {
-                soma = soma + mult1;
-            }
-            else if(cod == 2)
-            {
-                soma = soma + mult2;
-            }
-            else if(cod == 3)
-            {
-                soma = soma + mult3;
-            }
-            }*/
-
-
-            /*switch(cod)
-            {
-                case 1: lblResultado.Text = "R$ " + mult1.ToString();
+                case 1:
+                    lblResultado.Text = "R$ " + mult1.ToString();
                     break;
                 case 2:
                     lblResultado.Text = "R$ " + mult2.ToString();
@@ -70,9 +55,24 @@ namespace supermercado
                 default:
                     lblResultado.Text = "Código inválido";
                     break;
+            }
+
+            /*while(cod != 10) { 
+            if(cod == 1)
+            {
+                soma = soma + mult1;
+            }
+            else if(cod == 2)
+            {
+                soma = soma + mult2;
+            }
+            else if(cod == 3)
+            {
+                soma = soma + mult3;
+            }
             }*/
 
-            while (cod != 10){
+            /*while (cod != 10){
                 switch (cod)
             {
                 case 1: soma = soma + mult1;
@@ -93,15 +93,15 @@ namespace supermercado
                     lblResultado.Text = "Código inválido";
                     break;
             }
-            }
+            }*/
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtCodigo.Text = "";
             txtQuantidade.Text = "";
-            lblResultado.Text = soma.ToString();
-
+            lblResultado.Text = "";
+            /*lblResultado.Text = soma.ToString();*/
         }
     }
 }
