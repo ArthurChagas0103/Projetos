@@ -1,0 +1,11 @@
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\bin\Debug\provaAluno.exe.config
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\bin\Debug\provaAluno.exe
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\bin\Debug\provaAluno.pdb
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.csproj.AssemblyReference.cache
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.csproj.SuggestedBindingRedirects.cache
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.Form1.resources
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.Properties.Resources.resources
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.csproj.GenerateResource.cache
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.csproj.CoreCompileInputs.cache
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.exe
+C:\Users\arthu\Downloads\Ex15Pag09\provaAluno\provaAluno\obj\Debug\provaAluno.pdb
