@@ -1,0 +1,33 @@
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\bin\Debug\supermercado.exe.config
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\bin\Debug\supermercado.exe
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\bin\Debug\supermercado.pdb
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.AssemblyReference.cache
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.Form1.resources
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.Properties.Resources.resources
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.GenerateResource.cache
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.CoreCompileInputs.cache
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.exe
+H:\LogP\Segunda Etapa\Supermercado\supermercado\supermercado\obj\Debug\supermercado.pdb
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\bin\Debug\supermercado.exe.config
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\bin\Debug\supermercado.exe
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\bin\Debug\supermercado.pdb
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.AssemblyReference.cache
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.SuggestedBindingRedirects.cache
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.Form1.resources
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.Properties.Resources.resources
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.GenerateResource.cache
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.CoreCompileInputs.cache
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.exe
+C:\Users\flavio.chagas\Downloads\Supermercado\supermercado\supermercado\obj\Debug\supermercado.pdb
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\bin\Debug\supermercado.exe.config
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\bin\Debug\supermercado.exe
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\bin\Debug\supermercado.pdb
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.AssemblyReference.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.SuggestedBindingRedirects.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.Form1.resources
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.Properties.Resources.resources
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.GenerateResource.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.csproj.CoreCompileInputs.cache
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.exe
+C:\Users\flavio.chagas\OneDrive\Área de Trabalho\Supermercado\supermercado\supermercado\obj\Debug\supermercado.pdb
