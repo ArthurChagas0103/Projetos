@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#form1{
+  background-color: #1C658C;
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
+#home{
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 120px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+#contatos{
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 230px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+#servicosprodutos{
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 365px;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px 1px;
+  cursor: pointer;
+}
+
+#login{
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 96%;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+#circulo{
+  position: absolute;
+  top: 8px;
+  left: 29px;
+  height: 30px;
+  width: 30px;
+}
+
+#logo{
+  position: absolute;
+  top: 7px;
+  left: 28px;
+  height: 33px;
+  width: 33px;
+}
+
+#iconeCadeado{
+  position: absolute;
+  right: 50px;
+  top: -3px;
+  width: 20px;
+  height: 20px;
+}
+
+#iconeCasa{
+  position: absolute;
+  right: 52px;
+  top: -2px;
+  width: 19px;
+  height: 19px;
+}
+
+#iconeContato{
+  position: absolute;
+  right: 90px;
+  top: -1px;
+  width: 19px;
+  height: 19px;
+}
+
+#iconeCarrinho{
+  position: absolute;
+  right: 170px;
+  top: 14px;
+  width: 19px;
+  height: 19px;
+}
+
+#iconeMaior{
+  position: absolute;
+  right: -22px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+#dropdown:hover #iconeMaior{
+  transform:rotate(90deg);
+}
+
+#Home:hover #linha1{
+  visibility: visible;
+  cursor: pointer;
+}
+
+#Login{
+  cursor: pointer;
+}
+
+#dropdown:hover #linha3{
+  visibility: visible;
+}
+
+#Contatos:hover #linha2{
+  visibility: visible;
+  cursor: pointer;
+}
+
+#Lista1:hover{
+  background-color: #398AB9;
+  cursor: pointer;
+}
+
+#Lista2:hover{
+  background-color: #398AB9;
+  cursor: pointer;
+}
+
+#dropdown:hover #Lista{
+  visibility: visible;
+}
+
+#Lista{
+  position: absolute;
+  background-color: #1C658C;
+  width: 200px;
+  height: 105px;
+  box-shadow: 5px 8px 16px 5px rgba(0,0,0,0.2);
+  list-style: none;
+  top: 33px;
+  left: 325px;
+  visibility: hidden;
+  z-index: 5;
+}
+
+#Lista1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  width: 240px;
+  height: 52px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#Lista2{
+  position: absolute;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  top: 50px;
+  left: 0px;
+  font-family: 'Roboto', sans-serif;
+  width: 240px;
+  height: 39px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+#linha1{
+  position: relative;
+  left: 123px;
+  top: 17px;
+  height: 40px;
+  visibility: hidden;
+}
+
+#linha2{
+  position: relative;
+  left: 208px;
+  top: 17px;
+  height: 40px;
+  visibility: hidden;
+}
+
+#linha3{
+  position: relative;
+  left: 340px;
+  top: 17px;
+  visibility: hidden;
+  height: 40px;
+}
+
+#linha4{
+  position: relative;
+  left: 89.3%;
+  top: 17px;
+  height: 40px;
+}
+
+#divisoria{
+  margin-top: 50px;
+  margin-left: -40px;
+  width: 238px;
+  border-color: silver;
+}
+
+#iconeEngrenagem{
+  position: relative;
+  width: 19px;
+  height: 19px;
+  left: -5px;
+  top: 0px;
+}
+
+#iconeComputador{
+  position: relative;
+  width: 19px;
+  height: 19px;
+  left: -5px;
+  top: 3px;
+}
+
+body{
+  margin: 0px;
+}
+
+table{
+  background-color: #398AB9;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#tabelaLinha1{
+  background-color: #1C658C;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#text1{
+  color: white;
+}
+
+#tabelaLinha2{
+  height: 0px;
+}
+
+#text2{
+  color: white;
+  position: relative;
+  top: 20px;
+  left: -120px;
+}
+
+#tabelaLinha3{
+  width: 400px;
+  height: 0px;
+}
+
+#usuario{
+  position: relative;
+  background-color: #D8D2CB;
+  padding: 5px;
+  height: 23px;
+  width: 23px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  top: 7px;
+  left: -8px;
+}
+
+#txt1{
+  position: relative;
+  height: 30px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: large;
+  width: 250px;
+  top: -4px;
+  left: -8px;
+}
+
+#tabelaLinha4{
+  height: -200px;
+}
+
+#text3{
+  color: white;
+  position: relative;
+  top: 0px;
+  left: -120px;
+  height: 0px;
+}
+
+#cadeado{
+  position: relative;
+  background-color: #D8D2CB;
+  padding: 5px;
+  height: 23px;
+  width: 23px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  top: 7px;
+  left: -8px;
+}
+
+#txt2{
+  position: relative;
+  height: 30px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: large;
+  width: 250px;
+  top: -4px;
+  left: -8px;
+}
+
+.tabelaLinha5{
+  width: 100px;
+  height: 0px;
+}
+
+#check1{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 46px;
+}
+
+#text4{
+  color: white;
+  position: relative;
+  height: 0px;
+  left: 75px;
+  top: -41px;
+}
+
+#check2{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 0px;
+}
+
+#text5{
+  color: white;
+  position: relative;
+  height: 0px;
+  left: 30px;
+  top: -41px;
+}
+
+#text6{
+  color: white;
+  position: relative;
+  height: 0px;
+  left: -75px;
+  top: 0px;
+}
+
+#botão1{
+  background: linear-gradient(to bottom, #398ab9 5%, #1c658c 100%);
+	background-color: #398ab9;
+	border-radius: 10px;
+	border: 1px solid #1c658c;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	padding: 12px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #283966;
+  position: relative;
+  left: 50px;
+}
+
+#botão1:hover{
+  background: #398AB9;
+  background-color: #398AB9;
+}
+
+#text17{
+  text-decoration: none;
+  color: white;
+}
+
+.tabelaLinha6{
+  height: 100px;
+}
+
+#botão2{
+  background: linear-gradient(to bottom, #398ab9 5%, #1c658c 100%);
+	background-color: #398ab9;
+	border-radius: 10px;
+	border: 1px solid #1c658c;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	padding: 12px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #283966;
+  position: relative;
+  left: 5px;
+}
+
+#botão2:hover{
+  background: #398AB9;
+  background-color: #398AB9;
+}
+
+#linhaBranca{
+  width: 40px;
+  height: 310px;
+  position: relative;
+  top: -30px;
+}
+
+#circulo3{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -15px;
+}
+
+#logo2{
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  left: 456px;
+  top: 193px;
+}
