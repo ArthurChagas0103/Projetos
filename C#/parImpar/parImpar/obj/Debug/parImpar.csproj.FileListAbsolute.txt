@@ -1,0 +1,11 @@
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\bin\Debug\parImpar.exe.config
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\bin\Debug\parImpar.exe
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\bin\Debug\parImpar.pdb
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.csproj.AssemblyReference.cache
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.Form1.resources
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.Properties.Resources.resources
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.csproj.GenerateResource.cache
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.csproj.CoreCompileInputs.cache
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.exe
+H:\LogP\Segunda Etapa\ExPag24\parImpar\parImpar\obj\Debug\parImpar.pdb
