@@ -1,0 +1,11 @@
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\bin\Debug\condicaoSoma.exe.config
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\bin\Debug\condicaoSoma.exe
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\bin\Debug\condicaoSoma.pdb
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.csproj.AssemblyReference.cache
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.Form1.resources
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.Properties.Resources.resources
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.csproj.GenerateResource.cache
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.csproj.CoreCompileInputs.cache
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.exe
+H:\LogP\Segunda Etapa\Ex03Pag27\condicaoSoma\condicaoSoma\obj\Debug\condicaoSoma.pdb
