@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1.5% 1.5% 1.5% 1.5%;
     border-radius: 5px;
     z-index: 0;
-    width: 13.5%;
+    width: 290px;
 }
 
 #dropdown:hover #dropdown-content {
@@ -199,10 +199,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     position: absolute;
     margin-top: -8%;
-    width: 90%;
-    height: 80%;
+    width: 300px;
+    height: 130px;
     justify-content: center;
-    margin-left: 81%;
+    margin-left: 290px;
     display: none;
     background-color: black;
     padding: 5% 5% 5% 5%;
@@ -246,10 +246,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     position: absolute;
     margin-top: -17%;
-    width: 90%;
-    height: 120%;
+    width: 300px;
+    height: 190px;
     justify-content: center;
-    margin-left: 81%;
+    margin-left: 290px;
     display: none;
     background-color: black;
     padding: 5% 5% 5% 5%;
@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #iconePlay1 {
-    padding-left: 20%;
+    padding-left: 26%;
 }
 
 #dropdown4:hover #iconePlay2 {
@@ -305,7 +305,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #iconePlay2 {
-    padding-left: 66.5%;
+    padding-left: 68%;
 }
 
 #dropdown-content5 {
@@ -313,10 +313,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     position: absolute;
     margin-top: -27%;
-    width: 90%;
-    height: 88%;
+    width: 300px;
+    height: 130px;
     justify-content: center;
-    margin-left: 81%;
+    margin-left: 290px;
     display: none;
     background-color: black;
     padding: 5% 5% 5% 5%;
@@ -349,7 +349,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #iconePlay3 {
-    padding-left: 57%;
+    padding-left: 59.2%;
 }
 
 #dropdown-content6 {
@@ -357,10 +357,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     position: absolute;
     margin-top: -37%;
-    width: 90%;
-    height: 45%;
+    width: 300px;
+    height: 100px;
     justify-content: center;
-    margin-left: 81%;
+    margin-left: 290px;
     display: none;
     background-color: black;
     padding: 5% 5% 5% 5%;
@@ -385,7 +385,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #iconePlay4 {
-    padding-left: 17.5%;
+    padding-left: 24%;
 }
 
 #divPosImagem{
