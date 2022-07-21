@@ -74,4 +74,3 @@ $('.carousel').carousel({
 //         }
 //     })
 // });
-
