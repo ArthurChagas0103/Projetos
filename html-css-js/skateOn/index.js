@@ -74,3 +74,4 @@ $('.carousel').carousel({
 //         }
 //     })
 // });
+
