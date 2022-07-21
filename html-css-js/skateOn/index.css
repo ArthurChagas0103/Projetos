@@ -308,19 +308,6 @@ i {
     }
 }
 
-@media (max-width: 300px) {
-    .d-block{
-        height: 40%;
-        padding-top: 10%;
-    }
-}
-
-@media (max-width: 540px) {
-    .d-block{
-        padding-top: 9%;
-    }
-}
-
 @media (max-width: 650px) {
     .d-block{
         padding-top: 7%;
@@ -336,5 +323,18 @@ i {
 @media (max-width: 990px) {
     .d-block{
         padding-top: 5%;
+    }
+}
+
+@media (max-width: 540px) {
+    .d-block{
+        padding-top: 9%;
+    }
+}
+
+@media (max-width: 300px) {
+    .d-block{
+        height: 40%;
+        padding-top: 10%;
     }
 }
