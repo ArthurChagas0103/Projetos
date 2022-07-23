@@ -56,37 +56,3 @@ jQuery(document).ready(function ($) {
 $('.carousel').carousel({
 	interval: 10000
 });
-
-// Add active class on another page linked
-// ==========================================
-// $(window).on('load',function () {
-//     var current = location.pathname;
-//     console.log(current);
-//     $('#navbarSupportedContent ul li a').each(function(){
-//         var $this = $(this);
-//         // if the current path is like this link, make it active
-//         if($this.attr('href').indexOf(current) !== -1){
-//             $this.parent().addClass('active');
-//             $this.parents('.menu-submenu').addClass('show-dropdown');
-//             $this.parents('.menu-submenu').parent().addClass('active');
-//         }else{
-//             $this.parent().removeClass('active');
-//         }
-//     })
-// });
-
-function abrirTela1(){
-	window.open("https://www.youtube.com","_self");
-}
-
-function abrirTela2(){
-	window.open("https://www.youtube.com","_self");
-}
-
-function abrirTela3(){
-	window.open("https://www.youtube.com","_self");
-}
-
-function abrirTela4(){
-	window.open("https://www.youtube.com","_self");
-}
