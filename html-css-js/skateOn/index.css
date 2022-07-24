@@ -376,6 +376,7 @@ i {
         grid-template-rows: 200px 200px;
         justify-content: center;
         gap: 2%;
+        row-gap: 30%;
         margin-left: 4%;
         margin-right: 4%;
         height: 200px;
@@ -390,6 +391,7 @@ i {
         grid-template-rows: 200px 200px;
         justify-content: center;
         gap: 2%;
+        row-gap: 20%;
         margin-left: 4%;
         margin-right: 4%;
         height: 200px;
@@ -500,7 +502,7 @@ i {
     column-gap: 1%;
 }
 
-.itemsSobreEmpresa{
+.itemsSobreEmpresa {
     display: grid;
     grid-template-columns: 10% 90%;
     align-items: flex-start;
@@ -510,7 +512,7 @@ i {
 }
 
 @media (max-width: 1000px) {
-    .itemsSobreEmpresa{
+    .itemsSobreEmpresa {
         display: grid;
         grid-template-columns: 20% 80%;
         align-items: flex-start;
@@ -529,25 +531,8 @@ i {
     }
 }
 
-#produtos{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    column-gap: 2%;
-}
-
-.itemProduto{
-    box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
-    text-align: center;
-    height: 100%;
-    padding: 5%;
-    border-radius: 10px;
-}
-
-#imgLogo{
-    margin-top: 5%;
+#imgLogo {
+    margin-top: 300px;
     display: grid;
     grid-template-columns: 40% 50%;
     align-items: center;
@@ -557,20 +542,303 @@ i {
     justify-content: center;
 }
 
-@media (max-width: 1250px) {
-    #imgLogo{
-        margin-top: 20%;
+@media (min-width: 1250px) {
+    #imgLogo {
+        margin-top: 50px;
         display: grid;
         justify-content: center;
-        grid-template-columns: 20% 50%;
+        grid-template-columns: 40% 50%;
         align-items: center;
         background-color: #1E90FF;
         color: white;
         text-align: justify;
     }
+}
 
-    #imgLogoSemFundo{
-        width: 50%;
+@media (max-width: 750px) {
+    #imgLogoSemFundo {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 525px) {
+    #imgLogo {
+        margin-top: 280px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90%;
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        background-color: #1E90FF;
+        color: white;
+        text-align: justify;
+        padding-bottom: 5%;
+    }
+}
+
+@media (min-width: 2500px) {
+    #imgLogo {
+        margin-top: 140px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 40% 50%;
+        align-items: center;
+        background-color: #1E90FF;
+        color: white;
+        text-align: justify;
+    }
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    column-gap: 3%;
+}
+
+.itemProduto {
+    box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    background-color: greenyellow;
+}
+
+#itemProduto1{
+    row-gap: 12%;
+}
+
+#itemProduto2{
+    row-gap: 8%;
+}
+
+#itemProduto3{
+    row-gap: 13%;
+}
+
+#itemProduto4{
+    row-gap: 5%;
+}
+
+.imgProduto1{
+    border: black 2px solid;
+}
+
+.imgProduto2{
+    border: black 2px solid;
+}
+
+.btnItemProduto {
+    margin-top: 5%;
+    font-size: 15px;
+    font-family: Arial;
+    width: 140px;
+    height: 50px;
+    border-width: 1px;
+    color: #fff;
+    border-color: rgba(81, 97, 206, 1);
+    font-weight: bold;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0px 10px 14px -7px rgba(81, 97, 206, 1);
+    text-shadow: 0px 1px 0px rgba(81, 97, 206, 1);
+    background: linear-gradient(rgba(30, 144, 255, 1), rgba(81, 97, 206, 1));
+}
+
+.btnItemProduto:hover{
+    background: linear-gradient(rgba(81, 97, 206, 1), rgba(30, 144, 255, 1));
+}
+
+#btnItemProduto1{
+    margin-bottom: 10%;
+}
+
+#btnItemProduto2{
+    margin-bottom: 10%;
+}
+
+#btnItemProduto3{
+    margin-bottom: 20%;
+}
+
+#btnItemProduto4{
+    margin-bottom: 20%;
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        height: 650px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 20%;
+    }
+
+    .imgProduto1 {
+        width: 100%;
+        height: 130%;
+    }
+
+    .imgProduto2 {
+        width: 100%;
         height: 100%;
+    }
+
+    .btnItemProduto {
+        margin-top: 5%;
+        font-size: 15px;
+        font-family: Arial;
+        width: 140px;
+        height: 50px;
+        border-width: 1px;
+        color: #fff;
+        border-color: rgba(81, 97, 206, 1);
+        font-weight: bold;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: 0px 10px 14px -7px rgba(81, 97, 206, 1);
+        text-shadow: 0px 1px 0px rgba(81, 97, 206, 1);
+        background: linear-gradient(rgba(30, 144, 255, 1), rgba(81, 97, 206, 1));
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        height: 500px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 20%;
+    }
+
+    .imgProduto1 {
+        width: 100%;
+        height: 170%;
+    }
+
+    .imgProduto2 {
+        width: 100%;
+        height: 140%;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2300px) {
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        height: 500px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 20%;
+    }
+
+    .imgProduto1 {
+        width: 100%;
+        height: 190%;
+    }
+
+    .imgProduto2 {
+        width: 100%;
+        height: 160%;
+    }
+}
+
+@media (min-width: 2300px) and (max-width: 2600px) {
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        height: 500px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 20%;
+    }
+
+    .imgProduto1 {
+        width: 100%;
+        height: 210%;
+    }
+
+    .imgProduto2 {
+        width: 100%;
+        height: 180%;
+    }
+}
+
+@media (min-width: 2600px) and (max-width: 2900px) {
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        height: 500px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 20%;
+    }
+
+    .imgProduto1 {
+        width: 100%;
+        height: 230%;
+    }
+
+    .imgProduto2 {
+        width: 100%;
+        height: 200%;
+    }
+}
+
+@media (min-width: 2900px) {
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        height: 500px;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 20%;
+    }
+
+    .imgProduto1 {
+        width: 100%;
+        height: 280%;
+    }
+
+    .imgProduto2 {
+        width: 100%;
+        height: 250%;
     }
 }
