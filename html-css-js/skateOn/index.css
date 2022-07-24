@@ -347,7 +347,7 @@ i {
     margin-left: 4%;
     margin-right: 4%;
     height: 200px;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .itemsServico {
@@ -355,15 +355,13 @@ i {
     grid-template-columns: 30% 20%;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 29px 0 rgb(68 88 144 / 12%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 10px;
 }
 
 .itemsServico:hover {
-    box-shadow: 1px 1px 29px 0 rgb(68 88 144 / 30%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     cursor: pointer;
-    width: 101%;
-    height: 101%;
     transition: all 0.5s;
 }
 
@@ -528,5 +526,51 @@ i {
         background-color: #1e8fff2b;
         align-items: center;
         column-gap: 2%;
+    }
+}
+
+#produtos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    column-gap: 2%;
+}
+
+.itemProduto{
+    box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+    text-align: center;
+    height: 100%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#imgLogo{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    align-items: center;
+    background-color: #1E90FF;
+    color: white;
+    text-align: justify;
+    justify-content: center;
+}
+
+@media (max-width: 1250px) {
+    #imgLogo{
+        margin-top: 20%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 50%;
+        align-items: center;
+        background-color: #1E90FF;
+        color: white;
+        text-align: justify;
+    }
+
+    #imgLogoSemFundo{
+        width: 50%;
+        height: 100%;
     }
 }
