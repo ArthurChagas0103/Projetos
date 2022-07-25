@@ -800,3 +800,51 @@ i {
         margin-top: 40%;
     }
 }
+
+@media (min-width: 2100px) {
+    #produtos {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: center;
+        margin-top: 5%;
+        column-gap: 3%;
+    }
+    
+    .itemProduto {
+        box-shadow: #5161ce -5px 5px, #1E90FF -10px 10px, #38B6FF -15px 15px, #62c6ff -20px 20px, #b7e5ff -25px 25px;
+        text-align: center;
+        padding: 5%;
+        border-radius: 10px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        background-color: greenyellow;
+        height: 750px;
+    }
+}
+
+#rodape{
+    background-color: #1E90FF;
+    margin-bottom: 0;
+    margin-top: 10%;
+    height: 250px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    
+}
+
+.textRodape{
+    color: white;
+}
+
+.textRodape:hover{
+    color: #b7e5ff;
+}
+
+#tituloRodape{
+    font-weight: bolder;
+}
