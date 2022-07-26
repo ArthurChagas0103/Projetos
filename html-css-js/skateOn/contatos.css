@@ -244,3 +244,39 @@ i {
     z-index: 2;
     background-color: #1E90FF;
 }
+
+#informações{
+    width: 100%;
+    height: 300px;
+    background-color: #5161ce;
+    margin-top: 10%;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.textItemInformacao{
+    padding-bottom: 2%;
+}
+
+.tituloItemInformacao{
+    font-weight: 600;
+}
+
+#formulario{
+    background-color: #1E90FF;
+    height: 400px;
+    width: 40%; 
+    margin-top: -350px;
+    margin-left: 50%;
+    display: grid;
+    grid-template-rows: 20% 30%;
+    align-items: center;
+}
+
+#mapa{
+    margin-top: 5%;
+}
+
