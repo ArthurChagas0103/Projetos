@@ -56,3 +56,19 @@ jQuery(document).ready(function ($) {
 $('.carousel').carousel({
 	interval: 10000
 });
+
+function mensagem() {
+	var lbl1 = $("#txtFormulario1");
+	var lbl2 = $("#txtFormulario2");
+	var lbl3 = $("#txtFormulario3");
+
+	var r = confirm("Tem certeza que gostaria de excluir tudo?");
+	if (r == true) {
+		lbl1.val("");
+		lbl2.val("");
+		lbl3.val("");
+	}
+	else {
+		return false;
+	}
+}
