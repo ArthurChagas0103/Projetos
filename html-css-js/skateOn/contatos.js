@@ -72,3 +72,16 @@ function mensagem() {
 		return false;
 	}
 }
+
+function mensagem2() {
+	var lbl1 = $("#txtFormulario1");
+	var lbl2 = $("#txtFormulario2");
+	var lbl3 = $("#txtFormulario3");
+
+	if(lbl1.val() == "" || lbl2.val() == "" || lbl3.val() == ""){
+		alert('Complete todos os campos!')
+	}
+	else{
+		alert('Dados enviados com sucesso!')
+	}
+}

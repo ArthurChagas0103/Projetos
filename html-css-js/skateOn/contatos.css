@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#tela{
+    background-color: #54a3f738;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -245,7 +249,7 @@ i {
     background-color: #1E90FF;
 }
 
-#informações{
+#informacoes {
     width: 100%;
     height: 300px;
     background-color: #154682;
@@ -257,18 +261,46 @@ i {
     align-items: center;
 }
 
-.textItemInformacao{
+@media (min-width: 991px) and (max-width: 1500px) {
+    #informacoes {
+        width: 100%;
+        height: 300px;
+        background-color: #154682;
+        margin-top: 10%;
+        color: white;
+        display: grid;
+        grid-template-columns: 20% 30%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 991px) {
+    #informacoes {
+        width: 100%;
+        height: 300px;
+        background-color: #154682;
+        margin-top: 20%;
+        color: white;
+        display: grid;
+        grid-template-columns: 20% 30%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.textItemInformacao {
     padding-bottom: 2%;
 }
 
-.tituloItemInformacao{
+.tituloItemInformacao {
     font-weight: 600;
 }
 
-#formulario{
+#formulario {
     background-color: #1E90FF;
     height: 400px;
-    width: 40%; 
+    width: 40%;
     margin-top: -350px;
     margin-left: 50%;
     display: grid;
@@ -279,119 +311,165 @@ i {
     border-radius: 10px;
 }
 
-.input-container{
-	position:relative;
-	margin-bottom:25px;
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
 }
 
-.input-container label{
-	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:14px;
-	color:#fff;	
-	transition: all 0.5s ease-in-out;
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
 }
 
-.input-container input{ 
-  border:0;
-  border-bottom:2px solid #fff;  
-  background:transparent;
-  width:100%;
-  padding:8px 0 5px 0;
-  font-size:16px;
-  color:#fff;
+.input-container input {
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
 }
 
-.input-container textarea{ 
-    border:0;
-    border-bottom:2px solid #fff;  
-    background:transparent;
-    width:100%;
-    padding:8px 0 5px 0;
-    font-size:16px;
-    color:#fff;
+.input-container textarea {
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
 }
 
-.input-container input:focus{ 
- border:none;	
- outline:none;
- border-bottom:2px solid #38B6FF;	
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #38B6FF;
 }
 
-.input-container textarea:focus{ 
-    border:none;	
-    outline:none;
-    border-bottom:2px solid #38B6FF;	
+.input-container textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #38B6FF;
 }
 
-.input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
 }
 
-.input-container textarea:focus ~ label,
-.input-container textarea:valid ~ label{
-	top:-12px;
-	font-size:12px;
+.input-container textarea:focus~label,
+.input-container textarea:valid~label {
+    top: -12px;
+    font-size: 12px;
 }
 
-#btnFormulario1{
-    box-shadow:inset 0px 1px 0px 0px #54a3f7;
-	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-	background-color:#007dc1;
-	border-radius:3px;
-	border:1px solid #124d77;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	padding:11px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #154682;
+#btnFormulario1 {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 11px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
 }
 
-#btnFormulario1:hover{
-    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
-	background-color:#0061a7;
+#btnFormulario1:hover {
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color: #0061a7;
 }
 
-#btnFormulario2{
-    box-shadow:inset 0px 1px 0px 0px #cf866c;
-	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-	background-color:#d0451b;
-	border-radius:3px;
-	border:1px solid #942911;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	padding:11px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #854629;
+#btnFormulario2 {
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #d0451b;
+    border-radius: 3px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 11px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
 }
 
-#btnFormulario2:hover{
-    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-	background-color:#bc3315;
+#btnFormulario2:hover {
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    background-color: #bc3315;
 }
 
-#btnFormulario{
+#btnFormulario {
     display: grid;
     justify-content: center;
     grid-template-columns: 30% 30%;
     column-gap: 2%;
 }
 
-#mapa{
+#mapa1{
     margin-top: 5%;
+    width: 100%;
+    display: grid;
+}
+
+#mapa2 {
     margin-left: 30%;
 }
 
-#rodape{
+@media (max-width: 900px) {
+    #informacoes {
+        width: 100%;
+        height: 300px;
+        background-color: #154682;
+        margin-top: 20%;
+        color: white;
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #formulario {
+        background-color: #1E90FF;
+        height: 400px;
+        width: 70%;
+        margin-top: 0px;
+        margin-left: 15%;
+        display: grid;
+        grid-template-rows: 35% 2% 53% 0%;
+        grid-template-columns: 80%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    #btnFormulario {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 40% 40%;
+        column-gap: 2%;
+    }
+
+    #mapa2{
+        width: 80%;
+        height: 300px;
+        margin-left: 10%;
+    }
+}
+
+#rodape {
     background-color: #1E90FF;
     margin-bottom: 0;
     margin-top: 10%;
@@ -401,23 +479,23 @@ i {
     justify-content: center;
     align-items: center;
     grid-template-columns: 15% 15% 15% 15% 15%;
-    
+
 }
 
-.textRodape{
+.textRodape {
     color: white;
 }
 
-.textRodape:hover{
+.textRodape:hover {
     color: #b7e5ff;
 }
 
-#tituloRodape{
+#tituloRodape {
     font-weight: bolder;
 }
 
 @media (max-width: 1000px) {
-    #rodape{
+    #rodape {
         background-color: #1E90FF;
         margin-bottom: 0;
         margin-top: 10%;
@@ -427,13 +505,13 @@ i {
         justify-content: center;
         align-items: center;
         grid-template-columns: 15% 15% 15%;
-        grid-template-rows: 50% 50%;  
-        gap: 3%;     
+        grid-template-rows: 50% 50%;
+        gap: 3%;
     }
 }
 
 @media (max-width: 700px) {
-    #rodape{
+    #rodape {
         background-color: #1E90FF;
         margin-bottom: 0;
         margin-top: 50%;
@@ -443,11 +521,11 @@ i {
         justify-content: center;
         align-items: center;
         grid-template-columns: 15%;
-        grid-template-rows: 15% 15% 15% 15% 15%;  
-        
+        grid-template-rows: 15% 15% 15% 15% 15%;
+
     }
 
-    #imgRodape{
+    #imgRodape {
         width: 100%;
     }
 }

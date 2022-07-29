@@ -244,3 +244,32 @@ i {
     z-index: 2;
     background-color: #1E90FF;
 }
+
+#textImg{
+    margin-top: -500px;
+    background-color: #1e8fff;
+    height: 25%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50%;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+    box-shadow: #5161ce 0px 0px 0px 3px, #1E90FF 0px 0px 0px 6px, #38B6FF 0px 0px 0px 9px, #62c6ff 0px 0px 0px 12px, #b7e5ff 0px 0px 0px 15px;
+    animation: go-back 4s;
+    
+}
+
+#teste{
+    animation: go-back 3s;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
