@@ -246,9 +246,8 @@ i {
 }
 
 #textImg{
-    margin-top: -500px;
+    margin-top: -400px;
     background-color: #1e8fff;
-    height: 25%;
     position: absolute;
     display: grid;
     justify-content: center;
@@ -258,11 +257,57 @@ i {
     padding-top: 1%;
     box-shadow: #5161ce 0px 0px 0px 3px, #1E90FF 0px 0px 0px 6px, #38B6FF 0px 0px 0px 9px, #62c6ff 0px 0px 0px 12px, #b7e5ff 0px 0px 0px 15px;
     animation: go-back 4s;
-    
+    width: 100%;
 }
 
 #imgComText{
     animation: go-back 3s;
+}
+
+@media (min-width: 700px) and (max-width: 1500px) {
+    #imgCidade{
+        height: 400px;
+    }
+
+    #textImg{
+        margin-top: -280px;
+        background-color: #1e8fff;
+        position: absolute;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 80%;
+        text-align: center;
+        color: white;
+        padding-top: 1%;
+        box-shadow: #5161ce 0px 0px 0px 3px, #1E90FF 0px 0px 0px 6px, #38B6FF 0px 0px 0px 9px, #62c6ff 0px 0px 0px 12px, #b7e5ff 0px 0px 0px 15px;
+        animation: go-back 4s;
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    #imgCidade{
+        height: 400px;
+    }
+
+    #textImg{
+        margin-top: -280px;
+        background-color: #1e8fff;
+        position: absolute;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 80%;
+        text-align: center;
+        color: white;
+        padding-top: 1%;
+        box-shadow: #5161ce 0px 0px 0px 3px, #1E90FF 0px 0px 0px 6px, #38B6FF 0px 0px 0px 9px, #62c6ff 0px 0px 0px 12px, #b7e5ff 0px 0px 0px 15px;
+        animation: go-back 4s;
+        width: 100%;
+    }
+
+    #textoImagem{
+        font-size: 20px;
+    }
 }
 
 @keyframes go-back {
@@ -272,4 +317,55 @@ i {
     100% {
         transform: translateX(0);
     }
+}
+
+#imgEu{
+    border-radius: 100%;
+    margin-top: -100px;
+    position: absolute;
+    margin-left: 2.5%;
+}
+
+#divEu{
+    margin-top: 10%;
+    width: 350px;
+    height: 450px;
+    background-color: #b7e5ff;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 70%;
+    grid-template-rows: 80% 10%;
+    margin-left: 40%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#textEu{
+    margin-top: 80%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+#redesSociais{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15% 15% 15%;
+    margin-top: 15%;
+}
+
+#textFundador{
+    width: 100%;
+    background-color: #1e8fff;
+    color: white;
+}
+
+#textArthur{
+    color: #5161ce;
+}
+
+#textFullStack{
+    color: #1E90FF;
+}
+
+.fa{
+    color: #5161ce;
 }
