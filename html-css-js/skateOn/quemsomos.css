@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -256,16 +257,21 @@ i {
     color: white;
     padding-top: 1%;
     box-shadow: #5161ce 0px 0px 0px 3px, #1E90FF 0px 0px 0px 6px, #38B6FF 0px 0px 0px 9px, #62c6ff 0px 0px 0px 12px, #b7e5ff 0px 0px 0px 15px;
-    animation: go-back 4s;
     width: 100%;
 }
 
-#imgComText {
+#imgBanner {
     animation: go-back 3s;
 }
 
+#imgComText{
+    display: flex;
+    justify-content: center;
+    background-color: #5161ce;
+}
+
 @media (min-width: 700px) and (max-width: 1500px) {
-    #imgCidade {
+    #imgBanner {
         height: 400px;
     }
 
@@ -286,7 +292,7 @@ i {
 }
 
 @media (max-width: 700px) {
-    #imgCidade {
+    #imgBanner {
         height: 400px;
     }
 
