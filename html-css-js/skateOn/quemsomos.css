@@ -264,7 +264,7 @@ i {
     animation: go-back 3s;
 }
 
-#imgComText{
+#banner {
     display: flex;
     justify-content: center;
     background-color: #5161ce;
@@ -373,15 +373,15 @@ i {
     color: #1E90FF;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     color: #5161ce;
 }
 
-.fa-twitter{
+.fa-twitter {
     color: #5161ce;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: #5161ce;
 }
 
@@ -481,7 +481,7 @@ i {
     }
 }
 
-#mvv{
+#mvv {
     display: grid;
     height: 350px;
     background-color: #38b6ff3d;
@@ -491,7 +491,7 @@ i {
     justify-content: center;
 }
 
-.itemMvv{
+.itemMvv {
     display: grid;
     justify-content: center;
     grid-template-columns: 80%;
@@ -500,7 +500,7 @@ i {
     align-items: center;
 }
 
-#itemMvv1{
+#itemMvv1 {
     display: grid;
     justify-content: center;
     grid-template-columns: 80%;
@@ -509,22 +509,22 @@ i {
     align-items: center;
 }
 
-.fa-font-awesome{
+.fa-font-awesome {
     color: #1E90FF;
     font-size: 80px;
 }
 
-.fa-eye{
+.fa-eye {
     color: #1E90FF;
     font-size: 60px;
 }
 
-.fa-star{
+.fa-star {
     color: #1E90FF;
     font-size: 60px;
 }
 
-#rodape{
+#rodape {
     background-color: #1E90FF;
     margin-bottom: 0;
     margin-top: 10%;
@@ -534,23 +534,23 @@ i {
     justify-content: center;
     align-items: center;
     grid-template-columns: 15% 15% 15% 15% 15%;
-    
+
 }
 
-.textRodape{
+.textRodape {
     color: white;
 }
 
-.textRodape:hover{
+.textRodape:hover {
     color: #b7e5ff;
 }
 
-#tituloRodape{
+#tituloRodape {
     font-weight: bolder;
 }
 
 @media (max-width: 1000px) {
-    #rodape{
+    #rodape {
         background-color: #1E90FF;
         margin-bottom: 0;
         margin-top: 10%;
@@ -560,13 +560,13 @@ i {
         justify-content: center;
         align-items: center;
         grid-template-columns: 15% 15% 15%;
-        grid-template-rows: 50% 50%;  
-        gap: 3%;     
+        grid-template-rows: 50% 50%;
+        gap: 3%;
     }
 }
 
 @media (max-width: 700px) {
-    #rodape{
+    #rodape {
         background-color: #1E90FF;
         margin-bottom: 0;
         margin-top: 50%;
@@ -576,11 +576,11 @@ i {
         justify-content: center;
         align-items: center;
         grid-template-columns: 15%;
-        grid-template-rows: 15% 15% 15% 15% 15%;  
-        
+        grid-template-rows: 15% 15% 15% 15% 15%;
+
     }
 
-    #imgRodape{
+    #imgRodape {
         width: 100%;
     }
 }
