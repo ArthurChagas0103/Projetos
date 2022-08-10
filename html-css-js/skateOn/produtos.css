@@ -247,11 +247,23 @@ i {
 
 #filtrarPor{
     display: grid;
-    grid-template-columns: 20%;
-    margin-top: 50px;
+    grid-template-columns: 100%;
+    width: 13%;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: #CFEEFF;
+    padding: 30px;
 }
 
 #categoria{
+    margin-top: 20px;
+}
+
+#marca{
+    margin-top: 20px;
+}
+
+#buttons{
     margin-top: 20px;
 }
 

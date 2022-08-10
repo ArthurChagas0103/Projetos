@@ -62,11 +62,19 @@ function limpar(){
 	var bmx = document.getElementById("bmx");
 	var pecas = document.getElementById("pecas");
 	var roupas = document.getElementById("roupas");
+	var ahead = document.getElementById("ahead");
+	var ollie = document.getElementById("ollie");
+	var horus = document.getElementById("horus");
+	var nike = document.getElementById("nike");
 
-	if(skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true){
+	if(skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true || ahead.checked == true || ollie.checked == true || horus.checked == true || nike.checked == true ){
 		skates.checked = false;
 		bmx.checked = false;
 		pecas.checked = false;
 		roupas.checked = false;
+		ahead.checked = false;
+		ollie.checked = false;
+		horus.checked = false;
+		nike.checked = false;
 	}
 }
