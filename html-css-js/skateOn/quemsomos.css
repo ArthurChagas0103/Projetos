@@ -503,6 +503,19 @@ i {
     font-size: 60px;
 }
 
+#sobre{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    text-align: justify;
+    background-color: #38b6ff3d;
+    border: 2px solid #38b6ff9f;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #5161ce;
+}
+
 #rodape {
     background-color: #1E90FF;
     margin-bottom: 0;

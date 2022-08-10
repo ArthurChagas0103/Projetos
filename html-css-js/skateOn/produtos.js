@@ -56,3 +56,17 @@ jQuery(document).ready(function ($) {
 $('.carousel').carousel({
 	interval: 10000
 });
+
+function limpar(){
+	var skates = document.getElementById("skates");
+	var bmx = document.getElementById("bmx");
+	var pecas = document.getElementById("pecas");
+	var roupas = document.getElementById("roupas");
+
+	if(skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true){
+		skates.checked = false;
+		bmx.checked = false;
+		pecas.checked = false;
+		roupas.checked = false;
+	}
+}

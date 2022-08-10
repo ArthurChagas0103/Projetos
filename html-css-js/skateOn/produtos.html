@@ -17,7 +17,8 @@
 
 <body>
   <nav class="navbar navbar-expand-custom navbar-mainbg position-fixed w-100" id="barraNavegacao">
-    <a class="navbar-brand navbar-logo" href="index.html"><img src="img/logo_sem_fundo.png" width="80px" height="52px"></a>
+    <a class="navbar-brand navbar-logo" href="index.html"><img src="img/logo_sem_fundo.png" width="80px"
+        height="52px"></a>
     <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
       <i class="fas fa-bars text-white"></i>
@@ -44,14 +45,37 @@
     </div>
     <div class="input-group" id="barraPesquisa1">
       <div id="barraPesquisa2">
-        <input type="search" class="form-control rounded" placeholder="Procurar"
-          aria-label="Procurar" aria-describedby="search-addon" id="txtBarraPesquisa" /> 
+        <input type="search" class="form-control rounded" placeholder="Procurar" aria-label="Procurar"
+          aria-describedby="search-addon" id="txtBarraPesquisa" />
       </div>
       <button id="search-button" type="button" class="btn btn-primary">
         <i class="fas fa-search"></i>
       </button>
     </div>
   </nav>
+  <div>.</div>
+  <form id="filtrarPor">
+    <h3>Filtrar por:</h3>
+    <div id="categoria">
+      <h5>Categorias</h5>
+      <div>
+        <input type="radio" id="skates" name="categoria"><label for="skates" style="margin-left: 5px;"> Skates</label>
+      </div>
+      <div>
+        <input type="radio" id="bmx" name="categoria"><label for="bmx" style="margin-left: 5px;"> Bicicletas BMX</label>
+      </div>
+      <div>
+        <input type="radio" id="pecas" name="categoria"><label for="pecas" style="margin-left: 5px;"> Peças</label>
+      </div>
+      <div>
+        <input type="radio" id="roupas" name="categoria"><label for="roupas" style="margin-left: 5px;"> Roupas</label>
+      </div>
+    </div>
+    <div>
+      <input id="btnAplicar" type="button" value="Aplicar">
+      <input id="btnLimpar" type="button" value="Limpar" onclick="limpar()">
+    </div>
+  </form>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
