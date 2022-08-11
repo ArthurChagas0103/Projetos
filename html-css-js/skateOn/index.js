@@ -76,17 +76,33 @@ $('.carousel').carousel({
 // });
 
 function abrirTela1(){
-	window.open("https://www.youtube.com","_self");
+	window.open("produtos.html","_self");
 }
 
 function abrirTela2(){
-	window.open("https://www.youtube.com","_self");
+	window.open("produtos.html","_self");
 }
 
 function abrirTela3(){
-	window.open("https://www.youtube.com","_self");
+	window.open("produtos.html","_self");
 }
 
 function abrirTela4(){
-	window.open("https://www.youtube.com","_self");
+	window.open("produtos.html","_self");
+}
+
+function abrirTela5(){
+	window.open("produtos.html","_self");
+}
+
+function abrirTela6(){
+	window.open("produtos.html","_self");
+}
+
+function abrirTela7(){
+	window.open("produtos.html","_self");
+}
+
+function abrirTela8(){
+	window.open("produtos.html","_self");
 }

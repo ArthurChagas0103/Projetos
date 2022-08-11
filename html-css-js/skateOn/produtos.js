@@ -65,13 +65,17 @@ function limpar() {
 	var ahead = document.getElementById("ahead");
 	var ollie = document.getElementById("ollie");
 	var horus = document.getElementById("horus");
-	var nike = document.getElementById("nike");
+	var route = document.getElementById("route");
 	var mil = document.getElementById("milReais");
 	var quinhentos = document.getElementById("quinhentosReais");
 	var duzentos = document.getElementById("duzentosReais");
 	var cem = document.getElementById("cemReais");
+	var gts = document.getElementById("gts");
+	var romwe = document.getElementById("romwe");
+	var dc = document.getElementById("dc");
+	var ous = document.getElementById("ous");
 
-	if (skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true || ahead.checked == true || ollie.checked == true || horus.checked == true || nike.checked == true || mil.checked == true || quinhentos.checked == true || duzentos.checked == true || cem.checked == true) {
+	if (skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true || ahead.checked == true || ollie.checked == true || horus.checked == true || route.checked == true || mil.checked == true || quinhentos.checked == true || duzentos.checked == true || cem.checked == true || gts.checked == true || romwe.checked == true || dc.checked == true || ous.checked == true) {
 		skates.checked = false;
 		bmx.checked = false;
 		pecas.checked = false;
@@ -79,10 +83,14 @@ function limpar() {
 		ahead.checked = false;
 		ollie.checked = false;
 		horus.checked = false;
-		nike.checked = false;
+		route.checked = false;
 		mil.checked = false;
 		quinhentos.checked = false;
 		duzentos.checked = false;
 		cem.checked = false;
+		gts.checked = false;
+		romwe.checked = false;
+		dc.checked = false;
+		ous.checked = false;
 	}
 }
