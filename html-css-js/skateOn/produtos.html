@@ -86,12 +86,80 @@
         <input type="radio" id="nike" name="marca"><label for="nike" style="margin-left: 5px;"> Nike</label>
       </div>
     </div>
-    <div>
+    <div id="preco">
+      <h5>Preços</h5>
+      <div>
+        <input type="radio" id="milReais" name="preco"><label for="milReais" style="margin-left: 5px;"> Até R$
+          1000.00</label>
+      </div>
+      <div>
+        <input type="radio" id="quinhentosReais" name="preco"><label for="quinhentosReais" style="margin-left: 5px;">
+          Até R$ 500.00</label>
+      </div>
+      <div>
+        <input type="radio" id="duzentosReais" name="preco"><label for="duzentosReais" style="margin-left: 5px;"> Até R$
+          200.00</label>
+      </div>
+      <div>
+        <input type="radio" id="cemReais" name="preco"><label for="cemReais" style="margin-left: 5px;"> Até R$
+          100.00</label>
+      </div>
+    </div>
     <div id="buttons">
       <input id="btnAplicar" type="button" value="Aplicar">
       <input id="btnLimpar" type="button" value="Limpar" onclick="limpar()">
     </div>
   </form>
+  <div id="produtos">
+    <div class="produtos">
+      <div id="itemProduto1">
+        <img src="img/skateAhead.png" width="100%" height="120%" class="imgProduto1">
+        <div class="contentProduto">
+          <h6>SKATE COMPLETO AHEAD MILITARY ALL BLUE</h6>
+          <h6>R$ 269.90</h6>
+          <h6>ou</h6>
+          <h6>6x de R$44.98</h6>
+          <button class="btnItemProduto" id="btnItemProduto1">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="produtos">
+      <div class="itemProduto" id="itemProduto2">
+        <img src="img/sapatoOllie.png" width="100%" height="110%" class="imgProduto2">
+        <div class="contentProduto2">
+          <h6>KIT 3 TÊNIS OLLIE PLAZZA</h6>
+          <h6>R$ 237.97</h6>
+          <h6>ou</h6>
+          <h6>6x de R$41.67</h6>
+          <button class="btnItemProduto" id="btnItemProduto2">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="produtos">
+      <div id="itemProduto3">
+        <img src="img/blusa.png" width="100%" height="120%" class="imgProduto1">
+        <div class="contentProduto">
+          <h6>BLUSA XADREZ + CAMISA + CORDÃO</h6>
+          <h6>R$ 98.90</h6>
+          <h6>ou</h6>
+          <h6>6x de R$16.49</h6>
+          <button class="btnItemProduto" id="btnItemProduto3">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="produtos">
+      <div class="itemProduto" id="itemProduto4">
+        <img src="img/bicicletaBmx.png" width="100%" height="100%" class="imgProduto2">
+        <div class="contentProduto2">
+          <h6>BICICLETA BMX CROSS ARO 20 FREESTYLE A DISCO SKILL HORUS</h6>
+          <h6>R$ 779.90</h6>
+          <h6>ou</h6>
+          <h6>6x de R$129.99</h6>
+          <button class="btnItemProduto" id="btnItemProduto4">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

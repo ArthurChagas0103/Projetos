@@ -57,7 +57,7 @@ $('.carousel').carousel({
 	interval: 10000
 });
 
-function limpar(){
+function limpar() {
 	var skates = document.getElementById("skates");
 	var bmx = document.getElementById("bmx");
 	var pecas = document.getElementById("pecas");
@@ -66,8 +66,12 @@ function limpar(){
 	var ollie = document.getElementById("ollie");
 	var horus = document.getElementById("horus");
 	var nike = document.getElementById("nike");
+	var mil = document.getElementById("milReais");
+	var quinhentos = document.getElementById("quinhentosReais");
+	var duzentos = document.getElementById("duzentosReais");
+	var cem = document.getElementById("cemReais");
 
-	if(skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true || ahead.checked == true || ollie.checked == true || horus.checked == true || nike.checked == true ){
+	if (skates.checked == true || bmx.checked == true || pecas.checked == true || roupas.checked == true || ahead.checked == true || ollie.checked == true || horus.checked == true || nike.checked == true || mil.checked == true || quinhentos.checked == true || duzentos.checked == true || cem.checked == true) {
 		skates.checked = false;
 		bmx.checked = false;
 		pecas.checked = false;
@@ -76,5 +80,9 @@ function limpar(){
 		ollie.checked = false;
 		horus.checked = false;
 		nike.checked = false;
+		mil.checked = false;
+		quinhentos.checked = false;
+		duzentos.checked = false;
+		cem.checked = false;
 	}
 }
