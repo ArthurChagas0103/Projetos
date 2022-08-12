@@ -43,15 +43,16 @@
         </li>
       </ul>
     </div>
-    <div class="input-group" id="barraPesquisa1">
+    <form class="input-group" id="barraPesquisa1"
+      onSubmit="if(this.txtBarraPesquisa.value!=null && this.txtBarraPesquisa.value!='') findString(this.txtBarraPesquisa.value);return false">
       <div id="barraPesquisa2">
         <input type="search" class="form-control rounded" placeholder="Procurar" aria-label="Procurar"
-          aria-describedby="search-addon" id="txtBarraPesquisa" />
+          aria-describedby="search-addon" id="txtBarraPesquisa" name="txtBarraPesquisa" />
       </div>
-      <button id="search-button" type="button" class="btn btn-primary">
+      <button id="search-button" type="submit" class="btn btn-primary" value="Find">
         <i class="fas fa-search"></i>
       </button>
-    </div>
+    </form>
   </nav>
   <div>.</div>
   <div style="display: grid; justify-content:center;">
@@ -373,5 +374,7 @@
 <script type="text/javascript"
   src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search/search.min.js"></script>
 <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </html>
