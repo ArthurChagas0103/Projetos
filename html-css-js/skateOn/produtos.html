@@ -54,74 +54,78 @@
     </div>
   </nav>
   <div>.</div>
-  <form id="filtrarPor">
-    <h3>Filtrar por:</h3>
-    <div id="categoria">
-      <h5>Categorias</h5>
-      <div>
-        <input type="radio" id="skates" name="categoria"><label for="skates" style="margin-left: 5px;"> Skates</label>
+  <div style="display: grid; justify-content:center;">
+    <form id="filtrarPor">
+      <h3 style="height: 30px; position: absolute;" id="textFiltrarPor">Filtrar por:</h3>
+      <div id="categoria">
+        <h5>Categorias</h5>
+        <div>
+          <input type="radio" id="skates" name="categoria"><label for="skates" style="margin-left: 5px;"> Skates</label>
+        </div>
+        <div>
+          <input type="radio" id="bmx" name="categoria"><label for="bmx" style="margin-left: 5px;"> Bicicletas
+            BMX</label>
+        </div>
+        <div>
+          <input type="radio" id="pecas" name="categoria"><label for="pecas" style="margin-left: 5px;"> Peças</label>
+        </div>
+        <div>
+          <input type="radio" id="roupas" name="categoria"><label for="roupas" style="margin-left: 5px;"> Roupas</label>
+        </div>
       </div>
-      <div>
-        <input type="radio" id="bmx" name="categoria"><label for="bmx" style="margin-left: 5px;"> Bicicletas BMX</label>
+      <div id="marca">
+        <h5>Marcas</h5>
+        <div>
+          <input type="radio" id="ahead" name="marca"><label for="ahead" style="margin-left: 5px;"> Ahead</label>
+        </div>
+        <div>
+          <input type="radio" id="ollie" name="marca"><label for="ollie" style="margin-left: 5px;"> Ollie</label>
+        </div>
+        <div>
+          <input type="radio" id="horus" name="marca"><label for="horus" style="margin-left: 5px;"> Horus</label>
+        </div>
+        <div>
+          <input type="radio" id="route" name="marca"><label for="route" style="margin-left: 5px;"> Route</label>
+        </div>
+        <div>
+          <input type="radio" id="gts" name="marca"><label for="gts" style="margin-left: 5px;"> GTSM1</label>
+        </div>
+        <div>
+          <input type="radio" id="romwe" name="marca"><label for="romwe" style="margin-left: 5px;"> Romwe</label>
+        </div>
+        <div>
+          <input type="radio" id="dc" name="marca"><label for="dc" style="margin-left: 5px;"> DC</label>
+        </div>
+        <div>
+          <input type="radio" id="ous" name="marca"><label for="ous" style="margin-left: 5px;"> ÖUS</label>
+        </div>
       </div>
-      <div>
-        <input type="radio" id="pecas" name="categoria"><label for="pecas" style="margin-left: 5px;"> Peças</label>
+      <div id="preco">
+        <h5>Preços</h5>
+        <div>
+          <input type="radio" id="milReais" name="preco"><label for="milReais" style="margin-left: 5px;"> Até R$
+            1000.00</label>
+        </div>
+        <div>
+          <input type="radio" id="quinhentosReais" name="preco"><label for="quinhentosReais" style="margin-left: 5px;">
+            Até R$ 500.00</label>
+        </div>
+        <div>
+          <input type="radio" id="duzentosReais" name="preco"><label for="duzentosReais" style="margin-left: 5px;"> Até
+            R$
+            200.00</label>
+        </div>
+        <div>
+          <input type="radio" id="cemReais" name="preco"><label for="cemReais" style="margin-left: 5px;"> Até R$
+            100.00</label>
+        </div>
       </div>
-      <div>
-        <input type="radio" id="roupas" name="categoria"><label for="roupas" style="margin-left: 5px;"> Roupas</label>
+      <div id="buttons">
+        <input id="btnAplicar" type="button" value="Aplicar">
+        <input id="btnLimpar" type="button" value="Limpar" onclick="limpar()">
       </div>
-    </div>
-    <div id="marca">
-      <h5>Marcas</h5>
-      <div>
-        <input type="radio" id="ahead" name="marca"><label for="ahead" style="margin-left: 5px;"> Ahead</label>
-      </div>
-      <div>
-        <input type="radio" id="ollie" name="marca"><label for="ollie" style="margin-left: 5px;"> Ollie</label>
-      </div>
-      <div>
-        <input type="radio" id="horus" name="marca"><label for="horus" style="margin-left: 5px;"> Horus</label>
-      </div>
-      <div>
-        <input type="radio" id="route" name="marca"><label for="route" style="margin-left: 5px;"> Route</label>
-      </div>
-      <div>
-        <input type="radio" id="gts" name="marca"><label for="gts" style="margin-left: 5px;"> GTSM1</label>
-      </div>
-      <div>
-        <input type="radio" id="romwe" name="marca"><label for="romwe" style="margin-left: 5px;"> Romwe</label>
-      </div>
-      <div>
-        <input type="radio" id="dc" name="marca"><label for="dc" style="margin-left: 5px;"> DC</label>
-      </div>
-      <div>
-        <input type="radio" id="ous" name="marca"><label for="ous" style="margin-left: 5px;"> ÖUS</label>
-      </div>
-    </div>
-    <div id="preco">
-      <h5>Preços</h5>
-      <div>
-        <input type="radio" id="milReais" name="preco"><label for="milReais" style="margin-left: 5px;"> Até R$
-          1000.00</label>
-      </div>
-      <div>
-        <input type="radio" id="quinhentosReais" name="preco"><label for="quinhentosReais" style="margin-left: 5px;">
-          Até R$ 500.00</label>
-      </div>
-      <div>
-        <input type="radio" id="duzentosReais" name="preco"><label for="duzentosReais" style="margin-left: 5px;"> Até R$
-          200.00</label>
-      </div>
-      <div>
-        <input type="radio" id="cemReais" name="preco"><label for="cemReais" style="margin-left: 5px;"> Até R$
-          100.00</label>
-      </div>
-    </div>
-    <div id="buttons">
-      <input id="btnAplicar" type="button" value="Aplicar">
-      <input id="btnLimpar" type="button" value="Limpar" onclick="limpar()">
-    </div>
-  </form>
+    </form>
+  </div>
   <div id="produtos">
     <div class="produtos">
       <div id="itemProduto1">
@@ -292,6 +296,73 @@
       </div>
     </div>
   </div>
+  <footer id="rodape">
+    <div>
+      <a href="index.html"><img src="img/logo_sem_fundo.png" width="80%" id="imgRodape"></a>
+    </div>
+    <div>
+      <a href="index.html" class="textRodape" id="tituloRodape">
+        <h5>Home</h5>
+      </a>
+      <a href="index.html#carouselExampleIndicators" class="textRodape">
+        <h6>Vantagens</h6>
+      </a>
+      <a href="index.html#sobreEmpresa" class="textRodape">
+        <h6>Categorias</h6>
+      </a>
+      <a href="index.html#servicos" class="textRodape">
+        <h6>Apresentação</h6>
+      </a>
+      <a href="index.html#produtos" class="textRodape">
+        <h6>Produtos</h6>
+      </a>
+    </div>
+    <div>
+      <a href="quemsomos.html" class="textRodape">
+        <h5>Quem Somos</h5>
+      </a>
+      <a href="quemsomos.html#ponto" class="textRodape">
+        <h6>Sobre a skate On</h6>
+      </a>
+      <a href="quemsomos.html#divEu" class="textRodape">
+        <h6>Funcionários</h6>
+      </a>
+      <a href="quemsomos.html#mvv" class="textRodape">
+        <h6>MVV</h6>
+      </a>
+    </div>
+    <div>
+      <a href="" class="textRodape">
+        <h5>Produtos</h5>
+      </a>
+      <a href="" class="textRodape">
+        <h6></h6>
+      </a>
+      <a href="" class="textRodape">
+        <h6></h6>
+      </a>
+      <a href="" class="textRodape">
+        <h6></h6>
+      </a>
+      <a href="" class="textRodape">
+        <h6></h6>
+      </a>
+    </div>
+    <div>
+      <a href="contatos.html" class="textRodape">
+        <h5>Contatos</h5>
+      </a>
+      <a href="contatos.html#ponto" class="textRodape">
+        <h6>Informações</h6>
+      </a>
+      <a href="contatos.html#ponto" class="textRodape">
+        <h6>Formulário</h6>
+      </a>
+      <a href="contatos.html#mapa" class="textRodape">
+        <h6>Mapa</h6>
+      </a>
+    </div>
+  </footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
