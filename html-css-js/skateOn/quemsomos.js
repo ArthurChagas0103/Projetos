@@ -60,12 +60,9 @@ $('.carousel').carousel({
 var TRange = null;
 
 function findString(str) {
-	alert('Continue apertando a lupa para ir para próximos resultados')
 	if (parseInt(navigator.appVersion) < 4) return;
 	var strFound;
 	if (window.find) {
-
-		// CODE FOR BROWSERS THAT SUPPORT window.find
 
 		strFound = self.find(str);
 		if (!strFound) {
@@ -74,8 +71,6 @@ function findString(str) {
 		}
 	}
 	else if (navigator.appName.indexOf("Microsoft") != -1) {
-
-		// EXPLORER-SPECIFIC CODE
 
 		if (TRange != null) {
 			TRange.collapse(false);

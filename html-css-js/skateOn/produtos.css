@@ -254,9 +254,9 @@ i {
     background-color: #CFEEFF;
     padding: 30px;
     border-radius: 10px;
-    position: fixed;
+    position: absolute;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    z-index: -1;
+    z-index: 1;
 }
 
 #categoria{
@@ -508,6 +508,30 @@ i {
     width: 275px;
 }
 
+#itemProduto17{
+    row-gap: 8%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 275px;
+}
+
+#itemProduto18{
+    row-gap: 8%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 275px;
+}
+
+#itemProduto19{
+    row-gap: 8%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 275px;
+}
+
+#itemProduto20{
+    row-gap: 8%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 275px;
+}
+
 .imgProduto1{
     border: black 2px solid;
 }
@@ -747,8 +771,8 @@ i {
     #rodape{
         background-color: #1E90FF;
         margin-bottom: 0;
-        margin-top: 50%;
-        height: 600px;
+        margin-top: 60%;
+        height: 1000px;
         color: white;
         display: grid;
         justify-content: center;

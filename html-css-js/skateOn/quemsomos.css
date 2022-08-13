@@ -516,7 +516,7 @@ i {
     color: #5161ce;
 }
 
-#rodape {
+#rodape{
     background-color: #1E90FF;
     margin-bottom: 0;
     margin-top: 10%;
@@ -526,23 +526,23 @@ i {
     justify-content: center;
     align-items: center;
     grid-template-columns: 15% 15% 15% 15% 15%;
-
+    
 }
 
-.textRodape {
+.textRodape{
     color: white;
 }
 
-.textRodape:hover {
+.textRodape:hover{
     color: #b7e5ff;
 }
 
-#tituloRodape {
+#tituloRodape{
     font-weight: bolder;
 }
 
 @media (max-width: 1000px) {
-    #rodape {
+    #rodape{
         background-color: #1E90FF;
         margin-bottom: 0;
         margin-top: 10%;
@@ -552,27 +552,27 @@ i {
         justify-content: center;
         align-items: center;
         grid-template-columns: 15% 15% 15%;
-        grid-template-rows: 50% 50%;
-        gap: 3%;
+        grid-template-rows: 50% 50%;  
+        gap: 3%;     
     }
 }
 
 @media (max-width: 700px) {
-    #rodape {
+    #rodape{
         background-color: #1E90FF;
         margin-bottom: 0;
-        margin-top: 50%;
-        height: 600px;
+        margin-top: 60%;
+        height: 1000px;
         color: white;
         display: grid;
         justify-content: center;
         align-items: center;
         grid-template-columns: 15%;
-        grid-template-rows: 15% 15% 15% 15% 15%;
-
+        grid-template-rows: 15% 15% 15% 15% 15%;  
+        
     }
 
-    #imgRodape {
+    #imgRodape{
         width: 100%;
     }
 }

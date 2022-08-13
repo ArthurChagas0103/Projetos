@@ -54,7 +54,7 @@
       </button>
     </form>
   </nav>
-  <div>.</div>
+  <div id="ponto">.</div>
   <div style="display: grid; justify-content:center;">
     <form id="filtrarPor">
       <h3 style="height: 30px; position: absolute;" id="textFiltrarPor">Filtrar por:</h3>
@@ -122,15 +122,15 @@
         </div>
       </div>
       <div id="buttons">
-        <input id="btnAplicar" type="button" value="Aplicar">
+        <input id="btnAplicar" type="button" value="Aplicar" onclick="filtrar()">
         <input id="btnLimpar" type="button" value="Limpar" onclick="limpar()">
       </div>
     </form>
   </div>
   <div id="produtos">
-    <div class="produtos">
+    <div class="produtos" id="divSkates">
       <div id="itemProduto1">
-        <img src="img/skateAhead.png" width="100%" height="120%" class="imgProduto1">
+        <img src="img/skateAhead.png" width="100%" height="120%" class="imgProduto1" id="imgSkateAhead">
         <div class="contentProduto">
           <h6>SKATE COMPLETO AHEAD MILITARY ALL BLUE</h6>
           <h6>R$ 269.90</h6>
@@ -170,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div class="produtos">
+    <div class="produtos" id="bicicletas">
       <div class="itemProduto" id="itemProduto4">
         <img src="img/bicicletaBmx.png" width="100%" height="100%" class="imgProduto2">
         <div class="contentProduto2">
@@ -212,7 +212,7 @@
         </div>
       </div>
     </div>
-    <div class="produtos">
+    <div class="produtos" id="divRoupas">
       <div id="itemProduto3">
         <img src="img/blusa.png" width="100%" height="120%" class="imgProduto1">
         <div class="contentProduto">
@@ -254,7 +254,7 @@
         </div>
       </div>
     </div>
-    <div class="produtos">
+    <div class="produtos" id="sapatos">
       <div class="itemProduto" id="itemProduto2">
         <img src="img/sapatoOllie.png" width="100%" height="110%" class="imgProduto2">
         <div class="contentProduto2">
@@ -296,6 +296,48 @@
         </div>
       </div>
     </div>
+    <div class="produtos" id="divPecas">
+      <div class="itemProduto" id="itemProduto17">
+        <img src="img/rodinhaAhead.png" width="100%" height="110%" class="imgProduto2">
+        <div class="contentProduto2">
+          <h6>RODA AHEAD 53MM COLOR WHITE 95A</h6>
+          <h6>R$ 59.90</h6>
+          <h6>ou</h6>
+          <h6>1x de R$59.90</h6>
+          <button class="btnItemProduto" id="btnItemProduto16">COMPRAR</button>
+        </div>
+      </div>
+      <div class="itemProduto" id="itemProduto18">
+        <img src="img/truck.png" width="100%" height="110%" class="imgProduto2">
+        <div class="contentProduto2">
+          <h6>TRUCK DE SKATE INICIANTE 120mm</h6>
+          <h6>R$ 149.90</h6>
+          <h6>ou</h6>
+          <h6>5x de R$29.98</h6>
+          <button class="btnItemProduto" id="btnItemProduto17">COMPRAR</button>
+        </div>
+      </div>
+      <div class="itemProduto" id="itemProduto19">
+        <img src="img/porca.png" width="100%" height="110%" class="imgProduto2">
+        <div class="contentProduto2">
+          <h6>PORCA PARA TRUCK INDEPENDENT</h6>
+          <h6>R$ 39.90</h6>
+          <h6>ou</h6>
+          <h6>1x de R$39.90</h6>
+          <button class="btnItemProduto" id="btnItemProduto18">COMPRAR</button>
+        </div>
+      </div>
+      <div class="itemProduto" id="itemProduto20">
+        <img src="img/lixa.png" width="100%" height="110%" class="imgProduto2">
+        <div class="contentProduto2">
+          <h6>LIXA EMBORRACHADA BLACK SHEEP MILITARY BLUE</h6>
+          <h6>R$ 69.90</h6>
+          <h6>ou</h6>
+          <h6>2x de R$34.95</h6>
+          <button class="btnItemProduto" id="btnItemProduto19">COMPRAR</button>
+        </div>
+      </div>
+    </div>
   </div>
   <footer id="rodape">
     <div>
@@ -333,20 +375,20 @@
       </a>
     </div>
     <div>
-      <a href="" class="textRodape">
+      <a href="produtos.html" class="textRodape">
         <h5>Produtos</h5>
       </a>
-      <a href="" class="textRodape">
-        <h6></h6>
+      <a href="produtos.html#itemProduto1" class="textRodape">
+        <h6>Skates</h6>
       </a>
-      <a href="" class="textRodape">
-        <h6></h6>
+      <a href="produtos.html#itemProduto4" class="textRodape">
+        <h6>Bicicletas</h6>
       </a>
-      <a href="" class="textRodape">
-        <h6></h6>
+      <a href="produtos.html#itemProduto3" class="textRodape">
+        <h6>Roupas</h6>
       </a>
-      <a href="" class="textRodape">
-        <h6></h6>
+      <a href="produtos.html#itemProduto2" class="textRodape">
+        <h6>Pecas</h6>
       </a>
     </div>
     <div>

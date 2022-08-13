@@ -93,17 +93,26 @@ function limpar() {
 		dc.checked = false;
 		ous.checked = false;
 	}
+
+	var divSkates = document.getElementById("divSkates");
+	var bicicletas = document.getElementById("bicicletas");
+	var divRoupas = document.getElementById("divRoupas");
+	var sapatos = document.getElementById("sapatos");
+	var divPecas = document.getElementById("divPecas");
+
+	divSkates.style.display = 'grid'
+	bicicletas.style.display = 'grid'
+	divRoupas.style.display = 'grid'
+	sapatos.style.display = 'grid'
+	divPecas.style.display = 'grid'
 }
 
 var TRange = null;
 
 function findString(str) {
-	alert('Continue apertando a lupa para ir para próximos resultados')
 	if (parseInt(navigator.appVersion) < 4) return;
 	var strFound;
 	if (window.find) {
-
-		// CODE FOR BROWSERS THAT SUPPORT window.find
 
 		strFound = self.find(str);
 		if (!strFound) {
@@ -112,8 +121,6 @@ function findString(str) {
 		}
 	}
 	else if (navigator.appName.indexOf("Microsoft") != -1) {
-
-		// EXPLORER-SPECIFIC CODE
 
 		if (TRange != null) {
 			TRange.collapse(false);
@@ -133,3 +140,143 @@ function findString(str) {
 	if (!strFound) alert("String '" + str + "' not found!")
 	return;
 }
+
+function filtrar(){
+	var skates = document.getElementById("skates");
+	var bmx = document.getElementById("bmx");
+	var pecas = document.getElementById("pecas");
+	var roupas = document.getElementById("roupas");
+	var ahead = document.getElementById("ahead");
+	var ollie = document.getElementById("ollie");
+	var horus = document.getElementById("horus");
+	var route = document.getElementById("route");
+	var mil = document.getElementById("milReais");
+	var quinhentos = document.getElementById("quinhentosReais");
+	var duzentos = document.getElementById("duzentosReais");
+	var cem = document.getElementById("cemReais");
+	var gts = document.getElementById("gts");
+	var romwe = document.getElementById("romwe");
+	var dc = document.getElementById("dc");
+	var ous = document.getElementById("ous");
+
+	var divSkates = document.getElementById("divSkates");
+	var bicicletas = document.getElementById("bicicletas");
+	var divRoupas = document.getElementById("divRoupas");
+	var sapatos = document.getElementById("sapatos");
+	var divPecas = document.getElementById("divPecas");
+	
+	if (skates.checked == true){
+		divSkates.style.display = 'grid'
+		bicicletas.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+		divPecas.style.display = 'none'
+	}
+	if (bmx.checked == true){
+		bicicletas.style.display = 'grid'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+		divPecas.style.display = 'none'
+	}
+	if (pecas.checked == true){
+		divPecas.style.display = 'grid'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+	}
+	if (roupas.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'grid'
+		sapatos.style.display = 'none'
+	}
+	if (ahead.checked == true){
+		divPecas.style.display = 'grid'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'grid'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+	}
+	if (ollie.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'grid'
+	}
+	if (horus.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'grid'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+	}
+	if (route.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'grid'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+	}
+	if (gts.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'grid'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'none'
+	}
+	if (romwe.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'grid'
+		sapatos.style.display = 'none'
+	}
+	if (dc.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'grid'
+	}
+	if (ous.checked == true){
+		divPecas.style.display = 'none'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'none'
+		sapatos.style.display = 'grid'
+	}
+	if (mil.checked == true){
+		divPecas.style.display = 'grid'
+		bicicletas.style.display = 'grid'
+		divSkates.style.display = 'grid'
+		divRoupas.style.display = 'grid'
+		sapatos.style.display = 'grid'
+	}
+	if (quinhentos.checked == true){
+		divPecas.style.display = 'grid'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'grid'
+		divRoupas.style.display = 'grid'
+		sapatos.style.display = 'grid'
+	}
+	if (duzentos.checked == true){
+		divPecas.style.display = 'grid'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'grid'
+		sapatos.style.display = 'grid'
+	}
+	if (cem.checked == true){
+		divPecas.style.display = 'grid'
+		bicicletas.style.display = 'none'
+		divSkates.style.display = 'none'
+		divRoupas.style.display = 'grid'
+		sapatos.style.display = 'grid'
+	}
+}
+
+	

@@ -110,7 +110,6 @@ function abrirTela8(){
 var TRange = null;
 
 function findString(str) {
-	alert('Continue apertando a lupa para ir para próximos resultados')
 	if (parseInt(navigator.appVersion) < 4) return;
 	var strFound;
 	if (window.find) {
