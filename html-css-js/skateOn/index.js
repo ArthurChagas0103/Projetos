@@ -91,22 +91,6 @@ function abrirTela4(){
 	window.open("produtos.html","_self");
 }
 
-function abrirTela5(){
-	window.open("produtos.html","_self");
-}
-
-function abrirTela6(){
-	window.open("produtos.html","_self");
-}
-
-function abrirTela7(){
-	window.open("produtos.html","_self");
-}
-
-function abrirTela8(){
-	window.open("produtos.html","_self");
-}
-
 var TRange = null;
 
 function findString(str) {
@@ -143,4 +127,8 @@ function findString(str) {
 	}
 	if (!strFound) alert("String '" + str + "' not found!")
 	return;
+}
+
+function comprar(){
+	alert('Compra realizada com sucesso!')
 }
