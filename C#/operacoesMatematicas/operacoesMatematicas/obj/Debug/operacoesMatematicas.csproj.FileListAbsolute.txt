@@ -1,0 +1,8 @@
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\bin\Debug\operacoesMatematicas.exe.config
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\bin\Debug\operacoesMatematicas.exe
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\bin\Debug\operacoesMatematicas.pdb
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\obj\Debug\operacoesMatematicas.csproj.AssemblyReference.cache
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\obj\Debug\operacoesMatematicas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\obj\Debug\operacoesMatematicas.csproj.CoreCompileInputs.cache
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\obj\Debug\operacoesMatematicas.exe
+C:\Users\Arthu\Desktop\operacoesMatematicas\operacoesMatematicas\obj\Debug\operacoesMatematicas.pdb
