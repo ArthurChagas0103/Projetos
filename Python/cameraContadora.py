@@ -18,11 +18,11 @@ while True:
         x1, y1 = face.right(), face.bottom()
         cv2.rectangle(frame, (x, y), (x1, y1), (0, 255, 0), 2)
         i = i+1
-        cv2.putText(frame, 'face num '+str(i), (x-10, y-10),
+        cv2.putText(frame, 'Rosto num '+str(i), (x-10, y-10),
             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
         print(face, i)
     
-    cv2.imshow('frame', frame)
+    cv2.imshow('Camera Identificadora', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
