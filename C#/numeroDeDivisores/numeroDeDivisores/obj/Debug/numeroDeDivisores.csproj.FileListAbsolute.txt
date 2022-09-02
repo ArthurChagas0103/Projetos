@@ -1,0 +1,16 @@
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\bin\Debug\numeroDeDivisores.exe.config
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\bin\Debug\numeroDeDivisores.exe
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\bin\Debug\numeroDeDivisores.pdb
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.exe
+H:\LogP\Terceira Etapa\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.pdb
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\bin\Debug\numeroDeDivisores.exe.config
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\bin\Debug\numeroDeDivisores.exe
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\bin\Debug\numeroDeDivisores.pdb
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.csproj.AssemblyReference.cache
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.csproj.SuggestedBindingRedirects.cache
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.csproj.CoreCompileInputs.cache
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.exe
+C:\Users\Arthu\Desktop\ExemploFor2\numeroDeDivisores\numeroDeDivisores\obj\Debug\numeroDeDivisores.pdb
