@@ -1,0 +1,20 @@
+h11 {
+    color:red;
+}
+
+#logo {
+        width:50%;
+        height:50%;
+}
+
+.panel-heading{
+    font-size:150%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#formGeral{
+    padding: 20px;
+}
