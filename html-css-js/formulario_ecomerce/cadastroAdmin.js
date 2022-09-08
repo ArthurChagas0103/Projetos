@@ -112,5 +112,5 @@ function habilita(i) {
 }
 
 function mudarTela() {
-    window.open("cadastroAdmin.html",'_self')
+    window.open("cadastro.html",'_self')
 };

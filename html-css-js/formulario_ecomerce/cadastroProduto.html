@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Cadastro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="shortcut icon" href="img/logo.ico" />
+</head>
+
+<body>
+
+    <form class="form-horizontal" id="formGeral">
+        <fieldset>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Cadastro de Produto</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-11 control-label">
+                            <p class="help-block">
+                                <h11>*</h11> Campo Obrigatório
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Nome">Nome do Produto<h11>*</h11></label>
+                        <div class="col-md-5">
+                            <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required=""
+                                type="text">
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Nome">Código <h11>*</h11></label>
+                        <div class="col-md-2">
+                            <input placeholder="Apenas números" class="form-control input-md" required="" type="text"
+                                maxlength="11" pattern="[0-9]+$">
+                        </div>
+                        <label class="col-md-1 control-label" for="Nome">Fornecimento<h11>*</h11></label>
+                        <div class="col-md-2">
+                            <input placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text"
+                                maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                        </div>
+                    </div>
+                </div>
+                <!-- Prepended text-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="prependedtext">Valor <h11>*</h11></label>
+                    <div class="col-md-1">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                            <input id="prependedtext" name="prependedtext" class="form-control" placeholder="00.00"
+                                required="" type="text" maxlength="7">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="Nome">Funcionário <h11>*</h11></label>
+                    <div class="col-md-5">
+                        <input placeholder="" class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="exampleFormControlFile1">Selecione uma Foto <h11>*</h11></label>
+                    <div class="col-md-5">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="exampleFormControlTextarea1">Observações</label>
+                    <div class="col-md-5">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="Cadastrar"></label>
+                    <div class="col-md-8">
+                        <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                        <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Limpar</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
