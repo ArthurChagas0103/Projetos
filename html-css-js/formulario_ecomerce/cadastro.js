@@ -112,5 +112,17 @@ function habilita(i) {
 }
 
 function mudarTela() {
-    window.open("cadastroAdmin.html",'_self')
+    window.open("cadastroAdmin.html", '_self')
 };
+
+var cadastro = { Nome: null, cpf: null, dtnasc: null, sexo: null, celular: null, telefone: null, email: null, cep: null, rua: null, numero: null, bairro: null, cidade: null, estado: null, usuario: null, senha: null, confirmarSenha: null };
+console.log(cadastro);
+
+
+document.getElementById("lblUser").innerHTML = "Usuário";
+document.getElementById("lblPassword").innerHTML = "Senha";
+
+document.getElementById("txtUser").placeholder = "Usuário";
+document.getElementById("txtPassword").placeholder = "Senha";
+
+document.getElementById("txtUser").style.display = "block";

@@ -20,3 +20,6 @@ function desabilita(i) {
 function habilita(i) {
     document.getElementById(i).disabled = false;
 }
+
+var loginUser = { Nome: null, codigo: null, };
+console.log(loginUser);

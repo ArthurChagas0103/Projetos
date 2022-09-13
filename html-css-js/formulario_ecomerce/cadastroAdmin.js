@@ -114,3 +114,6 @@ function habilita(i) {
 function mudarTela() {
     window.open("cadastro.html",'_self')
 };
+
+var cadastro = { Nome: null, cpf: null, dtnasc: null, sexo: null, celular: null, telefone: null, email: null, cep: null, rua: null, numero: null, bairro: null, cidade: null, estado: null, usuario: null, senha: null, confirmarSenha: null, codigoAdmin: null, cargo: null, funcao: null, setor: null, };
+console.log(cadastro);
