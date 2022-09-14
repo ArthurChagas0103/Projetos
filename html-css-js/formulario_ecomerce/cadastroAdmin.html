@@ -37,7 +37,7 @@
 
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblNome"><h11>*</h11></label>
                         <div class="col-md-8">
                             <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required=""
                                 type="text">
@@ -45,19 +45,19 @@
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="cpf">CPF <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="cpf" id="lblCpf"><h11>*</h11></label>
                         <div class="col-md-2">
                             <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md"
                                 required="" type="text" maxlength="11" pattern="[0-9]+$">
                         </div>
-                        <label class="col-md-1 control-label" for="dtnasc">Nascimento<h11>*</h11></label>
+                        <label class="col-md-1 control-label" for="dtnasc" id="lblData"><h11>*</h11></label>
                         <div class="col-md-2">
                             <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md"
                                 required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)"
                                 onBlur="showhide()">
                         </div>
                         <!-- Multiple Radios (inline) -->
-                        <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
+                        <label class="col-md-1 control-label" for="radios" id="lblSexo"><h11>*</h11></label>
                         <div class="col-md-4">
                             <label required="" class="radio-inline" for="radios-0">
                                 <input name="sexo" id="sexo" value="feminino" type="radio" required>
@@ -71,22 +71,22 @@
                     </div>
                     <!-- Prepended text-->
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="prependedtext">Celular <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="prependedtext" id="lblCelular"><h11>*</h11></label>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input id="prependedtext" name="celular" class="form-control"
-                                    placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13"
+                                <input id="txtCelular" name="celular" class="form-control"
+                                    placeholder="" required="" type="text" maxlength="13"
                                     pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
                                     OnKeyPress="formatar('## #####-####', this)">
                             </div>
                         </div>
-                        <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+                        <label class="col-md-1 control-label" for="prependedtext" id="lblTelefone"></label>
                         <div class="col-md-2">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                <input id="prependedtext" name="telefone" class="form-control"
-                                    placeholder="XX XXXXX-XXXX" type="text" maxlength="13"
+                                <input id="txtTelefone" name="telefone" class="form-control"
+                                    placeholder="" type="text" maxlength="13"
                                     pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
                                     OnKeyPress="formatar('## ####-####', this)">
                             </div>
@@ -94,21 +94,21 @@
                     </div>
                     <!-- Prepended text-->
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="prependedtext" id="lblEmail"><h11>*</h11></label>
                         <div class="col-md-5">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                <input id="prependedtext" name="email" class="form-control"
-                                    placeholder="email@email.com" required="" type="text"
+                                <input id="txtEmail" name="email" class="form-control"
+                                    placeholder="" required="" type="text"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </div>
                         </div>
                     </div>
                     <!-- Search input-->
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="CEP" id="lblCep"><h11>*</h11></label>
                         <div class="col-md-2">
-                            <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md"
+                            <input id="cep" name="cep" class="form-control input-md"
                                 required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
                         </div>
                         <div class="col-md-2">
@@ -118,7 +118,7 @@
                     </div>
                     <!-- Prepended text-->
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+                        <label class="col-md-2 control-label" for="prependedtext" id="lblEndereco"></label>
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Rua</span>
@@ -166,49 +166,49 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="CEP">Código do Administrador <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="CEP" id="lblCodAdmin"><h11>*</h11></label>
                         <div class="col-md-1">
                             <input id="cep" name="codigoAdmin" class="form-control input-md"
                                 required="" value="" maxlength="5" pattern="[0-9]+$">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Cargo <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblCargo"><h11>*</h11></label>
                         <div class="col-md-8">
                             <input id="cargo" name="cargo" placeholder="" class="form-control input-md" required=""
                                 type="text">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Função <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblFuncao"><h11>*</h11></label>
                         <div class="col-md-8">
                             <input id="funcao" name="funcao" placeholder="" class="form-control input-md" required=""
                                 type="text">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Setor <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblSetor"><h11>*</h11></label>
                         <div class="col-md-8">
                             <input id="setor" name="setor" placeholder="" class="form-control input-md" required=""
                                 type="text">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Usuário <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblUsuario"><h11>*</h11></label>
                         <div class="col-md-3">
                             <input id="usuario" name="usuario" placeholder="" class="form-control input-md" required=""
                                 type="text">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Senha <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblSenha"><h11>*</h11></label>
                         <div class="col-md-3">
                             <input id="senha" name="senha" placeholder="" class="form-control input-md" required=""
                                 type="text">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-2 control-label" for="Nome">Confirmar Senha <h11>*</h11></label>
+                        <label class="col-md-2 control-label" for="Nome" id="lblConfirmarSenha"><h11>*</h11></label>
                         <div class="col-md-3">
                             <input id="confirmarSenha" name="Nome" placeholder="" class="form-control input-md" required=""
                                 type="text">
@@ -234,7 +234,7 @@
     </form>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="cadastro.js"></script>
+    <script src="cadastroAdmin.js"></script>
 </body>
 
 </html>

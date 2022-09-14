@@ -118,11 +118,20 @@ function mudarTela() {
 var cadastro = { Nome: null, cpf: null, dtnasc: null, sexo: null, celular: null, telefone: null, email: null, cep: null, rua: null, numero: null, bairro: null, cidade: null, estado: null, usuario: null, senha: null, confirmarSenha: null };
 console.log(cadastro);
 
+document.getElementById("lblNome").innerHTML = "Nome";
+document.getElementById("lblCpf").innerHTML = "CPF";
+document.getElementById("lblData").innerHTML = "Nascimento";
+document.getElementById("lblSexo").innerHTML = "Sexo";
+document.getElementById("lblCelular").innerHTML = "Celular";
+document.getElementById("lblTelefone").innerHTML = "Telefone";
+document.getElementById("lblEmail").innerHTML = "Email";
+document.getElementById("lblCep").innerHTML = "CEP";
+document.getElementById("lblEndereco").innerHTML = "Endereço";
+document.getElementById("lblUsuario").innerHTML = "Usuário";
+document.getElementById("lblSenha").innerHTML = "Senha";
+document.getElementById("lblConfirmarSenha").innerHTML = "Confirmar Senha";
 
-document.getElementById("lblUser").innerHTML = "Usuário";
-document.getElementById("lblPassword").innerHTML = "Senha";
-
-document.getElementById("txtUser").placeholder = "Usuário";
-document.getElementById("txtPassword").placeholder = "Senha";
-
-document.getElementById("txtUser").style.display = "block";
+document.getElementById("cep").placeholder = "Apenas números";
+document.getElementById("txtEmail").placeholder = "email@email.com";
+document.getElementById("txtTelefone").placeholder = "XX XXXXX-XXXX";
+document.getElementById("txtCelular").placeholder = "XX X XXXX-XXXX";

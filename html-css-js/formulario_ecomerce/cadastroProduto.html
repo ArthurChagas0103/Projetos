@@ -31,7 +31,7 @@
 
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="Nome">Nome do Produto<h11>*</h11></label>
+                        <label class="col-md-4 control-label" for="Nome" id="lblNomeProduto"> <h11>*</h11></label>
                         <div class="col-md-5">
                             <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required=""
                                 type="text">
@@ -39,45 +39,45 @@
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="Nome">Código <h11>*</h11></label>
+                        <label class="col-md-4 control-label" id="lblCodigo"> <h11>*</h11></label>
                         <div class="col-md-2">
                             <input placeholder="Apenas números" name="codigo" class="form-control input-md" required="" type="text"
-                                maxlength="11" pattern="[0-9]+$">
+                                maxlength="11" pattern="[0-9]+$" id="txtCodigo">
                         </div>
-                        <label class="col-md-1 control-label" for="Nome">Fornecimento<h11>*</h11></label>
+                        <label class="col-md-1 control-label" id="lblFornecimento"><h11>*</h11></label>
                         <div class="col-md-2">
-                            <input placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text"
-                                maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                            <input id="txtFornecimento" class="form-control input-md" required="" type="text"
+                                maxlength="10" name="dtFornecimento" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
                         </div>
                     </div>
                 </div>
                 <!-- Prepended text-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="prependedtext">Valor <h11>*</h11></label>
+                    <label class="col-md-4 control-label" for="prependedtext" id="lblValor"><h11>*</h11></label>
                     <div class="col-md-1">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-                            <input id="prependedtext" name="prependedtext" class="form-control" placeholder="00.00"
+                            <input name="valor" class="form-control" id="txtValor"
                                 required="" type="text" maxlength="7">
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="Nome">Funcionário <h11>*</h11></label>
+                    <label class="col-md-4 control-label" for="Nome" id="lblFuncionario"><h11>*</h11></label>
                     <div class="col-md-5">
-                        <input placeholder="" class="form-control input-md" required="" type="text">
+                        <input placeholder="" class="form-control input-md" required="" type="text" name="funcionario">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="exampleFormControlFile1">Selecione uma Foto <h11>*</h11></label>
+                    <label class="col-md-4 control-label" for="exampleFormControlFile1" id="lblFoto"><h11>*</h11></label>
                     <div class="col-md-5">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="selectFoto">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="exampleFormControlTextarea1">Observações</label>
+                    <label class="col-md-4 control-label" for="exampleFormControlTextarea1" id="lblObservacoes"></label>
                     <div class="col-md-5">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observacoes"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -96,7 +96,7 @@
     </form>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="cadastro.js"></script>
+    <script src="cadastroProduto.js"></script>
 </body>
 
 </html>
