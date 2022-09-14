@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\bin\Debug\maiorMenorIdade.exe.config
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\bin\Debug\maiorMenorIdade.exe
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\bin\Debug\maiorMenorIdade.pdb
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\obj\Debug\maiorMenorIdade.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\obj\Debug\maiorMenorIdade.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\obj\Debug\maiorMenorIdade.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\obj\Debug\maiorMenorIdade.exe
+H:\LogP\Terceira Etapa\ExPag54\maiorMenorIdade\maiorMenorIdade\obj\Debug\maiorMenorIdade.pdb

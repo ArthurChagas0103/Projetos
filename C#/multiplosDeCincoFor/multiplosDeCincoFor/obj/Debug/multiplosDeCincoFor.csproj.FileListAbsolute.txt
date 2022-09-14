@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\bin\Debug\multiplosDeCincoFor.exe.config
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\bin\Debug\multiplosDeCincoFor.exe
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\bin\Debug\multiplosDeCincoFor.pdb
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\obj\Debug\multiplosDeCincoFor.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\obj\Debug\multiplosDeCincoFor.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\obj\Debug\multiplosDeCincoFor.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\obj\Debug\multiplosDeCincoFor.exe
+H:\LogP\Terceira Etapa\ExemploFor2\multiplosDeCincoFor\multiplosDeCincoFor\obj\Debug\multiplosDeCincoFor.pdb

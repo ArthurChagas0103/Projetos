@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\bin\Debug\vinteNumerosParesImpares.exe.config
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\bin\Debug\vinteNumerosParesImpares.exe
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\bin\Debug\vinteNumerosParesImpares.pdb
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\obj\Debug\vinteNumerosParesImpares.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\obj\Debug\vinteNumerosParesImpares.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\obj\Debug\vinteNumerosParesImpares.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\obj\Debug\vinteNumerosParesImpares.exe
+H:\LogP\Terceira Etapa\Ex02Pag62\vinteNumerosParesImpares\vinteNumerosParesImpares\obj\Debug\vinteNumerosParesImpares.pdb

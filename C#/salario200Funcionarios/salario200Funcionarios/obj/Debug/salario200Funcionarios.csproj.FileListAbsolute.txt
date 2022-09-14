@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\bin\Debug\salario200Funcionarios.exe.config
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\bin\Debug\salario200Funcionarios.exe
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\bin\Debug\salario200Funcionarios.pdb
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\obj\Debug\salario200Funcionarios.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\obj\Debug\salario200Funcionarios.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\obj\Debug\salario200Funcionarios.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\obj\Debug\salario200Funcionarios.exe
+H:\LogP\Terceira Etapa\Ex05Pag62\salario200Funcionarios\salario200Funcionarios\obj\Debug\salario200Funcionarios.pdb

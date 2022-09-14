@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\bin\Debug\nota100Aluno.exe.config
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\bin\Debug\nota100Aluno.exe
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\bin\Debug\nota100Aluno.pdb
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\obj\Debug\nota100Aluno.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\obj\Debug\nota100Aluno.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\obj\Debug\nota100Aluno.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\obj\Debug\nota100Aluno.exe
+H:\LogP\Terceira Etapa\Ex09Pag62\nota100Aluno\nota100Aluno\obj\Debug\nota100Aluno.pdb

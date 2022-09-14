@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\bin\Debug\nota15Alunos.exe.config
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\bin\Debug\nota15Alunos.exe
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\bin\Debug\nota15Alunos.pdb
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\obj\Debug\nota15Alunos.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\obj\Debug\nota15Alunos.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\obj\Debug\nota15Alunos.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\obj\Debug\nota15Alunos.exe
+H:\LogP\Terceira Etapa\Ex01Pag62\nota15Alunos\nota15Alunos\obj\Debug\nota15Alunos.pdb

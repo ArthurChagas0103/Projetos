@@ -1,0 +1,8 @@
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\bin\Debug\calculoAtletas.exe.config
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\bin\Debug\calculoAtletas.exe
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\bin\Debug\calculoAtletas.pdb
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\obj\Debug\calculoAtletas.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\obj\Debug\calculoAtletas.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\obj\Debug\calculoAtletas.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\obj\Debug\calculoAtletas.exe
+H:\LogP\Terceira Etapa\Ex03Pag62\calculoAtletas\calculoAtletas\obj\Debug\calculoAtletas.pdb

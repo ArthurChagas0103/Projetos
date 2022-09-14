@@ -1,0 +1,8 @@
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\bin\Debug\pesquisa100Pessoas.exe.config
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\bin\Debug\pesquisa100Pessoas.exe
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\bin\Debug\pesquisa100Pessoas.pdb
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\obj\Debug\pesquisa100Pessoas.csproj.AssemblyReference.cache
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\obj\Debug\pesquisa100Pessoas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\obj\Debug\pesquisa100Pessoas.csproj.CoreCompileInputs.cache
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\obj\Debug\pesquisa100Pessoas.exe
+C:\Users\Arthu\Desktop\Ex06Pag62\pesquisa100Pessoas\pesquisa100Pessoas\obj\Debug\pesquisa100Pessoas.pdb
