@@ -135,3 +135,89 @@ document.getElementById("cep").placeholder = "Apenas números";
 document.getElementById("txtEmail").placeholder = "email@email.com";
 document.getElementById("txtTelefone").placeholder = "XX XXXXX-XXXX";
 document.getElementById("txtCelular").placeholder = "XX X XXXX-XXXX";
+
+function formatarTelCel(){
+    var cel_formatado = document.getElementById("txtCelular").value;
+    cel_formatado = cel_formatado.slice(0,16);
+    document.getElementById("txtCelular").value = cel_formatado;
+
+    var texto = document.getElementById("txtCelular").value;
+
+    if (texto[0] != "(")
+    {
+        if(texto[0] != undefined)
+        {
+            document.getElementById("txtCelular").value = "(" + texto[0];
+        }
+    }
+
+    if (texto[3] != ")")
+    {
+        if(texto[3] != undefined)
+        {
+            document.getElementById("txtCelular").value = texto.slice(0,3)+ ")" + texto[3]
+        }
+    }
+
+    if (texto[4] != " ")
+    {
+        if(texto[4] != undefined)
+        {
+            document.getElementById("txtCelular").value = texto.slice(0,4)+ " " + texto[4]
+        }
+    }
+
+    if (texto[6] != " ")
+    {
+        if(texto[6] != undefined)
+        {
+            document.getElementById("txtCelular").value = texto.slice(0,6)+ " " + texto[6]
+        }
+    }
+
+    if (texto[11] != "-")
+    {
+        if(texto[11] != undefined)
+        {
+            document.getElementById("txtCelular").value = texto.slice(0,11) + "-" + texto[11]
+        }
+    }
+// ----------------------------------------------------------------------------------------------------
+    var tel_formatado = document.getElementById("txtTelefone").value;
+    tel_formatado = tel_formatado.slice(0,14);
+    document.getElementById("txtTelefone").value = tel_formatado;
+
+    var texto2 = document.getElementById("txtTelefone").value;
+
+    if (texto2[0] != "(")
+    {
+        if(texto2[0] != undefined)
+        {
+            document.getElementById("txtTelefone").value = "(" + texto2[0];
+        }
+    }
+
+    if (texto2[3] != ")")
+    {
+        if(texto2[3] != undefined)
+        {
+            document.getElementById("txtTelefone").value = texto2.slice(0,3)+ ")" + texto2[3]
+        }
+    }
+
+    if (texto2[4] != " ")
+    {
+        if(texto2[4] != undefined)
+        {
+            document.getElementById("txtTelefone").value = texto2.slice(0,4)+ " " + texto2[4]
+        }
+    }
+
+    if (texto2[9] != "-")
+    {
+        if(texto2[9] != undefined)
+        {
+            document.getElementById("txtTelefone").value = texto2.slice(0,9) + "-" + texto2[9]
+        }
+    }
+}
