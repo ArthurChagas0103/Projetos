@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.ico" />
 </head>
 
@@ -28,14 +28,15 @@
                                     <h3 style="text-align: center;">Login</h3>
                                     <div id="divSelecao" class="mb-4">
                                         <select id="selecao">
-                                            <option value=""></option>
-                                            <option value="" id="selectionUser">Usuário</option>
-                                            <option value="" id="selectionAdmin">Administrador</option>
+                                            <option value="" id="selectionNull" selected></option>
+                                            <option value="telaBranca.html" id="selectionUser">Usuário</option>
+                                            <option value="cadastroProduto.html" id="selectionAdmin">Administrador
+                                            </option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <form action="#" class="signin-form">
+                            <form class="signin-form">
                                 <div class="form-group mb-3">
                                     <label class="label" for="name" id="lblUser"></label>
                                     <input type="text" class="form-control" required name="usuario" id="txtUser">
@@ -44,8 +45,14 @@
                                     <label class="label" for="password" id="lblPassword"></label>
                                     <input type="password" class="form-control" required name="senha" id="txtPassword">
                                 </div>
+                                <div class="w-50 text-left mb-3 mt-0">
+                                    <label class="checkbox-wrap checkbox-primary mb-0" id="lblMostrar">Mostrar Senha
+                                        <input type="checkbox" id="checkbox" onclick="mostrarSenha()">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
                                 <div class="form-group">
-                                    <button type="submit" class="form-control btn btn-primary rounded submit px-3"
+                                    <button class="form-control btn btn-primary rounded px-3"
                                         onclick="salvar()">Entrar</button>
                                 </div>
                                 <div class="form-group d-md-flex">
@@ -60,7 +67,8 @@
                                     </div>
                                 </div>
                             </form>
-                            <p class="text-center">Não é um membro? <a data-toggle="tab" href="cadastro.html">Cadastre-se</a>
+                            <p class="text-center">Não é um membro? <a data-toggle="tab"
+                                    href="cadastro.html">Cadastre-se</a>
                             </p>
                         </div>
                     </div>

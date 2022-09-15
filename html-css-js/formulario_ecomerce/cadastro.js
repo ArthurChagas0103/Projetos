@@ -98,7 +98,6 @@ function idade() {
     return idade;
 }
 
-
 function exibe(i) {
     document.getElementById(i).readOnly = true;
 }
@@ -112,8 +111,13 @@ function habilita(i) {
 }
 
 function mudarTela() {
-    window.open("cadastroAdmin.html", '_self')
-};
+    var select = document.getElementById("selecao").value;
+    var admin = document.getElementById("selectionAdmin").value;
+
+    if (select == admin) {
+        window.open('cadastroAdmin.html','_self');
+    }
+}
 
 var cadastro = { Nome: null, cpf: null, dtnasc: null, sexo: null, celular: null, telefone: null, email: null, cep: null, rua: null, numero: null, bairro: null, cidade: null, estado: null, usuario: null, senha: null, confirmarSenha: null };
 console.log(cadastro);
@@ -136,88 +140,122 @@ document.getElementById("txtEmail").placeholder = "email@email.com";
 document.getElementById("txtTelefone").placeholder = "XX XXXXX-XXXX";
 document.getElementById("txtCelular").placeholder = "XX X XXXX-XXXX";
 
-function formatarTelCel(){
+function formatarTelCel() {
     var cel_formatado = document.getElementById("txtCelular").value;
-    cel_formatado = cel_formatado.slice(0,16);
+    cel_formatado = cel_formatado.slice(0, 16);
     document.getElementById("txtCelular").value = cel_formatado;
 
     var texto = document.getElementById("txtCelular").value;
 
-    if (texto[0] != "(")
-    {
-        if(texto[0] != undefined)
-        {
+    if (texto[0] != "(") {
+        if (texto[0] != undefined) {
             document.getElementById("txtCelular").value = "(" + texto[0];
         }
     }
 
-    if (texto[3] != ")")
-    {
-        if(texto[3] != undefined)
-        {
-            document.getElementById("txtCelular").value = texto.slice(0,3)+ ")" + texto[3]
+    if (texto[3] != ")") {
+        if (texto[3] != undefined) {
+            document.getElementById("txtCelular").value = texto.slice(0, 3) + ")" + texto[3]
         }
     }
 
-    if (texto[4] != " ")
-    {
-        if(texto[4] != undefined)
-        {
-            document.getElementById("txtCelular").value = texto.slice(0,4)+ " " + texto[4]
+    if (texto[4] != " ") {
+        if (texto[4] != undefined) {
+            document.getElementById("txtCelular").value = texto.slice(0, 4) + " " + texto[4]
         }
     }
 
-    if (texto[6] != " ")
-    {
-        if(texto[6] != undefined)
-        {
-            document.getElementById("txtCelular").value = texto.slice(0,6)+ " " + texto[6]
+    if (texto[6] != " ") {
+        if (texto[6] != undefined) {
+            document.getElementById("txtCelular").value = texto.slice(0, 6) + " " + texto[6]
         }
     }
 
-    if (texto[11] != "-")
-    {
-        if(texto[11] != undefined)
-        {
-            document.getElementById("txtCelular").value = texto.slice(0,11) + "-" + texto[11]
+    if (texto[11] != "-") {
+        if (texto[11] != undefined) {
+            document.getElementById("txtCelular").value = texto.slice(0, 11) + "-" + texto[11]
         }
     }
-// ----------------------------------------------------------------------------------------------------
+    // ----------------------------------------------------------------------------------------------------
     var tel_formatado = document.getElementById("txtTelefone").value;
-    tel_formatado = tel_formatado.slice(0,14);
+    tel_formatado = tel_formatado.slice(0, 14);
     document.getElementById("txtTelefone").value = tel_formatado;
 
     var texto2 = document.getElementById("txtTelefone").value;
 
-    if (texto2[0] != "(")
-    {
-        if(texto2[0] != undefined)
-        {
+    if (texto2[0] != "(") {
+        if (texto2[0] != undefined) {
             document.getElementById("txtTelefone").value = "(" + texto2[0];
         }
     }
 
-    if (texto2[3] != ")")
-    {
-        if(texto2[3] != undefined)
-        {
-            document.getElementById("txtTelefone").value = texto2.slice(0,3)+ ")" + texto2[3]
+    if (texto2[3] != ")") {
+        if (texto2[3] != undefined) {
+            document.getElementById("txtTelefone").value = texto2.slice(0, 3) + ")" + texto2[3]
         }
     }
 
-    if (texto2[4] != " ")
-    {
-        if(texto2[4] != undefined)
-        {
-            document.getElementById("txtTelefone").value = texto2.slice(0,4)+ " " + texto2[4]
+    if (texto2[4] != " ") {
+        if (texto2[4] != undefined) {
+            document.getElementById("txtTelefone").value = texto2.slice(0, 4) + " " + texto2[4]
         }
     }
 
-    if (texto2[9] != "-")
-    {
-        if(texto2[9] != undefined)
-        {
-            document.getElementById("txtTelefone").value = texto2.slice(0,9) + "-" + texto2[9]
+    if (texto2[9] != "-") {
+        if (texto2[9] != undefined) {
+            document.getElementById("txtTelefone").value = texto2.slice(0, 9) + "-" + texto2[9]
+        }
+    }
+}
+
+function formatarCep(){
+    var cep_formatado = document.getElementById("cep").value;
+    cep_formatado = cep_formatado.slice(0, 8);
+    document.getElementById("cep").value = cep_formatado;
+}
+
+function formatarCpf(){
+    var cpf_formatado = document.getElementById("cpf").value;
+    cpf_formatado = cpf_formatado.slice(0, 14);
+    document.getElementById("cpf").value = cpf_formatado;
+
+    var texto = document.getElementById("cpf").value;
+
+    if (texto[3] != ".") {
+        if (texto[3] != undefined) {
+            document.getElementById("cpf").value = texto.slice(0, 3) + "." + texto[3]; 
+        }
+    }
+
+    if (texto[7] != ".") {
+        if (texto[7] != undefined) {
+            document.getElementById("cpf").value = texto.slice(0, 7) + "." + texto[7]; 
+        }
+    }
+
+    if (texto[11] != "-") {
+        if (texto[11] != undefined) {
+            document.getElementById("cpf").value = texto.slice(0, 11) + "-" + texto[11]; 
+        }
+    }
+}
+
+function formatarNascimento(){
+    var nascimento_formatado = document.getElementById("dtnasc").value;
+    nascimento_formatado = nascimento_formatado.slice(0, 10);
+    document.getElementById("dtnasc").value = nascimento_formatado;
+
+    var texto = document.getElementById("dtnasc").value;
+
+    if (texto[2] != "/") {
+        if (texto[2] != undefined) {
+            document.getElementById("dtnasc").value = texto.slice(0, 2) + "/" + texto[2]; 
+        }
+    }
+
+    if (texto[5] != "/") {
+        if (texto[5] != undefined) {
+            document.getElementById("dtnasc").value = texto.slice(0, 5) + "/" + texto[5]; 
         }
     }
 }
