@@ -1,0 +1,16 @@
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\bin\Debug\temperaturasRandom.exe.config
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\bin\Debug\temperaturasRandom.exe
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\bin\Debug\temperaturasRandom.pdb
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.csproj.AssemblyReference.cache
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.csproj.SuggestedBindingRedirects.cache
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.csproj.CoreCompileInputs.cache
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.exe
+H:\LogP\Terceira Etapa\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.pdb
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\bin\Debug\temperaturasRandom.exe.config
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\bin\Debug\temperaturasRandom.exe
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\bin\Debug\temperaturasRandom.pdb
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.csproj.AssemblyReference.cache
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.csproj.SuggestedBindingRedirects.cache
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.csproj.CoreCompileInputs.cache
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.exe
+C:\Users\Arthu\Desktop\Ex12Pag62\temperaturasRandom\temperaturasRandom\obj\Debug\temperaturasRandom.pdb
