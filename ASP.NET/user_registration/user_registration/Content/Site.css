@@ -18,23 +18,25 @@ textarea {
     max-width: 280px;
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
         margin-top: 20px;
     }
+
     .body-content {
         padding: 0;
     }
 }
 
-.liNavbar{
+.liNavbar {
     color: white !important;
 }
 
-.liNavbar:hover{
-    color: whitesmoke !important;
-}
+    .liNavbar:hover {
+        color: whitesmoke !important;
+    }
 
 .divSpan {
     display: flex;

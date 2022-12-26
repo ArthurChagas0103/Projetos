@@ -1,4 +1,4 @@
-﻿<%@ Page Title="User Registration" Language="VB" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="user_registration._Default" %>
+﻿<%@ Page Title="User Registration" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="user_registration._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -111,13 +111,7 @@
             <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novdades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
-        <asp:Button ID="Button1" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro" Height="36px" Width="1254px"/>
+        <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro" Height="36px" Width="1254px"/>
     </div>
-
-&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;   
-
-    
 
 </asp:Content>

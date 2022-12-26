@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="user_registration.Global_asax" Language="vb" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="user_registration.Global" Language="C#" %>
