@@ -85,13 +85,13 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.TextBox txtTelefoneAdicional;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// dpdArea control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.DropDownList dpdArea;
         
         /// <summary>
         /// DropDownList4 control.
@@ -184,13 +184,13 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.DropDownList dbdEstado;
         
         /// <summary>
-        /// CheckBox1 control.
+        /// checkContrato control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.CheckBox checkContrato;
         
         /// <summary>
         /// CheckBox2 control.

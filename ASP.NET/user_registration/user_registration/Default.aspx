@@ -41,8 +41,9 @@
             </div>
 
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="300px">
+                <asp:DropDownList ID="dpdArea" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="300px">
                     <asp:ListItem>Para qual área está se preparando?</asp:ListItem>
+                    <asp:ListItem>Saúde</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="DropDownList4" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="200px">
                     <asp:ListItem>Advogado</asp:ListItem>
@@ -55,8 +56,8 @@
         <hr style="margin-bottom: 5px"/>
 
         <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-            <asp:TextBox ID="txtSenha" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
-            <asp:TextBox ID="txtConfirmeSenha" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
+            <asp:TextBox ID="txtSenha" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="txtConfirmeSenha" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;" TextMode="Password"></asp:TextBox>
         </div>
 
         <hr />
@@ -107,7 +108,7 @@
         </div>
 
         <div style="display: flex; flex-direction: column;">
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="Declaro que li e concordo com as Condições Gerais e Contrato de Termos de Uso" CssClass="ChkBoxClass" />
+            <asp:CheckBox ID="checkContrato" runat="server" Text="Declaro que li e concordo com as Condições Gerais e Contrato de Termos de Uso" CssClass="ChkBoxClass" />
             <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
