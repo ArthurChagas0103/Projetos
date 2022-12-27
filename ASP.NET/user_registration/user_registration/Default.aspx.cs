@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Correios.Net;
 
 namespace user_registration
 {
@@ -29,7 +30,7 @@ namespace user_registration
 
             txtCpf.ToolTip = "000.000.000-00";
             txtDataNascimento.ToolTip = "dd/mm/aaaa";
-            txtEmail.ToolTip = "email@email.com.br";            
+            txtEmail.ToolTip = "email@email.com.br";
             txtCelular.ToolTip = "(00)0 0000-0000";
             txtTelefone.ToolTip = "(00) 0000-0000";
             txtTelefoneAdicional.ToolTip = "(00) 0000-0000";
@@ -44,7 +45,7 @@ namespace user_registration
         }
 
         protected void btnCadastro_Click(object sender, EventArgs e)
-        { 
+        {
             if (txtNomeCompleto.Text == "")
             {
                 Response.Write("<script>alert('Digite seu NOME COMPLETO!')</script>");
@@ -153,12 +154,30 @@ namespace user_registration
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            LocalizarCEP();
         }
 
         private void LocalizarCEP()
         {
-            
+            if (!string.IsNullOrWhiteSpace(txtCep.Text))
+            {
+                Address endereco = SearchZip.GetAddress(txtCep.Text);
+                if (endereco.Zip != null)
+                {
+                    //txtEstado.Text = endereco.State;
+                    txtCidade.Text = endereco.City;
+                    txtBairro.Text = endereco.District;
+                    txtEndereco.Text = endereco.Street;
+                }
+                else
+                {
+                    Response.Write("<script>alert('CEP não localizado')</script>");
+                }
+            }
+            else
+            {
+                Response.Write("<script>alert('Inform um CEP válido!')</script>");
+            }
         }
     }
 }
