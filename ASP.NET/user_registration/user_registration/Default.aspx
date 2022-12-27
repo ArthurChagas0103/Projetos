@@ -44,7 +44,7 @@
                 <asp:DropDownList ID="DropDownList3" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="300px">
                     <asp:ListItem>Para qual área está se preparando?</asp:ListItem>
                 </asp:DropDownList>
-                <asp:DropDownList ID="DropDownList4" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="300px">
+                <asp:DropDownList ID="DropDownList4" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="200px">
                     <asp:ListItem>Advogado</asp:ListItem>
                 </asp:DropDownList>
             </div>
@@ -111,7 +111,7 @@
             <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
-        <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro" Height="36px" Width="1254px"/>
+        <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro" Height="36px" Width="1254px" OnClick="btnCadastro_Click"/>
     </div>
 
 </asp:Content>

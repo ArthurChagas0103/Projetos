@@ -29,6 +29,20 @@ namespace user_registration
 
             txtCpf.ToolTip = "000.000.000-00";
             txtDataNascimento.ToolTip = "dd/mm/aaaa";
+            txtEmail.ToolTip = "email@email.com.br";            
+            txtCelular.ToolTip = "(00)0 0000-0000";
+            txtTelefone.ToolTip = "(00) 0000-0000";
+            txtTelefoneAdicional.ToolTip = "(00) 0000-0000";
+            txtCep.ToolTip = "00000-000";
+        }
+
+        protected void btnCadastro_Click(object sender, EventArgs e)
+        {
+            string CNPJ = txtCpf.Text;
+
+            string CNPJFormatado = String.Format(txtCpf.Text, ".", ".", ".", "-");
+
+            txtCpf.Text = CNPJFormatado;
         }
     }
 }
