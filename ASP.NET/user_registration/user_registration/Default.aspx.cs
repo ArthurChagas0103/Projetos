@@ -89,7 +89,7 @@ namespace user_registration
                 Response.Write("<script>alert('Digite o número do seu TELEFONE ADICIONAL!')</script>");
                 txtTelefoneAdicional.Focus();
             }
-            else if (txtTelefone.Text == txtTelefoneAdicional.Text)
+            else if ((txtTelefone.Text == txtTelefoneAdicional.Text) && txtTelefone.Text != "")
             {
                 Response.Write("<script>alert('Número do TELEFONE e do TELEFONE ADICIONAL não podem ser iguais!')</script>");
                 txtTelefoneAdicional.Focus();
@@ -151,7 +151,7 @@ namespace user_registration
                 txtCelular.Text = String.Format(@"{0:(00)0 0000-0000}", Convert.ToDecimal(txtCelular.Text));
                 txtTelefone.Text = String.Format(@"{0:(00) 0000-0000}", Convert.ToDecimal(txtTelefone.Text));
                 txtTelefoneAdicional.Text = String.Format(@"{0:(00) 0000-0000}", Convert.ToDecimal(txtTelefoneAdicional.Text));
-                txtCep.Text = String.Format(@"{0:00000-000}", Convert.ToDecimal(txtCep.Text));
+                txtCep.Text = String.Format(@"{0: 00000-000}", Convert.ToDecimal(txtCep.Text));
             }
         }
 
@@ -240,11 +240,6 @@ namespace user_registration
                     }
                 }
             }
-        }
-
-        
-    }
-
-        
-    
+        }      
+    } 
 }

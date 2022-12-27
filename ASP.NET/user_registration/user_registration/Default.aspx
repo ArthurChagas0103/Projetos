@@ -107,7 +107,7 @@
                     <asp:ListItem> SE</asp:ListItem>
                     <asp:ListItem> TO</asp:ListItem>
                 </asp:DropDownList>
-                <asp:Button ID="btnBuscarCep" runat="server" OnClick="btnBuscarCep_Click" Text="Buscar CEP" CssClass="btn btn-info" Width="200px" Height="35px" style="margin-top: 20px; margin-bottom: 20px"/>
+                <asp:Button ID="btnBuscarCep" runat="server" OnClick="btnBuscarCep_Click" Text="Buscar CEP" CssClass="btn" Width="200px" Height="35px" style="margin-top: 20px; margin-bottom: 20px"/>
             </div>
         </div>
 
@@ -116,7 +116,7 @@
             <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
-        <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro btn btn-info" Height="35px" Width="100%" OnClick="btnCadastro_Click" style="margin-top: 20px;"/>
+        <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro btn" Height="35px" Width="100%" OnClick="btnCadastro_Click" style="margin-top: 20px;"/>
     </div>
 
 </asp:Content>

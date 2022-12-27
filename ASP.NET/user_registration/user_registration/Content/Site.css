@@ -54,6 +54,8 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px #bbbbbb solid;
+    border-right: 0px;
 }
 
 .ChkBoxClass input {
@@ -64,14 +66,17 @@ textarea {
 
 .form-control {
     background-color: #f8f7f7;
+    border-radius: 0px !important;
 }
 
 .btn {
     background-color: #6e9bed;
     border: #6e9bed;
+    color: white;
 }
 
 .btn:hover {
     background-color: #8aaceb;
     border: #8aaceb;
+    color: white;
 }
