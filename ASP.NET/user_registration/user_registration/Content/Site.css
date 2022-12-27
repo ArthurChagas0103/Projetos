@@ -58,4 +58,9 @@ textarea {
 .ChkBoxClass input {
     width: 20px;
     height: 20px;
+    margin-right: 10px;
+}
+
+.form-control {
+    background-color: #f8f7f7;
 }

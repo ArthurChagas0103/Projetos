@@ -8,35 +8,35 @@
 
         <div>
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;" Width="300px"></asp:TextBox>
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="200px">
-                    <asp:ListItem>SEXO</asp:ListItem>
+                <asp:TextBox ID="txtNomeCompleto" runat="server" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;" Width="300px"></asp:TextBox>
+                <asp:DropDownList ID="dpdSexo" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px;" Width="200px">
+                    <asp:ListItem>Sexo</asp:ListItem>
                     <asp:ListItem>Masculino</asp:ListItem>
                     <asp:ListItem>Feminino</asp:ListItem>
                 </asp:DropDownList>
                 <asp:TextBox ID="txtCpf" runat="server" Width="300px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
                 <div class="input-group divSpan" style="margin-top: 20px;">
                     <span class="input-group-text span" id="spanCalendar"><i class="fa fa-calendar"></i></span>
-                    <asp:TextBox ID="calendar" runat="server" CssClass="form-control" ClientIDMode="Static" Width="250px"></asp:TextBox>
+                    <asp:TextBox ID="txtDataNascimento" runat="server" CssClass="form-control" ClientIDMode="Static" Width="250px"></asp:TextBox>
                 </div>
             </div>
 
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
                 <div class="input-group divSpan" style="margin-right: 40px; margin-top: 20px;">
                     <span class="input-group-text span"><i class="fa fa-envelope"></i></span>
-                    <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" ClientIDMode="Static" Width="202px"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" ClientIDMode="Static" Width="202px"></asp:TextBox>
                 </div>
                 <div class="input-group divSpan" style="margin-right: 40px; margin-top: 20px;">
                     <span class="input-group-text span"><i class="fa fa-mobile"></i></span>
-                    <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control" ClientIDMode="Static" Width="202px"></asp:TextBox>
+                    <asp:TextBox ID="txtCelular" runat="server" CssClass="form-control" ClientIDMode="Static" Width="202px"></asp:TextBox>
                 </div>
                 <div class="input-group divSpan" style="margin-right: 40px; margin-top: 20px;">
                     <span class="input-group-text span"><i class="fa fa-phone" style="transform: rotate(90deg);"></i></span>
-                    <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control" ClientIDMode="Static" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="txtTelefone" runat="server" CssClass="form-control" ClientIDMode="Static" Width="240px"></asp:TextBox>
                 </div>
                 <div class="input-group divSpan" style="margin-top: 20px;">
                     <span class="input-group-text span"><i class="fa fa-phone" style="transform: rotate(90deg);"></i></span>
-                    <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control" ClientIDMode="Static" Width="247px"></asp:TextBox>
+                    <asp:TextBox ID="txtTelefoneAdicional" runat="server" CssClass="form-control" ClientIDMode="Static" Width="247px"></asp:TextBox>
                 </div>
             </div>
 
@@ -55,8 +55,8 @@
         <hr style="margin-bottom: 5px"/>
 
         <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-            <asp:TextBox ID="TextBox7" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
-            <asp:TextBox ID="TextBox8" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
+            <asp:TextBox ID="txtSenha" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
+            <asp:TextBox ID="txtConfirmeSenha" runat="server" Width="300px" CssClass="form-control" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
         </div>
 
         <hr />
@@ -65,16 +65,16 @@
 
         <div>
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:TextBox ID="TextBox13" runat="server" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;" Width="300px"></asp:TextBox>
-                <asp:TextBox ID="TextBox14" runat="server" Width="300px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
-                <asp:TextBox ID="TextBox15" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
-                <asp:TextBox ID="TextBox16" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>                
+                <asp:TextBox ID="txtCep" runat="server" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;" Width="300px"></asp:TextBox>
+                <asp:TextBox ID="txtEndereco" runat="server" Width="300px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
+                <asp:TextBox ID="txtNumero" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
+                <asp:TextBox ID="txtComplemento" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>                
             </div>
 
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:TextBox ID="TextBox9" runat="server" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;" Width="300px"></asp:TextBox>
-                <asp:TextBox ID="TextBox10" runat="server" Width="300px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
-                <asp:DropDownList ID="DropDownList2" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px; margin-bottom: 20px" Width="200px">
+                <asp:TextBox ID="txtCidade" runat="server" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;" Width="300px"></asp:TextBox>
+                <asp:TextBox ID="txtBairro" runat="server" Width="300px" CssClass="form-control col-md-4" Style="margin-right: 40px; margin-top: 20px;"></asp:TextBox>
+                <asp:DropDownList ID="dbdEstado" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 40px; margin-top: 20px; margin-bottom: 20px" Width="200px">
                     <asp:ListItem>-- Estado --</asp:ListItem>
                     <asp:ListItem>Acre</asp:ListItem>
                     <asp:ListItem>Alagoas</asp:ListItem>
@@ -108,7 +108,7 @@
 
         <div style="display: flex; flex-direction: column;">
             <asp:CheckBox ID="CheckBox1" runat="server" Text="Declaro que li e concordo com as Condições Gerais e Contrato de Termos de Uso" CssClass="ChkBoxClass" />
-            <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novdades de cursos e informações do portal" CssClass="ChkBoxClass" />
+            <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
         <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro" Height="36px" Width="1254px"/>

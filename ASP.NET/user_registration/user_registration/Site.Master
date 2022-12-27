@@ -48,7 +48,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/" style="color: white;">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/" style="color: white;">User Registration</a>
                 </div>
                 <div class="navbar-collapse collapse" style="border-top: white">
                     <ul class="nav navbar-nav">
