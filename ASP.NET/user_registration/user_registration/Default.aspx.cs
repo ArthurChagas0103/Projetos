@@ -4,7 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Correios.Net;
+using System.Text.RegularExpressions;
+using System.Net;
+using System.Net.WebSockets;
+using System.IO;
 
 namespace user_registration
 {
@@ -152,32 +155,96 @@ namespace user_registration
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnBuscarCep_Click(object sender, EventArgs e)
         {
-            LocalizarCEP();
-        }
-
-        private void LocalizarCEP()
-        {
-            if (!string.IsNullOrWhiteSpace(txtCep.Text))
+            if (txtCep.Text == "" || txtCep.Text.Length < 8)
             {
-                Address endereco = SearchZip.GetAddress(txtCep.Text);
-                if (endereco.Zip != null)
-                {
-                    //txtEstado.Text = endereco.State;
-                    txtCidade.Text = endereco.City;
-                    txtBairro.Text = endereco.District;
-                    txtEndereco.Text = endereco.Street;
-                }
-                else
-                {
-                    Response.Write("<script>alert('CEP não localizado')</script>");
-                }
+                Response.Write("<script>alert('Digite um CEP válido!')</script>");
+                txtCep.Focus();
             }
             else
             {
-                Response.Write("<script>alert('Inform um CEP válido!')</script>");
+                LocalizarCEP();
             }
         }
+
+        public void LocalizarCEP()
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://viacep.com.br/ws/" + txtCep.Text + "/json/");
+            request.AllowAutoRedirect = false;
+            HttpWebResponse ChecaServidor = (HttpWebResponse)request.GetResponse();
+
+            if (ChecaServidor.StatusCode != HttpStatusCode.OK)
+            {
+                Response.Write("<script>alert('Servidor Indisponível!')</script>");
+                return; // Sai da rotina
+            }
+
+            using (Stream webStream = ChecaServidor.GetResponseStream())
+            {
+                if (webStream != null)
+                {
+                    using (StreamReader responseReader = new StreamReader(webStream))
+                    {
+                        string response = responseReader.ReadToEnd();
+                        response = Regex.Replace(response, "[{},]", string.Empty);
+                        response = response.Replace("\"", "");
+
+                        String[] substrings = response.Split('\n');
+
+                        int cont = 0;
+                        foreach (var substring in substrings)
+                        {
+                            if (cont == 1)
+                            {
+                                string[] valor = substring.Split(":".ToCharArray());
+                                if (valor[0] == "  erro")
+                                {
+                                    Response.Write("<script>alert('CEP não encontrado!')</script>");
+                                    txtCep.Focus();
+                                    return;
+                                }
+                            }
+                            else if (cont == 2)
+                            {
+                                string[] valor = substring.Split(":".ToCharArray());
+                                txtEndereco.Text = valor[1];
+                            }
+                            else if (cont == 3)
+                            {
+                                string[] valor = substring.Split(":".ToCharArray());
+                                txtComplemento.Text = valor[1]; 
+                                if(txtComplemento.Text == " ")
+                                {
+                                    txtComplemento.Text = "";
+                                }
+                            }
+                            else if (cont == 4)
+                            {
+                                string[] valor = substring.Split(":".ToCharArray());
+                                txtBairro.Text = valor[1];
+                            }
+                            else if (cont == 5)
+                            {
+                                string[] valor = substring.Split(":".ToCharArray());
+                                txtCidade.Text = valor[1];
+                            }
+                            else if (cont == 6)
+                            {
+                                string[] valor = substring.Split(":".ToCharArray());
+                                dbdEstado.SelectedValue = valor[1];
+                            }
+
+                            cont++;
+                        }
+                    }
+                }
+            }
+        }
+
+        
     }
+
+        
+    
 }

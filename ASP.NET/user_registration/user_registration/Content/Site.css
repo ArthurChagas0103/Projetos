@@ -12,11 +12,11 @@ body {
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
-}
+}*/
 
 
 /* Responsive: Portrait tablets and up */
@@ -47,12 +47,13 @@ textarea {
 .span {
     font-size: 15px;
     background-color: #e9e9e9;
-    padding-top: 6px;
-    padding-bottom: 6.5px;
-    padding-left: 13px;
-    padding-right: 13px;
+    width: 34px;
+    height: 34px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ChkBoxClass input {
@@ -63,4 +64,14 @@ textarea {
 
 .form-control {
     background-color: #f8f7f7;
+}
+
+.btn {
+    background-color: #6e9bed;
+    border: #6e9bed;
+}
+
+.btn:hover {
+    background-color: #8aaceb;
+    border: #8aaceb;
 }

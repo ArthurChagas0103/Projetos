@@ -184,6 +184,15 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.DropDownList dbdEstado;
         
         /// <summary>
+        /// btnBuscarCep control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuscarCep;
+        
+        /// <summary>
         /// checkContrato control.
         /// </summary>
         /// <remarks>
@@ -200,15 +209,6 @@ namespace user_registration {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// btnCadastro control.
