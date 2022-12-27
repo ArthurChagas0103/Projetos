@@ -85,6 +85,11 @@ namespace user_registration
                 Response.Write("<script>alert('Digite o número do seu TELEFONE ADICIONAL!')</script>");
                 txtTelefoneAdicional.Focus();
             }
+            else if (txtTelefone.Text == txtTelefoneAdicional.Text)
+            {
+                Response.Write("<script>alert('Número do TELEFONE e do TELEFONE ADICIONAL não podem ser iguais!')</script>");
+                txtTelefoneAdicional.Focus();
+            }
             else if (dpdArea.SelectedIndex == 0)
             {
                 Response.Write("<script>alert('Selecione a ÁREA QUE VOCÊ ESTÁ SE PREPARANDO!')</script>");
@@ -144,6 +149,16 @@ namespace user_registration
                 txtTelefoneAdicional.Text = String.Format(@"{0:(00) 0000-0000}", Convert.ToDecimal(txtTelefoneAdicional.Text));
                 txtCep.Text = String.Format(@"{0:00000-000}", Convert.ToDecimal(txtCep.Text));
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LocalizarCEP()
+        {
+            
         }
     }
 }

@@ -112,6 +112,8 @@
             <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+
         <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro" Height="36px" Width="1254px" OnClick="btnCadastro_Click"/>
     </div>
 
