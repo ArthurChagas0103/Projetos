@@ -13,6 +13,8 @@ namespace user_registration
 {
     public partial class _Default : Page
     {
+        bool btnCadastrarClick = false;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             txtNomeCompleto.Attributes.Add("placeholder", "Nome Completo");
@@ -34,21 +36,25 @@ namespace user_registration
             txtCpf.ToolTip = "000.000.000-00";
             txtDataNascimento.ToolTip = "dd/mm/aaaa";
             txtEmail.ToolTip = "email@email.com.br";
-            txtCelular.ToolTip = "(00)0 0000-0000";
+            txtCelular.ToolTip = "(00) 0 0000-0000";
             txtTelefone.ToolTip = "(00) 0000-0000";
             txtTelefoneAdicional.ToolTip = "(00) 0000-0000";
             txtCep.ToolTip = "00000-000";
 
-            txtCpf.MaxLength = 11;
-            txtDataNascimento.MaxLength = 8;
-            txtCelular.MaxLength = 11;
-            txtTelefone.MaxLength = 10;
-            txtTelefoneAdicional.MaxLength = 10;
-            txtCep.MaxLength = 8;
+            txtCpf.MaxLength = 14;
+            txtDataNascimento.MaxLength = 10;
+            txtCelular.MaxLength = 16;
+            txtTelefone.MaxLength = 14;
+            txtTelefoneAdicional.MaxLength = 14;
+            txtCep.MaxLength = 9;
+
+            btnCadastrarClick = false;
         }
 
         protected void btnCadastro_Click(object sender, EventArgs e)
         {
+            btnCadastrarClick = true;
+
             if (txtNomeCompleto.Text == "")
             {
                 Response.Write("<script>alert('Digite seu NOME COMPLETO!')</script>");
@@ -59,12 +65,12 @@ namespace user_registration
                 Response.Write("<script>alert('Selecione seu SEXO!')</script>");
                 dpdSexo.Focus();
             }
-            else if (txtCpf.Text == "" || txtCpf.Text.Length < 11)
+            else if (txtCpf.Text == "" || txtCpf.Text.Length < 14)
             {
                 Response.Write("<script>alert('Digite seu CPF!')</script>");
                 txtCpf.Focus();
             }
-            else if (txtDataNascimento.Text == "" || txtDataNascimento.Text.Length < 8)
+            else if (txtDataNascimento.Text == "" || txtDataNascimento.Text.Length < 10)
             {
                 Response.Write("<script>alert('Digite sua DATA DE NASCIMENTO!')</script>");
                 txtDataNascimento.Focus();
@@ -74,17 +80,22 @@ namespace user_registration
                 Response.Write("<script>alert('Digite seu EMAIL!')</script>");
                 txtDataNascimento.Focus();
             }
-            else if (txtCelular.Text == "" || txtCelular.Text.Length < 11)
+            else if (txtCelular.Text == "" || txtCelular.Text.Length < 16)
             {
                 Response.Write("<script>alert('Digite o número do seu CELULAR!')</script>");
                 txtCelular.Focus();
             }
-            else if (txtTelefone.Text.Length < 10 && txtTelefone.Text.Length != 0)
+            else if (txtTelefoneAdicional.Text != "" && txtTelefone.Text == "")
+            {
+                Response.Write("<script>alert('Digite o número do seu TELEFONE antes de cadastrar um TELEFONE ADICIONAL!')</script>");
+                txtTelefoneAdicional.Focus();
+            }
+            else if (txtTelefone.Text.Length < 14 && txtTelefone.Text.Length != 0)
             {
                 Response.Write("<script>alert('Digite o número do seu TELEFONE!')</script>");
                 txtTelefone.Focus();
             }
-            else if (txtTelefoneAdicional.Text.Length < 10 && txtTelefoneAdicional.Text.Length != 0)
+            else if (txtTelefoneAdicional.Text.Length < 14 && txtTelefoneAdicional.Text.Length != 0)
             {
                 Response.Write("<script>alert('Digite o número do seu TELEFONE ADICIONAL!')</script>");
                 txtTelefoneAdicional.Focus();
@@ -96,21 +107,15 @@ namespace user_registration
             }
             else if (dpdArea.SelectedIndex == 0)
             {
-                Response.Write("<script>alert('Selecione a ÁREA QUE VOCÊ ESTÁ SE PREPARANDO!')</script>");
+                Response.Write("<script>alert('Selecione uma ÁREA QUE VOCÊ ESTÁ SE PREPARANDO ou uma PROFISSÃO!')</script>");
                 dpdArea.Focus();
             }
-            else if (txtSenha.Text == "")
+            else if (dpdProfissao.SelectedIndex == 0)
             {
-                Response.Write("<script>alert('Digite sua SENHA!')</script>");
-                txtSenha.Focus();
+                Response.Write("<script>alert('Selecione uma PROFISSÃO ou uma ÁREA QUE VOCÊ ESTÁ SE PREPARANDO!')</script>");
+                dpdArea.Focus();
             }
-            else if (txtSenha.Text != txtConfirmeSenha.Text)
-            {
-                Response.Write("<script>alert('SENHAS não conferem!')</script>");
-                txtSenha.Focus();
-                txtConfirmeSenha.Focus();
-            }
-            else if (txtCep.Text == "" || txtCep.Text.Length < 8)
+            else if (txtCep.Text == "" || txtCep.Text.Length < 9)
             {
                 Response.Write("<script>alert('Digite seu CEP!')</script>");
                 txtCep.Focus();
@@ -122,7 +127,7 @@ namespace user_registration
             }
             else if (txtNumero.Text == "")
             {
-                Response.Write("<script>alert('Digite seu NÚMERO')</script>");
+                Response.Write("<script>alert('Digite o NÚMERO do seu ENDEREÇO')</script>");
                 txtNumero.Focus();
             }
             else if (txtCidade.Text == "")
@@ -140,6 +145,17 @@ namespace user_registration
                 Response.Write("<script>alert('Selecione seu ESTADO!')</script>");
                 dbdEstado.Focus();
             }
+            else if (txtSenha.Text == "")
+            {
+                Response.Write("<script>alert('Digite sua SENHA!')</script>");
+                txtSenha.Focus();
+            }
+            else if (txtSenha.Text != txtConfirmeSenha.Text)
+            {
+                Response.Write("<script>alert('SENHAS não conferem!')</script>");
+                txtSenha.Focus();
+                txtConfirmeSenha.Focus();
+            }
             else if (checkContrato.Checked == false)
             {
                 Response.Write("<script>alert('Leia e marque a opção CONDIÇÕES GERAIS E CONTRATO DE TERMOS DE USO!')</script>");
@@ -147,17 +163,13 @@ namespace user_registration
             }
             else
             {
-                txtDataNascimento.Text = String.Format(@"{0:00/00/0000}", Convert.ToDecimal(txtDataNascimento.Text));
-                txtCelular.Text = String.Format(@"{0:(00)0 0000-0000}", Convert.ToDecimal(txtCelular.Text));
-                txtTelefone.Text = String.Format(@"{0:(00) 0000-0000}", Convert.ToDecimal(txtTelefone.Text));
-                txtTelefoneAdicional.Text = String.Format(@"{0:(00) 0000-0000}", Convert.ToDecimal(txtTelefoneAdicional.Text));
-                txtCep.Text = String.Format(@"{0: 00000-000}", Convert.ToDecimal(txtCep.Text));
+                LocalizarCEP();
             }
         }
 
         protected void btnBuscarCep_Click(object sender, EventArgs e)
         {
-            if (txtCep.Text == "" || txtCep.Text.Length < 8)
+            if (txtCep.Text == "" || txtCep.Text.Length < 9)
             {
                 Response.Write("<script>alert('Digite um CEP válido!')</script>");
                 txtCep.Focus();
@@ -237,9 +249,36 @@ namespace user_registration
 
                             cont++;
                         }
+
+                        if (btnCadastrarClick == true)
+                        {
+                            Response.Write("<script>alert('Cadastro realizado com sucesso!')</script>");
+
+                            txtNomeCompleto.Text = "";
+                            dpdSexo.SelectedIndex = 0;
+                            txtCpf.Text = "";
+                            txtDataNascimento.Text = "";
+                            txtEmail.Text = "";
+                            txtCelular.Text = "";
+                            txtTelefone.Text = "";
+                            txtTelefoneAdicional.Text = "";
+                            dpdArea.SelectedIndex = 0;
+                            dpdProfissao.SelectedIndex = 0;                            
+                            txtCep.Text = "";
+                            txtEndereco.Text = "";
+                            txtNumero.Text = "";
+                            txtComplemento.Text = "";
+                            txtCidade.Text = "";
+                            txtBairro.Text = "";
+                            dbdEstado.SelectedIndex = 0;
+                            txtSenha.Text = "";
+                            txtConfirmeSenha.Text = "";
+                            checkContrato.Checked = false;
+                            checkNoticias.Checked = false;
+                        }
                     }
                 }
             }
-        }      
+        }
     } 
 }

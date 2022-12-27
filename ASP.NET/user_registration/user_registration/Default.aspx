@@ -14,7 +14,7 @@
                     <asp:ListItem>Masculino</asp:ListItem>
                     <asp:ListItem>Feminino</asp:ListItem>
                 </asp:DropDownList>
-                <asp:TextBox ID="txtCpf" runat="server" Width="250px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;"></asp:TextBox>
+                <asp:TextBox ID="txtCpf" runat="server" Width="250px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;" ClientIDMode="Static"></asp:TextBox>
                 <div class="input-group divSpan" style="margin-top: 20px;">
                     <span class="input-group-text span" id="spanCalendar"><i class="fa fa-calendar"></i></span>
                     <asp:TextBox ID="txtDataNascimento" runat="server" CssClass="form-control" ClientIDMode="Static" Width="230px"></asp:TextBox>
@@ -24,7 +24,7 @@
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
                 <div class="input-group divSpan" style="margin-right: 30px; margin-top: 20px;">
                     <span class="input-group-text span"><i class="fa fa-envelope"></i></span>
-                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" ClientIDMode="Static" Width="210px"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" ClientIDMode="Static" Width="210px" type="Email"></asp:TextBox>
                 </div>
                 <div class="input-group divSpan" style="margin-right: 30px; margin-top: 20px;">
                     <span class="input-group-text span"><i class="fa fa-mobile"></i></span>
@@ -45,19 +45,11 @@
                     <asp:ListItem>Para qual área está se preparando?</asp:ListItem>
                     <asp:ListItem>Saúde</asp:ListItem>
                 </asp:DropDownList>
-                <asp:DropDownList ID="DropDownList4" runat="server" CssClass="col-md-2 form-control" Style="margin-top: 20px;" Width="545px">
+                <asp:DropDownList ID="dpdProfissao" runat="server" CssClass="col-md-2 form-control" Style="margin-top: 20px;" Width="545px">
+                    <asp:ListItem>Profissão da área que está se preparando</asp:ListItem>
                     <asp:ListItem>Advogado</asp:ListItem>
                 </asp:DropDownList>
             </div>
-        </div>
-
-        <hr />
-        <h5 style="color: gray">Senha de Acesso</h5>
-        <hr style="margin-bottom: 5px"/>
-
-        <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-            <asp:TextBox ID="txtSenha" runat="server" Width="558px" CssClass="form-control" Style="margin-right: 30px; margin-top: 20px;" TextMode="Password"></asp:TextBox>
-            <asp:TextBox ID="txtConfirmeSenha" runat="server" Width="558px" CssClass="form-control" Style="margin-top: 20px;" TextMode="Password"></asp:TextBox>
         </div>
 
         <hr />
@@ -68,7 +60,7 @@
 
         <div>
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:TextBox ID="txtCep" runat="server" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;" Width="170px"></asp:TextBox>
+                <asp:TextBox ID="txtCep" runat="server" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;" Width="170px" ClientIDMode="Static"></asp:TextBox>
                 <asp:TextBox ID="txtEndereco" runat="server" Width="500px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;"></asp:TextBox>
                 <asp:TextBox ID="txtNumero" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;"></asp:TextBox>
                 <asp:TextBox ID="txtComplemento" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-top: 20px;"></asp:TextBox>                
@@ -107,16 +99,25 @@
                     <asp:ListItem> SE</asp:ListItem>
                     <asp:ListItem> TO</asp:ListItem>
                 </asp:DropDownList>
-                <asp:Button ID="btnBuscarCep" runat="server" OnClick="btnBuscarCep_Click" Text="Buscar CEP" CssClass="btn" Width="200px" Height="35px" style="margin-top: 20px; margin-bottom: 20px"/>
+                <asp:Button ID="btnBuscarCep" runat="server" OnClick="btnBuscarCep_Click" Text="Buscar CEP" CssClass="btn" Width="200px" Height="35px" style="margin-top: 20px"/>
             </div>
+        </div>
+
+        <hr />
+        <h5 style="color: gray">Senha de Acesso</h5>
+        <hr style="margin-bottom: 5px"/>
+
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+            <asp:TextBox ID="txtSenha" runat="server" Width="558px" CssClass="form-control" Style="margin-right: 30px; margin-top: 20px;" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="txtConfirmeSenha" runat="server" Width="558px" CssClass="form-control" Style="margin-top: 20px; margin-bottom: 20px" TextMode="Password"></asp:TextBox>
         </div>
 
         <div style="display: flex; flex-direction: column;">
             <asp:CheckBox ID="checkContrato" runat="server" Text="Declaro que li e concordo com as Condições Gerais e Contrato de Termos de Uso" CssClass="ChkBoxClass" />
-            <asp:CheckBox ID="CheckBox2" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
+            <asp:CheckBox ID="checkNoticias" runat="server" Text="Quero receber novidades de cursos e informações do portal" CssClass="ChkBoxClass" />
         </div>
 
-        <asp:Button ID="btnCadastro" runat="server" Text="Realizar Cadastro" CssClass="btnCadastro btn" Height="35px" Width="100%" OnClick="btnCadastro_Click" style="margin-top: 20px;"/>
+        <asp:Button ID="btnCadastro" runat="server" UseSubmitBehavior="true" Text="Realizar Cadastro" CssClass="btnCadastro btn" Height="35px" Width="100%" OnClick="btnCadastro_Click" style="margin-top: 20px;"/>
     </div>
 
 </asp:Content>

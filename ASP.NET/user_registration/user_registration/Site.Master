@@ -38,8 +38,6 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <script src="https://kit.fontawesome.com/94dd89b3ac.js"></script>
-
         <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #6e9bed; border: #6e9bed">
             <div class="container">
                 <div class="navbar-header">
@@ -69,5 +67,8 @@
         </div>
 
     </form>
+    <script src="https://kit.fontawesome.com/94dd89b3ac.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src='Scripts/WebForms/Masks.js'></script>
 </body>
 </html>

@@ -94,31 +94,13 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.DropDownList dpdArea;
         
         /// <summary>
-        /// DropDownList4 control.
+        /// dpdProfissao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
-        
-        /// <summary>
-        /// txtSenha control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSenha;
-        
-        /// <summary>
-        /// txtConfirmeSenha control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConfirmeSenha;
+        protected global::System.Web.UI.WebControls.DropDownList dpdProfissao;
         
         /// <summary>
         /// txtCep control.
@@ -193,6 +175,24 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.Button btnBuscarCep;
         
         /// <summary>
+        /// txtSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSenha;
+        
+        /// <summary>
+        /// txtConfirmeSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtConfirmeSenha;
+        
+        /// <summary>
         /// checkContrato control.
         /// </summary>
         /// <remarks>
@@ -202,13 +202,13 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.CheckBox checkContrato;
         
         /// <summary>
-        /// CheckBox2 control.
+        /// checkNoticias control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox2;
+        protected global::System.Web.UI.WebControls.CheckBox checkNoticias;
         
         /// <summary>
         /// btnCadastro control.
