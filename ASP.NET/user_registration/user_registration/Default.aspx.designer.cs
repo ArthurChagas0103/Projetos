@@ -166,15 +166,6 @@ namespace user_registration {
         protected global::System.Web.UI.WebControls.DropDownList dbdEstado;
         
         /// <summary>
-        /// btnBuscarCep control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscarCep;
-        
-        /// <summary>
         /// txtSenha control.
         /// </summary>
         /// <remarks>

@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div>
-        <h5 style="color: gray;">Identificação do Usuário</h5>
+        <h5 style="color: gray;">Identificação do Usuário</h5>    
         <hr style="margin-bottom: 5px" />
 
         <div>
@@ -41,13 +41,14 @@
             </div>
 
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:DropDownList ID="dpdArea" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 30px; margin-top: 20px;" Width="570px">
+                <asp:DropDownList ID="dpdArea" runat="server" CssClass="col-md-2 form-control" Style="margin-right: 30px; margin-top: 20px;" Width="570px" OnSelectedIndexChanged="dpdArea_SelectedIndexChanged" ClientIDMode="Static" AutoPostBack="True">
                     <asp:ListItem>Para qual área está se preparando?</asp:ListItem>
                     <asp:ListItem>Saúde</asp:ListItem>
+                    <asp:ListItem>Direito</asp:ListItem>
+                    <asp:ListItem>Tecnologia da Informação</asp:ListItem>
                 </asp:DropDownList>
                 <asp:DropDownList ID="dpdProfissao" runat="server" CssClass="col-md-2 form-control" Style="margin-top: 20px;" Width="545px">
-                    <asp:ListItem>Profissão da área que está se preparando</asp:ListItem>
-                    <asp:ListItem>Advogado</asp:ListItem>
+                    <asp:ListItem>Profissão da área que está se preparando</asp:ListItem>                   
                 </asp:DropDownList>
             </div>
         </div>
@@ -60,8 +61,8 @@
 
         <div>
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                <asp:TextBox ID="txtCep" runat="server" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;" Width="170px" ClientIDMode="Static"></asp:TextBox>
-                <asp:TextBox ID="txtEndereco" runat="server" Width="500px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;"></asp:TextBox>
+                <asp:TextBox ID="txtCep" runat="server" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;" Width="170px" ClientIDMode="Static" AutoPostBack="True" OnTextChanged="txtCep_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="txtEndereco" runat="server" Width="500px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;" AutoPostBack="True"></asp:TextBox>
                 <asp:TextBox ID="txtNumero" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-right: 30px; margin-top: 20px;"></asp:TextBox>
                 <asp:TextBox ID="txtComplemento" runat="server" Width="200px" CssClass="form-control col-md-4" Style="margin-top: 20px;"></asp:TextBox>                
             </div>
@@ -99,7 +100,6 @@
                     <asp:ListItem> SE</asp:ListItem>
                     <asp:ListItem> TO</asp:ListItem>
                 </asp:DropDownList>
-                <asp:Button ID="btnBuscarCep" runat="server" OnClick="btnBuscarCep_Click" Text="Buscar CEP" CssClass="btn" Width="200px" Height="35px" style="margin-top: 20px"/>
             </div>
         </div>
 
