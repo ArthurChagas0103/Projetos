@@ -8,12 +8,15 @@ using System.Text.RegularExpressions;
 using System.Net;
 using System.Net.WebSockets;
 using System.IO;
+using user_registration.Scripts.WebForms.Classes;
 
 namespace user_registration
 {
     public partial class _Default : Page
     {
         bool btnCadastrarClick = false;
+        ValidacaoCPF validaCPF = new ValidacaoCPF();
+        ValidacaoData validaData = new ValidacaoData();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -163,9 +166,22 @@ namespace user_registration
             }
             else
             {
-                LocalizarCEP();
+                if (validaCPF.IsCpf(txtCpf.Text) == false)
+                {
+                    Response.Write("<script>alert('CPF inválido!')</script>");
+                }
+                else if (validaData.DataIsTrue(txtDataNascimento.Text) == false)
+                {
+                    Response.Write("<script>alert('Data inválida!')</script>");
+                }
+                else
+                {
+                    LocalizarCEP();
+                }
             }
         }
+
+        
 
         protected void btnBuscarCep_Click(object sender, EventArgs e)
         {
@@ -178,7 +194,7 @@ namespace user_registration
             {
                 LocalizarCEP();
             }
-        }
+        }       
 
         public void LocalizarCEP()
         {
@@ -225,8 +241,8 @@ namespace user_registration
                             else if (cont == 3)
                             {
                                 string[] valor = substring.Split(":".ToCharArray());
-                                txtComplemento.Text = valor[1]; 
-                                if(txtComplemento.Text == " ")
+                                txtComplemento.Text = valor[1];
+                                if (txtComplemento.Text == " ")
                                 {
                                     txtComplemento.Text = "";
                                 }
@@ -263,7 +279,7 @@ namespace user_registration
                             txtTelefone.Text = "";
                             txtTelefoneAdicional.Text = "";
                             dpdArea.SelectedIndex = 0;
-                            dpdProfissao.SelectedIndex = 0;                            
+                            dpdProfissao.SelectedIndex = 0;
                             txtCep.Text = "";
                             txtEndereco.Text = "";
                             txtNumero.Text = "";
@@ -279,6 +295,6 @@ namespace user_registration
                     }
                 }
             }
-        }
+        }      
     } 
 }
