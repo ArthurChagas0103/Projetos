@@ -1,0 +1,3 @@
+2- Faça um script que leia dois valores inteiros A e B, se os valores forem iguais, 
+os mesmos devem ser somados, caso contrário multiplique A por B, 
+ao final do cálculo atribuir o resultado para uma variável C e exibir o resultado.

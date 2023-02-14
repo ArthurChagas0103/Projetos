@@ -1,0 +1,2 @@
+1 - Faça um script que entre com o nome e o salário de um funcionário e mostre seu novo salário, 
+sabendo que o mesmo teve um aumento de 10%.
