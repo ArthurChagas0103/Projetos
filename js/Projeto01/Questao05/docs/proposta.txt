@@ -1,0 +1,2 @@
+5- Faça um script que receba um número de 1 a 12 e retorne com o nome do respectivo mês
+referente ao número. Ex - Entrou com número 1 saída: Janeiro e assim sucessivamente.

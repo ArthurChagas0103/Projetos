@@ -1,0 +1,3 @@
+4- Faça um script que leia o nome e as três notas de uma disciplina de um aluno e ao final
+escreva o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para
+aprovação é igual ou superior a 7.

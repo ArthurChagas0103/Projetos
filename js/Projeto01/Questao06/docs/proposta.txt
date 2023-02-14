@@ -1,0 +1,2 @@
+6- Faça um script que contenha um menu de seleção deste exercício e execute os mesmos
+mediante seleção: Ex. selecionei 1, deve executar a primeira atividade e assim por diante.
