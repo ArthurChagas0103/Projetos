@@ -1,0 +1,8 @@
+1- Você estava criando uma array com as cores do arco-íris, e se esqueceu de algumas
+cores. As cores padrão de um arco-íris são normalmente listadas nesta ordem:
+Arco_iris = [Vermelho, Laranja, Amarelo, Verde, Azul, Roxo];
+Mas você fez assim:
+Arco_iris = [Vermelho, Laranja, Marrom, Azul];
+
+Usando somente o método splice(), insira as cores que faltam na array e remova a cor que
+não faz parte do arco-íris padrão

@@ -1,0 +1,9 @@
+2 - Crie uma função com o objeto abaixo que retorne o seguinte conteúdo:
+O usuário mora em Belo Horizonte/ MG, no bairro Floresta, na rua Itajubá, nº 230.
+var endereco = {
+rua: "",
+numero: ,
+bairro: "",
+cidade: "",
+uf: ""
+};
