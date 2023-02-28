@@ -1,8 +1,15 @@
+var habilidade = ["Javascript", "ReactJS", "React Native", "Angular"];
+
 function temHabilidade(habilidade)
 {
-    habilidade.indexOf("Javascript")
-}
+    let habilidadeTrueFalse = habilidade.indexOf("Javascript");
 
-var habilidade = ["Javascript", "ReactJS", "React Native", "Angular"];
+    if(habilidadeTrueFalse == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 
 console.log(temHabilidade(habilidade)); 
