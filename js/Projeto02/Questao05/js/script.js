@@ -8,11 +8,9 @@ let usuarios = [{
 }];
 
 function habilidades(usuarios){
-
     for(let x = 0; x < usuarios.length; x++){
-        return "O Gabriel possui as habilidades: " + usuarios[x].habilidades.join(", ") + "\n" + "A Lara possui as habilidades: " + usuarios[x].habilidades.join(", ")
+        console.log(`${usuarios[x].nome} possui as habilidades: ${usuarios[x].habilidades.join(", ")}`);
     }
-
 }
 
-console.log(habilidades(usuarios))
+habilidades(usuarios)

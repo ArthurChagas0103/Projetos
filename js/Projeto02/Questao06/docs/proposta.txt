@@ -1,0 +1,28 @@
+6- Crie um array de objetos contendo dados sobre 10 pessoas (nome, idade, RG) , utilize o
+método filter para retornar apenas as idades de quem tem +de 18 anos.
+Exemplo
+// array de números
+const numeros = [1, 2, 3, 4];
+// array com objetos
+const objetos = [
+{
+nome: 'Harry Potter',
+idade: 15
+},
+{
+nome: 'Gandalf',
+idade: 1706
+},
+{
+nome: 'Jon Snow',
+idade: 28
+},
+];
+// função que filtra os valores menores que 2, ou seja, apenas os maiores vão para o novo array
+// Lembre-se que o filter retorna um novo array
+let novoArrayA = numeros.filter(numero => numero > 2);
+console.log(novoArray); // => 3, 4]
+// função que filtra o array objeto pelo nome
+// Lembre-se que o filter retorna um novo array
+let novoArrayB = objetos.filter(objeto =&gt; objeto.nome === 'Gandalf');
+console.log(novoArray) // => { nome: 'gandalf' } ]
