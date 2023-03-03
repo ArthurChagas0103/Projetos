@@ -47,9 +47,11 @@ let pessoas = [{
 function procuraMaiorIdade(pessoas){
     let maiorDeIdade = pessoas.filter(pessoa => pessoa.idade >= 18);
 
-    for(let x = 0; x < pessoas.length; x++){
-        console.log(`Nome: ${maiorDeIdade[x].nome} - Idade: ${maiorDeIdade[x].idade}`)
-    }
+    console.log(maiorDeIdade)
+
+    // for(let x = 0; x < pessoas.length; x++){
+    //     console.log(`Nome: ${maiorDeIdade[x].nome} - Idade: ${maiorDeIdade[x].idade}`)
+    // }
 }
 
 procuraMaiorIdade(pessoas)

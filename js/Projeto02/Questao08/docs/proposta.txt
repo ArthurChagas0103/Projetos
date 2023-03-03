@@ -1,0 +1,8 @@
+2- O Carnaval do Cotemig celebrado hoje terá um concurso onde serão julgadas vários quesitos para
+determinar a fantasia campeã do Carnaval.
+Cada fantasia é avaliada em vários quesitos; em cada quesito, cada aluno recebe cinco notas que variam
+de 5,0 a 10,0. A nota final do aluno em um dado quesito é a soma das três notas centrais recebidas pelo
+aluno, excluindo a maior e a menor das cinco notas.
+Como existem muitos alunos e muitos quesitos, você vai escrever um programa que, dadas as 5 notas,
+calcula a sua nota final num dado quesito.
+Quesitos: criatividade, originalidade, elegância, acabamento e conservação.
