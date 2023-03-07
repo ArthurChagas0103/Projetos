@@ -1,0 +1,5 @@
+1- Crie 2 arrays numéricos com dados sendo preenchidos pelo usuário, utilizando o push para
+popular, concatene os mesmos, exclua o maior e menor valor, ao final exiba:
+1) Os dois arrays originais preenchidos,
+2) O array concatenado ;
+3) O array concatenado sem o maior e menor valores.

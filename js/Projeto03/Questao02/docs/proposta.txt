@@ -1,0 +1,5 @@
+2- Verifique se no vetor concatenado da atividade anterior existe um determinado número
+informado pelo usuário:
+Ex: VetConcatenado=[5,205, 30 , 50 , 65 ,16]
+Valor digitado pelo usuário: 27
+Resposta: Valor não existe no vetconcatenado.
