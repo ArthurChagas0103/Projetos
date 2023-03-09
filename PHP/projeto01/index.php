@@ -10,7 +10,7 @@
 
     echo("<br>");
 
-    echo("Usu·rio: " . $user);
+    echo("Usu√°rio: " . $user);
 
     echo("<br>");
 

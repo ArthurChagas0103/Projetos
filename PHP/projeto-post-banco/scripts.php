@@ -24,7 +24,7 @@ if ($primeiroNumero > 0 && $segundoNumero > 0) {
     $select->close();
 } 
 else{
-    echo("Digite n�meros v�lidos");
+    echo("Digite números válidos");
 }
 
 $conexaoBanco->close();
