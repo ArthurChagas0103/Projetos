@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+#form{
+    padding: 2%;
+    background-color: #E5E4E2;
+    border-radius: 50px;
+}
+
+.form-control{
+    text-align: center;
+}
