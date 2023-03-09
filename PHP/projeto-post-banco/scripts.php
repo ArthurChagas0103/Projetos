@@ -13,7 +13,7 @@ if ($primeiroNumero > 0 && $segundoNumero > 0) {
     $insert->execute();
     $insert->close();
 
-    $select = $conexaoBanco->prepare("SELECT * FROM soma");
+    $select = $conexaoBanco->prepare("SELECT * FROM soma ORDER BY id");
     $select->execute();
     $result = $select -> get_result();
     
@@ -24,7 +24,7 @@ if ($primeiroNumero > 0 && $segundoNumero > 0) {
     $select->close();
 } 
 else{
-    echo("Digite números válidos");
+    echo("Digite nï¿½meros vï¿½lidos");
 }
 
 $conexaoBanco->close();
