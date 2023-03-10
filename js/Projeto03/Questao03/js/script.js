@@ -1,15 +1,11 @@
-var habilidade = ["Javascript", "ReactJS", "React Native", "Angular"];
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function temHabilidade(habilidade)
-{
-    let habilidadeTrueFalse = habilidade.indexOf("Javascript");
+console.log(numeros)
 
-    if(habilidadeTrueFalse == 0){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
+// function multiplicador(num) {
+//   return num * 2;
+// }
 
-console.log(temHabilidade(habilidade)); 
+let numerosDuplicados = numeros.map(numeros => numeros * 2)
+
+console.log(numerosDuplicados)

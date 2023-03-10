@@ -1,11 +1,9 @@
-4- Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
-function experiencia(anos)
-{
-// código aqui
-}
-//entrada de dados var anosEstudo = ….;
-experiencia(anosEstudo);
-// De 0-1 ano: Junior
-// De 1-3 anos: Pleno
-// De 3-6 anos: Senior
-// De 7 acima: Mestre Jedi
+4- Imagine a situação onde você tem uma lista de produtos e precisa extrair apenas o id de
+cada um.
+const produtos = [
+{ id: 1, categoria: 'limpeza', name: 'Amaciante' },
+{ id: 2, categoria: 'limpeza';, name: 'Detergente' },
+{ id: 3, categoria: 'alimento', name: 'ovo' },
+{ id: 4, categoria: 'alimento', name: 'alface' },
+]
+Utilize o método map(), para retornar um array contendo somente os ids.

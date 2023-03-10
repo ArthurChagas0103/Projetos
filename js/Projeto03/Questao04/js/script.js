@@ -1,21 +1,16 @@
-let anosEstudo = Number(prompt("Digite seus anos de estudos: "));;
+const produtos = [
+    { id: 1, categoria: 'limpeza', name: 'Amaciante' },
+    { id: 2, categoria: 'limpeza', name: 'Detergente' },
+    { id: 3, categoria: 'alimento', name: 'ovo' },
+    { id: 4, categoria: 'alimento', name: 'alface' },
+]
 
-let titulo = ["Junior", "Pleno", "Senior", "Mestre Jedi"];
+console.log(produtos)
 
-function experiencia(anos, titulo)
-{
-    if(anos >= 0 && anos <= 1){
-        return titulo[0];
-    }
-    else if(anos > 1 && anos <= 3){
-        return titulo[1];
-    }
-    else if(anos > 3 && anos <= 6){
-        return titulo[2];
-    }
-    else {
-        return titulo[3];
-    } 
-}
+// function buscaId(elementos){
+//     return elementos.id
+// }
 
-console.log(experiencia(anosEstudo, titulo));
+let idProdutos = produtos.map(produtos => produtos.id);
+
+console.log(idProdutos)
