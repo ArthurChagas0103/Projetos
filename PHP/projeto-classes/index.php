@@ -1,0 +1,31 @@
+<?php 
+
+    require("model/carro.php");
+
+    $obj = new Carro("Fusca", "Azul");  
+
+    $numeros = array(10, 54, 78);   
+
+    foreach($numeros as $valor){
+        echo $valor, "<br>";
+    }
+
+    $numeros[2];
+    $numeros[0];
+
+    $palavras = array("banana", "maçã", "abacaxi");
+
+    $palavras[1];
+
+    $notas = array(5.99, 6.5, 7.8);
+
+    $idades = array("Fernando" => 36, "Amanda" => 40, "João" => 22);
+
+    $idades["Amanda"]; //40
+    $idades["João"]; //22
+
+    foreach($idades as $valor){
+        echo $valor;
+    }
+
+?>
