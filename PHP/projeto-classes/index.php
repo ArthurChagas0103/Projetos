@@ -28,4 +28,10 @@
         echo $valor;
     }
 
+    $obj = array(
+        new Carro("Teste"),
+        new Carro("Teste"),
+        new Carro("Teste")
+    );
+
 ?>
