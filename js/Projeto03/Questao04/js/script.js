@@ -14,3 +14,5 @@ console.log(produtos)
 let idProdutos = produtos.map(produtos => produtos.id);
 
 console.log(idProdutos)
+
+localStorage.setItem("arrayQuestao4", JSON.stringify(produtos));
