@@ -1,0 +1,14 @@
+O código em questão define uma função que chama "verifica", passando um atributo arr que seria um array multidimensional 
+como parâmetro e retorna um novo array com o maior número de cada "sub-array".
+A função é criada na linha 1, e na linha 2 é declarada uma variável "resul", que é inicializada com a chamada do método "map"
+no array recebido como parâmetro (arr). O método "map" percorre cada "sub-array" do array recebido e executa uma função que 
+encontra o maior número presente em cada "sub-array".
+Na linha 3, é declarado a variável "maior" com o valor inicial de 0. Em seguida, um laço de repetição "for" é executado, 
+ele percorre cada número do "sub-array" atual a partir da linha 4. Dentro desse laço, é verificado se o número atual é maior 
+do que a variável "maior" na linha 6. Se for, a variável "maior" é atualizada com o valor do número atual. 
+Esse processo se repete até que todos os números do subarray tenham sido percorridos.
+Por fim, na linha 9, a função retorna o array "resul", que contém o maior número de cada "sub-array".
+Na chamada da função, um array multidimensional é passado como argumento (linha 11). 
+A saída final será um novo array com os maiores números de cada "sub-array", que no caso são:
+
+[5, 27, 39, 1001]

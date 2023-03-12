@@ -1,44 +1,34 @@
-let notasInput = prompt("Digite as cinco notas separadas por vírgulas (Quesitos: criatividade, originalidade, elegância, acabamento e conservação):");
-let notas = notasInput.split(",").map(function (nota) { return parseFloat(nota.trim()); });
-
-let notasAceitas = notas.find(nota => nota < 5 || nota > 10);
-
-if (notasAceitas == undefined) {
-  function calcularNotaFinal(notas) {
-    notas.sort(function (a, b) { return a - b });
-
-    let notasCentrais = notas.slice(1, -1);
-    let somaNotasCentrais = notasCentrais.reduce(function (a, b) { return a + b; });
-    let notaFinal = somaNotasCentrais / notasCentrais.length;
-
-    return notaFinal.toFixed(1);
+const funcionarios = [
+  {
+    Nome: 'Han Solo',
+    Departamento: 'Financeiro',
+    Salario: 5000
+  },
+  {
+    Nome: 'Luke',
+    Departamento: 'Financeiro',
+    Salario: 15000
+  },
+  {
+    Nome: 'Ben',
+    Departamento: 'Marketing',
+    Salario: 2000
+  },
+  {
+    Nome: 'Leia',
+    Departamento: 'Marketing',
+    Salario: 10000
+  },
+  {
+    Nome: 'Rey',
+    Departamento: 'Financeiro',
+    Salario: 2500
   }
+];
 
-  let notaFinalCriatividade = calcularNotaFinal(notas);
-  console.log("A nota final de criatividade é: " + notaFinalCriatividade);
-}
-else {
-  console.log("Notas inválidas!")
-}
+const totalSalariosFinanceiro = funcionarios
+  .filter((funcionario) => funcionario.Departamento === 'Financeiro')
+  .map((funcionario) => funcionario.Salario * 1.5)
+  .reduce((total, salario) => total + salario, 0);
 
-
-
-// let quesitos = ["criatividade", "originalidade", "elegancia", "acabamento", "conservacao"];
-
-// soma = 0;
-
-// notas = [0, 0, 0, 0, 0];
-
-// for(i = 0; i < 5; i++){
-//   notas[i] = parseInt(prompt("Digite a nota para cada quesito: "));
-
-//   notas.sort(function(a, b){return a - b});
-//   notas.pop();
-//   notas.shift();
-
-//   for(i = 0; i < notas.length; i++){
-//     soma = notas[i] + soma;
-//   }
-
-//   console.log(soma)
-// }
+console.log(`O Departamento Financeiro irá receber ${totalSalariosFinanceiro} ao todo com o aumento de 50% nos salários.`);

@@ -1,8 +1,29 @@
-2- O Carnaval do Cotemig celebrado hoje terá um concurso onde serão julgadas vários quesitos para
-determinar a fantasia campeã do Carnaval.
-Cada fantasia é avaliada em vários quesitos; em cada quesito, cada aluno recebe cinco notas que variam
-de 5,0 a 10,0. A nota final do aluno em um dado quesito é a soma das três notas centrais recebidas pelo
-aluno, excluindo a maior e a menor das cinco notas.
-Como existem muitos alunos e muitos quesitos, você vai escrever um programa que, dadas as 5 notas,
-calcula a sua nota final num dado quesito.
-Quesitos: criatividade, originalidade, elegância, acabamento e conservação.
+8- Dado o array abaixo que armazena os funcionários de uma empresa.
+
+Const funcionários = [{
+Nome: &#39;Han Solo&#39;,
+Departamento: &#39;Financeiro&#39;,
+Salario: 5000
+}, {
+Nome: &#39;Luke&#39;,
+Departamento: &#39;Financeiro&#39;,
+Salario: 15000
+}, {
+Nome: &#39;Ben&#39;,
+Departamento: &#39;Marketing&#39;,
+Salario: 2000
+}, {
+Nome: &#39;Leia&#39;,
+Departamento: &#39;Marketing&#39;,
+Salario: 10000
+}, {
+Nome: &#39;Rey&#39;,
+Departamento: &#39;Financeiro&#39;,
+Salario: 2500
+}]
+
+Faça um scprit que retorne o valor que o Departamento Financeiro iria receber ao todo se
+déssemos 50% de aumento para eles. Para saber essa informação, nós precisaríamos:
+1) filtrar do array quais são os funcionários do Departamento Financeiro,
+2) adicionar 50% de aumento em seus salários e
+3) fazer a somatória total desses salários.

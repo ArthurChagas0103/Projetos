@@ -1,0 +1,6 @@
+10 – Crie um array misto com números positivos e negativos(informados pelo usuário, enquanto
+ele quiser inserir dados) e verifique e identifique quais são os elementos negativos e quantos
+desses elementos você encontrou.
+Ex: Array=[11 ,-4 , 6 , -3 , 12 ,1 , 8 , -7 , -10]
+Saída: [-4,-3,-7,-10]
+Quantidade: 4 itens.
