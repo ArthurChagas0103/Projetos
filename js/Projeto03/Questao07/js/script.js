@@ -4,9 +4,11 @@ const produtos = [
     { nome: 'Tênis', preco: 120 }
   ];
   
-  const produtosComDesconto = produtos.map((produto) => {
-    const precoComDesconto = produto.preco * 0.9;
-    return Object.fromEntries(Object.entries(produto).map(([chave, valor]) => [chave, chave === 'preco' ? precoComDesconto : valor]));
-  });
+  // const produtosComDesconto = produtos.map((produto) => {
+  //   const precoComDesconto = produto.preco * 0.1;
+  //   return Object.fromEntries(Object.entries(produto).map(([chave, valor]) => [chave, chave === 'preco' ? precoComDesconto : valor]));
+  // });
+
   
-  console.log(produtosComDesconto);
+  
+  console.log(produtos.map(item => (item.preco)-(item.preco * 0.1)));
