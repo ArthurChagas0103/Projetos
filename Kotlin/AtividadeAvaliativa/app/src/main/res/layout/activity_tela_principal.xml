@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAFFFC"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TelaPrincipal">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tela Principal"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40sp" />
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:backgroundTint="#009688"
+        android:text="SOBRE NÓS"
+        app:cornerRadius="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp" />
+
+    <Button
+        android:id="@+id/btnHorario"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:backgroundTint="#009688"
+        android:text="HORÁRIO DE FUNCIONAMENTO"
+        app:cornerRadius="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13sp" />
+
+    <Button
+        android:id="@+id/btnLocalizacao"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:backgroundTint="#009688"
+        android:text="LOCALIZAÇÃO"
+        app:cornerRadius="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40sp" />
+
+    <Button
+        android:id="@+id/btnDeslogar"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:backgroundTint="#FF5757"
+        android:text="Deslogar"
+        android:textSize="24sp"
+        app:cornerRadius="50sp" />
+
+</LinearLayout>
