@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 
 class TelaPrincipal : AppCompatActivity() {
     lateinit var sobrenos : Button
@@ -19,10 +18,12 @@ class TelaPrincipal : AppCompatActivity() {
         sobrenos = findViewById(R.id.btnSobre)
         horario = findViewById(R.id.btnHorario)
         localizacao = findViewById(R.id.btnLocalizacao)
-        deslogar = findViewById(R.id.btnDeslogar)
+        deslogar = findViewById(R.id.btnVoltar)
 
         deslogar.setOnClickListener{ chamaTelaInicial() }
         sobrenos.setOnClickListener{ chamaTelaSobreNos() }
+        horario.setOnClickListener{ chamaTelaHorario() }
+        localizacao.setOnClickListener{ chamaTelaLocalizacao() }
     }
 
     private fun chamaTelaInicial(){
@@ -32,6 +33,16 @@ class TelaPrincipal : AppCompatActivity() {
 
     private fun chamaTelaSobreNos(){
         val tela = Intent(this@TelaPrincipal,SobreNos::class.java);
+        startActivity(tela);
+    }
+
+    private fun chamaTelaHorario(){
+        val tela = Intent(this@TelaPrincipal,HorarioFuncionamento::class.java);
+        startActivity(tela);
+    }
+
+    private fun chamaTelaLocalizacao(){
+        val tela = Intent(this@TelaPrincipal,Localizacao()::class.java);
         startActivity(tela);
     }
 }

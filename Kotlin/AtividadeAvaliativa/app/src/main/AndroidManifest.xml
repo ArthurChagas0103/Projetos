@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AtividadeAvaliativa">
         <activity
+            android:name=".Localizacao"
+            android:exported="true" />
+
+        <activity
+            android:name=".HorarioFuncionamento"
+            android:exported="true" />
+        <activity
             android:name=".SobreNos"
             android:exported="true" />
         <activity

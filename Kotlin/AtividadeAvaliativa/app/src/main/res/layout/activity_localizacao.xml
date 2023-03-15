@@ -7,13 +7,13 @@
     android:background="#DAFFFC"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SobreNos">
+    tools:context=".Localizacao">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sobre Nós"
+        android:text="Localização"
         android:textAlignment="center"
         android:textSize="34sp" />
 
@@ -21,13 +21,11 @@
         android:layout_width="match_parent"
         android:layout_height="40sp" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="iFood é uma empresa brasileira atuante no ramo de entrega de refeição por meio da internet, sendo líder no setor na América Latina, com presença apenas no Brasil."
-        android:textAlignment="center"
-        android:textSize="20sp" />
+        app:srcCompat="@drawable/sem_t_tulo" />
 
     <Space
         android:layout_width="match_parent"
@@ -42,7 +40,6 @@
         android:backgroundTint="#FF5757"
         android:text="Voltar"
         android:textSize="24sp"
-        app:cornerRadius="50sp"
-        tools:ignore="TextContrastCheck" />
+        app:cornerRadius="50sp" />
 
 </LinearLayout>
