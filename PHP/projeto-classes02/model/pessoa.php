@@ -7,8 +7,13 @@
 
         public function __construct($nome, $idade, $sexo)
         {
-            echo("Meu nome é " . $nome . ", tenho " . $idade . " anos e sou o sexo " . $sexo);
+            $this -> nome = $nome;
+            $this -> idade = $idade;
+            $this -> sexo = $sexo;
+        }
+
+        public function imprimir(){
+            return "Meu nome é ".  $this -> nome . ", tenho " 
+                . $this -> idade . " anos e sou do sexo " . $this -> sexo . ".";
         }
     }
-
-?>
