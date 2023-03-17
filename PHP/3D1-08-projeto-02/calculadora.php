@@ -29,27 +29,34 @@ class Calculadora
 
     public function gravar() {
         $con = new mysqli("localhost", "root", "", "devwev2_projeto_02");
+
         $stmt = $con->prepare(
-        "insert into operacoes(numero1, operador, numero2, resultado) values (?, ?, ?, ?)"
+            "insert into operacoes(numero1, operador, numero2, resultado) values (?, ?, ?, ?)"
         );
+
         $resultado = 0;
+
         switch ($this->operador) {
-        case "+":
-        $resultado = $this->somar();
-        break;
-        case "-":
-        $resultado = $this->subtrair();
-        break;
-        case "*":
-        $resultado = $this->multiplicar();
-        break;
-        case "/":
-        $resultado = $this->dividir();
-        break;
+            case "+":
+                $resultado = $this->somar();
+                break;
+            case "-":
+                $resultado = $this->subtrair();
+                break;
+            case "*":
+                $resultado = $this->multiplicar();
+                break;
+            case "/":
+                $resultado = $this->dividir();
+                break;
         }
+
         $stmt->bind_param("isii", $this->numero1, $this->operador, $this->numero2, $resultado);
+
         $stmt->execute();
+
         $stmt->close();
+        
         $con->close();
     }
 }
