@@ -1,4 +1,15 @@
-<?php 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pessoas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <?php
 
     require("model/pessoa.php");
 
@@ -10,8 +21,11 @@
         new Pessoa("Sofia", 12, "Feminino")
     );
 
-    foreach($obj as $pessoas){
-        echo "Meu nome é " . $pessoas.$nome . ", tenho " . $pessoas.$idade . " anos e sou o sexo " . $pessoas.$sexo;
+    foreach ($obj as $pessoas) {
+        echo "<h1>" . $pessoas->imprimir() . "</h1>";
     }
-    
-?>
+
+    ?>
+</body>
+
+</html>
