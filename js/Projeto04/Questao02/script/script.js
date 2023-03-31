@@ -1,11 +1,32 @@
-let button = document.querySelector('#btnSomar');
+let btnVermelho = document.querySelector('#btnVermelho');
+let btnVerde = document.querySelector('#btnVerde');
+let btnAzul = document.querySelector('#btnAzul');
+let btnAmarelo = document.querySelector('#btnAmarelo');
+var corpo = document.querySelector('body');
 
-function somarNumeros() {
-    let valorA = parseFloat(document.querySelector('#numero1').value);
-    let valorB = parseFloat(document.querySelector('#numero2').value);
-    let resultado = document.querySelector('#resultado');
+corpo.addEventListener('load', padrao)
 
-    resultado.value = valorA + valorB;
+function padrao() {
+    corpo.style.backgroundColor = '#f2f2f2'
 }
 
-button.addEventListener('click', somarNumeros)
+function vermelho() {
+    corpo.style.backgroundColor = 'red'
+}
+
+function verde() {
+    corpo.style.backgroundColor = 'green'
+}
+
+function azul() {
+    corpo.style.backgroundColor = 'blue'
+}
+
+function amarelo() {
+    corpo.style.backgroundColor = 'yellow'
+}
+
+btnVermelho.addEventListener('click', vermelho)
+btnVerde.addEventListener('click', verde)
+btnAzul.addEventListener('click', azul)
+btnAmarelo.addEventListener('click', amarelo)
