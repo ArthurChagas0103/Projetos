@@ -15,12 +15,12 @@
     <form action="processar.php" id="formCalculadora" class="form-control" method="post">
         <h4 class="mb-4 mt-4">Calculadora</h1>
             <div class="form-floating mb-3">
-                <input type="number" name="numero1" class="form-control" id="numero1" placeholder="NÃºmero 1">
-                <label for="numero1">NÃºmero 1</label>
+                <input type="number" name="numero1" class="form-control" id="numero1" placeholder="Número 1">
+                <label for="numero1">Número 1</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" name="numero2" class="form-control" id="numero2" placeholder="NÃºmero 2">
-                <label for="numero2">NÃºmero 2</label>
+                <input type="number" name="numero2" class="form-control" id="numero2" placeholder="Número 2">
+                <label for="numero2">Número 2</label>
             </div>
             <div class="form-floating">
                 <select name="operador" class="form-select mb-4" id="floatingSelect" aria-label="Floating label select example">
