@@ -1,15 +1,17 @@
-h1{
+h1 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
-#wrap input{
+#wrap input {
     border-radius: 5px;
     width: 30%;
     height: 30px;
 }
 
-#botoes, #saida, #wrap{
+#botoes,
+#saida,
+#wrap {
     margin-top: 3px;
     text-align: center;
     border: 1px solid black;
@@ -20,32 +22,33 @@ h1{
     margin-left: 2%;
 }
 
-button{
+button {
     width: 30%;
     height: 35px;
-    background-color:rgb(0, 95, 139);
+    background-color: rgb(0, 95, 139);
     color: white;
     border-radius: 5px;
 }
 
-button:hover, tr:hover{
-    background-color:yellow;
+button:hover,
+tr:hover {
+    background-color: yellow;
     color: black;
 }
 
-#saida input{
+#saida input {
     height: 20px;
     width: 20px;
 }
 
-table{
+table {
     border: solid black;
     border-radius: 10px;
     background-color: rgb(0, 95, 139);
     color: white;
 }
 
-td{
+td {
     border: 1px solid white;
     border-radius: 10px;
 }
