@@ -13,21 +13,130 @@
 
 <body>
 
-    <form id="form">
-        <div class="col-auto">
-            <label for="staticEmail2" class="visually-hidden">Email</label>
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
-        </div>
-        <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Password</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-        </div>
-        <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-        </div>
+    <form class="form-control">
+        <h4 class="mb-4 mt-4">Cardápio QuickFood</h1>
+            <form action="salvar_motor.php" id="formCalculadora" class="form-control" method="post">
+                <div class="form-floating mb-3">
+                    <input type="text" name="modelo" class="form-control" id="modelo" placeholder="Modelo">
+                    <label for="modelo">Modelo</label>
+                </div>
+                <select id="my-select" multiple="multiple" class="form-select">
+                    <option value="segunda">Segunda</option>
+                    <option value="terça">Terça</option>
+                    <option value="quarta">Quarta</option>
+                    <option value="quinta">Quinta</option>
+                    <option value="sexta">Sexta</option>
+                </select>
+            </form>
+            <div class="diasSemana">
+                <table class="table table-bordered table-hover table-striped-row">
+                    <thead>
+                        <td colspan="3" class="dia"><b>SEGUNDA</b></td>
+                        <tr class="options">
+                            <th scope="col">#</th>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">OPÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover table-striped-row">
+                    <thead>
+                        <td colspan="3" class="dia"><b>TERÇA</b></td>
+                        <tr class="options">
+                            <th scope="col">#</th>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">OPÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover table-striped-row">
+                    <thead>
+                        <td colspan="3" class="dia"><b>QUARTA</b></td>
+                        <tr class="options">
+                            <th scope="col">#</th>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">OPÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover table-striped-row">
+                    <thead>
+                        <td colspan="3" class="dia"><b>QUINTA</b></td>
+                        <tr class="options">
+                            <th scope="col">#</th>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">OPÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered table-hover table-striped-row">
+                    <thead>
+                        <td colspan="3" class="dia"><b>SEXTA</b></td>
+                        <tr class="options">
+                            <th scope="col">#</th>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">OPÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     </form>
 
+
+
+
+
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include the default stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.css">
+    <!-- Include plugin -->
+    <script src="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.js"></script>
+    <script>
+    // Initialize multiple select on your regular select
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
