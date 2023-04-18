@@ -17,9 +17,12 @@
         <h4 class="mb-4 mt-4">Cardápio QuickFood</h1>
             <form action="salvar_motor.php" id="formCalculadora" class="form-control" method="post">
                 <div class="form-floating mb-3">
-                    <input type="text" name="modelo" class="form-control" id="modelo" placeholder="Modelo">
-                    <label for="modelo">Modelo</label>
+                    <input type="text" name="produto" class="form-control" id="produto" placeholder="Produto" aria-describedby="button-addon2">
+                    
+                    <label for="produto">Produto</label>
+                    <button class="btn btn-outline-success" type="button" style="width: 305px; margin-top: 15px;">CADASTRAR</button>
                 </div>
+                
                 <select id="my-select" multiple="multiple" class="form-select">
                     <option value="segunda">Segunda</option>
                     <option value="terça">Terça</option>
@@ -117,10 +120,6 @@
             </div>
     </form>
 
-
-
-
-
     <div class="ocean">
         <div class="wave"></div>
         <div class="wave"></div>
@@ -128,15 +127,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Include the default stylesheet -->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.css">
-    <!-- Include plugin -->
     <script src="https://cdn.rawgit.com/wenzhixin/multiple-select/e14b36de/multiple-select.js"></script>
-    <script>
-    // Initialize multiple select on your regular select
-
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>

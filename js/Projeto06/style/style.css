@@ -88,11 +88,13 @@ button{
 .dia{
     background-color: #104c84 !important;
     color: white;
+    text-align: center;
 }
 
 .options{
     background-color: #40709d !important;
     color: white;   
+    text-align: center;
 }
 
 table{
@@ -100,7 +102,8 @@ table{
 }
 
 .ms-parent{
-    width: 25% !important;
+    width: 305px !important;
+    margin-bottom: 7px;
 }
 
 .ms-choice{
@@ -123,4 +126,45 @@ table{
 
 .ms-drop {
     margin-left: -12px !important;
+}
+
+.ms-drop input[type="checkbox"] {
+    margin-right: 5px !important;
+}
+
+.ms-drop ul > li label {
+    font-weight: bold !important;
+}
+
+.diasSemana{
+    display: grid;
+    justify-content: center;
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+    .diasSemana{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px){
+    .diasSemana{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media (max-width: 400px){
+    .diasSemana{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+    .ocean{
+        bottom: -200px;
+    }
 }
