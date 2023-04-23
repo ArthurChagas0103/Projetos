@@ -168,3 +168,35 @@ table{
         bottom: -200px;
     }
 }
+
+#formulario{
+    display: grid;
+    justify-content: center;
+}
+
+#divProduto{
+    width: 100%;
+}
+
+#btnCadastrar{
+    width: 305px; 
+    margin-top: 10px;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fa-pen{
+    color: blue;
+}
+
+.fa-trash{
+    color: red;
+}
+
+.linhaID{
+    font-weight: bold;
+}

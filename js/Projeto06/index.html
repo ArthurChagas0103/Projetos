@@ -13,23 +13,24 @@
 
 <body>
 
-    <form class="form-control">
+    <form class="form-control" id="formulario">
         <h4 class="mb-4 mt-4">Cardápio QuickFood</h1>
             <form action="salvar_motor.php" id="formCalculadora" class="form-control" method="post">
-                <div class="form-floating mb-3">
-                    <input type="text" name="produto" class="form-control" id="produto" placeholder="Produto" aria-describedby="button-addon2">
-                    
+                <div class="form-floating mb-3" id="divProduto">
+                    <input type="text" name="produto" class="form-control" id="produto" placeholder="Produto"
+                        aria-describedby="button-addon2">
                     <label for="produto">Produto</label>
-                    <button class="btn btn-outline-success" type="button" style="width: 305px; margin-top: 15px;">CADASTRAR</button>
                 </div>
-                
-                <select id="my-select" multiple="multiple" class="form-select">
+                <select id="diaSemana" multiple="multiple" class="form-select">
                     <option value="segunda">Segunda</option>
                     <option value="terça">Terça</option>
                     <option value="quarta">Quarta</option>
                     <option value="quinta">Quinta</option>
                     <option value="sexta">Sexta</option>
                 </select>
+                <div>
+                    <button class="btn btn-outline-success" type="button" id="cadastrar">CADASTRAR</button>
+                </div>
             </form>
             <div class="diasSemana">
                 <table class="table table-bordered table-hover table-striped-row">
@@ -41,15 +42,10 @@
                             <th scope="col">OPÇÕES</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
+                    <tbody id="segunda">
                     </tbody>
                 </table>
-                <table class="table table-bordered table-hover table-striped-row">
+                <table class="table table-bordered table-hover table-striped-row" id="terca">
                     <thead>
                         <td colspan="3" class="dia"><b>TERÇA</b></td>
                         <tr class="options">
@@ -59,14 +55,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
                     </tbody>
                 </table>
-                <table class="table table-bordered table-hover table-striped-row">
+                <table class="table table-bordered table-hover table-striped-row" id="quarta">
                     <thead>
                         <td colspan="3" class="dia"><b>QUARTA</b></td>
                         <tr class="options">
@@ -76,14 +67,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
                     </tbody>
                 </table>
-                <table class="table table-bordered table-hover table-striped-row">
+                <table class="table table-bordered table-hover table-striped-row" id="quinta">
                     <thead>
                         <td colspan="3" class="dia"><b>QUINTA</b></td>
                         <tr class="options">
@@ -93,14 +79,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
                     </tbody>
                 </table>
-                <table class="table table-bordered table-hover table-striped-row">
+                <table class="table table-bordered table-hover table-striped-row" id="sexta">
                     <thead>
                         <td colspan="3" class="dia"><b>SEXTA</b></td>
                         <tr class="options">
@@ -110,11 +91,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -137,6 +113,7 @@
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <script src="./node_modules/bootbox/dist/bootbox.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/94dd89b3ac.js" crossorigin="anonymous"></script>
     <script src='./script/script.js'></script>
 </body>
 
