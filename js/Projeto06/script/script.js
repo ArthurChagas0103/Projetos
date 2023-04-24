@@ -3,6 +3,7 @@ $("#diaSemana").multipleSelect({
 });
 
 let btnCadastrar = document.querySelectorAll('#cadastrar')[0];
+let btnIMC = document.querySelectorAll('#IMC')[0];
 let inputProduto = document.querySelectorAll('#produto')[0];
 let tabelaSegunda = document.querySelector('#segunda');
 let tabelaTerca = document.querySelector('#terca');
@@ -20,8 +21,11 @@ let diasSemana = [];
 let isEdit = false;
 let idForEdit = "";
 
-btnCadastrar.onclick = function () {
+btnIMC.onclick = function () {
+    window.open('./pages/IMC.html')
+}
 
+btnCadastrar.onclick = function () {
     if (inputProduto.value == "") {
         bootbox.alert('Por favor, escreva um produto para o cardápio!');
         return
@@ -61,29 +65,85 @@ btnCadastrar.onclick = function () {
             produto.IDSexta = idProdutoSexta++;
             tabelaSexta.innerHTML += `<tr id="${produto.IDSexta + "sexta"}"><td class="linhaID">${produto.IDSexta}</td><td>${produto.nome}</td><td class="opcoes"><i class="fa fa-pen" onclick="editar('${produto.IDSexta + "sexta"}','sexta','Sexta')"></i><i class="fa fa-trash" onclick="deletar('${produto.IDSexta + "sexta"}')"></i></td></tr>`;
         }
+
+        isEdit = false;
+        idForEdit = "";
+        inputProduto.value = "";
+
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = false;
+        }
+
+        var button = document.querySelector('button.ms-choice');
+        var span = button.querySelector('span');
+        span.textContent = '';
     }
     else {
-        let buscaElementoByID = document.getElementById(idForEdit);
+        bootbox.confirm({
+            message: 'Tem certeza que gostaria de editar o produto?',
+            title: 'Aviso!',
+            buttons: {
+                confirm: {
+                    label: 'Sim',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'Não',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result == false) {
+                    return
+                }
+                else {
+                    let buscaElementoByID = document.getElementById(idForEdit);
 
-        buscaElementoByID.getElementsByTagName("td")[1].textContent = inputProduto.value;
+                    buscaElementoByID.getElementsByTagName("td")[1].textContent = inputProduto.value;
+
+                    isEdit = false;
+                    idForEdit = "";
+                    inputProduto.value = "";
+
+                    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        checkboxes[i].checked = false;
+                    }
+
+                    var button = document.querySelector('button.ms-choice');
+                    var span = button.querySelector('span');
+                    span.textContent = '';
+                }
+            }
+        });
     }
-
-    isEdit = false;
-    idForEdit = "";
-    inputProduto.value = "";
-
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    for (var i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].checked = false;
-    }
-
-    var button = document.querySelector('button.ms-choice');
-    var span = button.querySelector('span');
-    span.textContent = '';
 }
 
 function deletar(id) {
-    document.getElementById(id).remove()
+    bootbox.confirm({
+        message: 'Tem certeza que gostaria de excluir o produto?',
+        title: 'Aviso!',
+        buttons: {
+            confirm: {
+                label: 'Sim',
+                className: 'btn-success'
+            },
+            cancel: {
+                label: 'Não',
+                className: 'btn-danger'
+            }
+        },
+        callback: function (result) {
+            if (result == false) {
+                return
+            }
+            else {
+                document.getElementById(id).remove()
+            }
+        }
+    });
+
 }
 
 function editar(id, valueDiaSemana, diaSemana) {
