@@ -13,8 +13,13 @@ window.addEventListener('load', function () {
 
         const tabelaBody = document.querySelector('#tabelaBody');
 
-        for(let i = 0; i < dados.length; i++){
-            tabelaBody.innerHTML += `<tr><td>${i}</td><td>${dados[i].name}</td><td>${dados[i].alpha2Code}</td><td>${dados[i].capital}</td></tr>`;
+        for (let i = 0; i < dados.length; i++) {
+            if (dados[i].capital == undefined) {
+                tabelaBody.innerHTML += `<tr><td>${i}</td><td>${dados[i].name}</td><td>${dados[i].alpha2Code}</td><td></td></tr>`;
+            }
+            else {
+                tabelaBody.innerHTML += `<tr><td>${i}</td><td>${dados[i].name}</td><td>${dados[i].alpha2Code}</td><td>${dados[i].capital}</td></tr>`;
+            }
         }
     }
 });
