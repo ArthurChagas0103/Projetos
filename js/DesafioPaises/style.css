@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bandeira {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+
+.btnAdd {
+    background-color: #1b2029;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all 0.5s;
+}
+
+.btnAdd:hover {
+    background-color: #fff;
+    color: #1b2029;
+    transition: all 0.5s;
+}
+
+#titulos {
+    text-align: center;
+}
+
+.centro {
+    text-align: center;
+}
+
+table {
+    border: solid 1px #1b2029;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
