@@ -15,3 +15,20 @@ function soma(a, b) {
 }
 let total = soma(5, 6);
 console.log(total);
+function contar(valor) {
+    if (valor >= 0) {
+        console.log(valor);
+        contar(valor - 1);
+    }
+}
+contar(10);
+function somaRecursiva(valores, posicao = 0) {
+    let soma = 0;
+    if (posicao < valores.length) {
+        soma = valores[posicao] + somaRecursiva(valores, posicao + 1);
+    }
+    return soma;
+}
+const listaValores = [4, 10, 6, 5, 4];
+const somaArray = somaRecursiva(listaValores);
+console.log(somaArray);
