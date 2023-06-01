@@ -30,5 +30,10 @@ while (valor > 0) {
     valor -= 100;
 }
 
+//npm install typescript@4.9.5 -D
+//npx tsc --init
+//criar src e dist
+//npx tsc
+//node .\dist\<arquivo>.js
 //${} ou ,
 // break quebra da repetição toda, continue pula um certo momento da repetição, por exemplo, ir de 1 a 5 mas pular o 2
