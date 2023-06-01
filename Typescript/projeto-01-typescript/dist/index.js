@@ -25,5 +25,5 @@ while (valor > 0) {
     valor -= 100;
 }
 //npx tsc
-//nod .\dist\index.js
+//node .\dist\index.js
 //${} ou ,
