@@ -1,0 +1,1 @@
+1) Solicite ao usuário as quatro notas (inteiro) bimestrais de um aluno, armazenando-as num array simples. Após isso, utilize a função reduce() para calcular a média desse aluno.
