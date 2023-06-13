@@ -1,0 +1,4 @@
+2) Solicite ao usuário quatro valores inteiros e os
+armazene em um array simples. Após isso,
+utilize a função filter() para gerar um novo
+array contendo apenas os valores pares.
