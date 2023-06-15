@@ -30,6 +30,7 @@ while (valor > 0) {
     valor -= 100;
 }
 
+//npm init -y
 //npm install typescript@4.9.5 -D
 //npx tsc --init
 //criar src e dist
