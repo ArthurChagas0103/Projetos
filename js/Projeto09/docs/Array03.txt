@@ -1,0 +1,5 @@
+3) Solicite ao usuário o nome e idade de quatro
+pessoas, armazenando esses dados em um
+array de objetos. Após utilize filter() para
+gerar um novo array contendo apenas as
+pessoas idosas(idade maior ou igual a 60).
