@@ -1,0 +1,32 @@
+6) Dado o vetor de objetos, pokemon abaixo: faça o que se pede
+const
+pokemons
+= [
+{
+id: 1,
+nome: &#39;Eevee&#39;,
+tipo: &#39;normal&#39;,
+registro: 133,
+CP: 300,
+},
+{
+id: 2,
+nome: &#39;Charmander&#39;,
+tipo: &#39;fire&#39;,
+registro: 004,
+CP: 500,
+},
+{
+id: 3,
+nome: &#39;Abra&#39;,
+tipo: &#39;psíquico&#39;,
+registro: 063,
+CP: 350
+}
+];
+
+a) Considere que você subiu de nível no Pokemon, e
+agora todos os seus Pokemons devem receber uma
+atualização. Cada CP Máximo deve ser
+acrescentado em 50. Utilize um método de array
+para aplicar este acréscimo em todos.
