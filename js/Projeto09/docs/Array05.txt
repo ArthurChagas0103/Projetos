@@ -1,0 +1,7 @@
+5) Solicite ao usuário o nome e abreviatura de
+quatro estados brasileiros, armazenando esses
+dados em um array de objetos. Utilize a função
+map() para gerar um novo array onde cada um
+desses estados deve estar contido em tags
+HTML <i></i>, gerando como resposta a
+imagem abaixo

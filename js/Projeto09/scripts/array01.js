@@ -3,8 +3,6 @@ let nota2 = document.querySelectorAll('#nota2')[0];
 let nota3 = document.querySelectorAll('#nota3')[0];
 let nota4 = document.querySelectorAll('#nota4')[0];
 
-
-
 function calcular() {
     let notasAlunos = [];
     let mediaAlunos = 0;

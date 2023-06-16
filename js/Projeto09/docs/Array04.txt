@@ -1,0 +1,4 @@
+4) Solicite ao usuário quatro valores inteiros e os
+armazene em um array. Utilize a função map()
+para gerar um novo array contendo o fatorial
+desses valores.
