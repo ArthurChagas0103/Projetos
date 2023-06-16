@@ -1,0 +1,7 @@
+c) Digamos que você quer verificar se possui doces
+suficientes para evoluir o seu Pokemon. Sendo
+assim, você agora precisa achar o seu pokemon no
+array e mostrar seus dados na tela. A propriedade
+ID é o nosso identificador único e ele será a
+condicional usada para descobrir qual Pokemon
+foi selecionado por você. Utilize FIND().

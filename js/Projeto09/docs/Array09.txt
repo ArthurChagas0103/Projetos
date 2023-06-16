@@ -1,0 +1,3 @@
+d) Imagina que você quer saber o quanto seus
+Pokemons juntos possuem de CP. Utilize reduce
+para retornar a soma.

@@ -1,0 +1,5 @@
+b) Considere que agora você está fazendo uma busca
+na sua lista de Pokemons. Você deseja procurar
+pelo seus Pokemon Charmanders afim de
+visualizar dados deles. Utilize um método de array
+para aplicar este filtro.

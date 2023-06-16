@@ -1,6 +1,7 @@
-function uppar() {
+function somar() {
     let pokemons = [];
-    let pokemonsUppados = "";
+    let valorInicial = 0;
+    let somaCP = 0;
 
     pokemons.push(
         {
@@ -26,14 +27,15 @@ function uppar() {
         }
     );
 
-    pokemonsUppados = pokemons.map(function (pokemon) {
-        return `<li><i>${pokemon.nome} - ${pokemon.CP + 50}</i></li>`;
-    });
+    somaCP = pokemons.reduce(
+        (acumulador, valorCorrente) => acumulador + valorCorrente.CP,
+        valorInicial
+    );
 
     bootbox.alert({
         title: 'Resultado',
-        message: `<b>${pokemonsUppados.join('')}</b>`
+        message: `<b>${somaCP} CP</b>`
     });
 }
 
-document.getElementById('btnUppar').addEventListener('click', uppar);
+document.getElementById('btnSomar').addEventListener('click', somar);

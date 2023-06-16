@@ -1,6 +1,9 @@
-function uppar() {
+let idPokemon = document.querySelectorAll('#idPokemon')[0];
+
+function buscar() {
     let pokemons = [];
-    let pokemonsUppados = "";
+    let filtroPokemon = "";
+    let listaPokemon = "";
 
     pokemons.push(
         {
@@ -26,14 +29,14 @@ function uppar() {
         }
     );
 
-    pokemonsUppados = pokemons.map(function (pokemon) {
-        return `<li><i>${pokemon.nome} - ${pokemon.CP + 50}</i></li>`;
-    });
+    filtroPokemon = pokemons.find(pokemon => pokemon.id == parseInt(idPokemon.value));
+
+    listaPokemon += `<li>id: ${filtroPokemon.id}</li> <li>nome: ${filtroPokemon.nome}</li> <li>tipo: ${filtroPokemon.tipo}</li> <li>registro: ${filtroPokemon.registro}</li> <li>CP: ${filtroPokemon.CP}</li>`
 
     bootbox.alert({
         title: 'Resultado',
-        message: `<b>${pokemonsUppados.join('')}</b>`
+        message: `<b>${listaPokemon}</b>`
     });
 }
 
-document.getElementById('btnUppar').addEventListener('click', uppar);
+document.getElementById('btnBuscar').addEventListener('click', buscar);
