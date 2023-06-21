@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         myAdapter = ItemAdapter(data)
 
-        //recyclerView = findViewById<RecyclerView>(R.id.reci)
+        recyclerView = findViewById<RecyclerView>(R.id.recycler).apply {
+            layoutManager = manager
+            adapter = myAdapter
+        }
     }
 }
