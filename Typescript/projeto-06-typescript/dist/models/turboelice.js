@@ -1,38 +1,33 @@
-import IAviao from "./aviao.js";
-
-export default class Jato implements IAviao {
-    private _velocidadeAtualDeVoo: number = 0.0;
-    private readonly _velocidadeMinimaDeVoo: number = 200.0;
-    private readonly _velocidadeAceleracao: number = 10.0;
-    private _nome: string = "";
-
-    public constructor(nome: string) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Turboelice {
+    constructor(nome) {
+        this._velocidadeAtualDeVoo = 0.0;
+        this._velocidadeMinimaDeVoo = 300.0;
+        this._velocidadeAceleracao = 5.0;
+        this._nome = "";
         this._nome = nome;
     }
-
-    public get nome(): string {
+    get nome() {
         return this._nome;
     }
-
-    public decolar(): void {
+    decolar() {
         if (this._velocidadeAtualDeVoo == 0) {
             this._velocidadeAtualDeVoo = this._velocidadeMinimaDeVoo;
         }
     }
-
-    public acelerar(): void {
+    acelerar() {
         this._velocidadeAtualDeVoo += this._velocidadeAceleracao;
     }
-    
-    public desacelerar(): void {
+    desacelerar() {
         if (this._velocidadeAtualDeVoo > this._velocidadeMinimaDeVoo) {
             this._velocidadeAtualDeVoo -= this._velocidadeAceleracao;
         }
     }
-    
-    public pousar(): void {
+    pousar() {
         if (this._velocidadeAtualDeVoo == this._velocidadeMinimaDeVoo) {
             this._velocidadeAtualDeVoo = 0;
         }
     }
 }
+exports.default = Turboelice;

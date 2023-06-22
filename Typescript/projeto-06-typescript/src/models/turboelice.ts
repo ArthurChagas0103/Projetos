@@ -1,9 +1,9 @@
 import IAviao from "./aviao.js";
 
-export default class Jato implements IAviao {
+export default class Turboelice implements IAviao {
     private _velocidadeAtualDeVoo: number = 0.0;
-    private readonly _velocidadeMinimaDeVoo: number = 200.0;
-    private readonly _velocidadeAceleracao: number = 10.0;
+    private readonly _velocidadeMinimaDeVoo: number = 300.0;
+    private readonly _velocidadeAceleracao: number = 5.0;
     private _nome: string = "";
 
     public constructor(nome: string) {
