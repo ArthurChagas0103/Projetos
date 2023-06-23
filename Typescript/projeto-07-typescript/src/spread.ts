@@ -31,7 +31,7 @@ const meuObjeto2 = {
 console.log(JSON.stringify(meuObjeto));
 console.log(JSON.stringify(meuObjeto2));
 
-const meuObjetoClone = {...meuObjeto};
+const meuObjetoClone = { ...meuObjeto };
 
 console.log(JSON.stringify(meuObjeto));
 console.log(JSON.stringify(meuObjetoClone));

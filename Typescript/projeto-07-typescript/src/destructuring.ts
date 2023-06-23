@@ -34,6 +34,6 @@ const meuObjetos = [
 ];
 
 const [objeto1, objeto2] = meuObjetos;
-const {idade: idade2} = objeto2;
+const { idade: idade2 } = objeto2;
 
 console.log(idade2)
