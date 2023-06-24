@@ -1,41 +1,92 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'jquery';
-import 'bootstrap/dist/js/bootstrap.bundle.js'
 import NavbarStyle from '../../../assets/styles/Navbar';
+import { useEffect } from 'react';
 
-const { Nav, NavLinks, TextAC } = NavbarStyle
+const { Nav, NavbarButtonResponsive, Barras, TextAC, NavLinks, SearchWrapper, Search, Lupa } = NavbarStyle
 
-function Navbar({ setCurrentPage }) {
+function Navbar({ currentPage, setCurrentPage }) {
+
+    useEffect(() => {
+        $('#navbarTogglerButton').click(function () {
+            $('#navbarSupportedContent').collapse('toggle');
+        });
+
+        $('#lupa').click(function () {
+            let texto = $('#search').val();
+            let strFound = false;
+
+            if (window.find) {
+                strFound = window.find(texto);
+                if (!strFound) {
+                    strFound = window.find(texto, 0, 1);
+                    while (window.find(texto, 0, 1)) {
+                        continue;
+                    }
+                }
+            } else if (navigator.appName.indexOf("Microsoft") !== -1) {
+                var TRange = null;
+                if (TRange !== null) {
+                    TRange.collapse(false);
+                    strFound = TRange.findText(texto);
+                    if (strFound) {
+                        TRange.select();
+                    }
+                }
+                if (TRange === null || strFound === 0) {
+                    TRange = window.document.body.createTextRange();
+                    strFound = TRange.findText(texto);
+                    if (strFound) {
+                        TRange.select();
+                    }
+                }
+            } else if (navigator.appName === "Opera") {
+                bootbox.alert("Opera não suportado");
+                return;
+            }
+
+            if (!strFound) {
+                bootbox.alert("Texto '" + texto + "' não encontrado!");
+            }
+        });
+    }, []);
+
     return (
         <>
             <Nav className="navbar navbar-expand-lg">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon" id="menu"><i className="fa fa-bars" id="barras"></i></span>
-                </button>
+                <NavbarButtonResponsive className="navbar-toggler" type="button" id="navbarTogglerButton" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon" id="menu">
+                        <Barras className="fa fa-bars"></Barras>
+                    </span>
+                </NavbarButtonResponsive>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav col-12 justify-content-center">
                         <li className="nav-item">
-                            <TextAC className="navbar-brand mr-5">AC</TextAC>
+                            <TextAC className="nav-link" onClick={() => setCurrentPage('home')}>AC</TextAC>
                         </li>
-                        <li className="nav-item active">
-                            <NavLinks className="nav-link mr-5 mt-3" id="home" onClick={() => setCurrentPage('home')}>Home</NavLinks>
+                        <li className="nav-item">
+                            <NavLinks className={`nav-link ${currentPage === 'home' ? 'ativo' : ''}`} onClick={() => setCurrentPage('home')}>Home</NavLinks>
                         </li>
-                        <li className="nav-item active">
-                            <NavLinks className="nav-link mr-5 mt-3" href="/front-end/about/about.html">About Me</NavLinks>
+                        <li className="nav-item">
+                            <NavLinks className={`nav-link ${currentPage === 'about' ? 'ativo' : ''}`} onClick={() => setCurrentPage('about')}>About Me</NavLinks>
                         </li>
-                        <li className="nav-item active">
-                            <NavLinks className="nav-link mr-5 mt-3" href="/front-end/contact/contact.html">Contact</NavLinks>
+                        <li className="nav-item">
+                            <NavLinks className={`nav-link ${currentPage === 'contact' ? 'ativo' : ''}`} onClick={() => setCurrentPage('contact')}>Contact</NavLinks>
                         </li>
-                        <li className="nav-item active">
-                            <NavLinks className="nav-link mr-5 mt-3" href="/front-end/portfolio/portfolio.html">Portfolio</NavLinks>
+                        <li className="nav-item">
+                            <NavLinks className={`nav-link ${currentPage === 'portfolio' ? 'ativo' : ''}`} onClick={() => setCurrentPage('portfolio')}>Portfolio</NavLinks>
                         </li>
-                        <li className="nav-item active">
-                            <form className="form-inline mt-3"
-                                onSubmit="if(this.search.value!=null && this.search.value!='') findString(this.search.value);return false">
-                                <input className="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search"
-                                    id="search" /><a onclick="findString(document.getElementById('search').value)"><i
-                                    className="fa fa-search" id="lupa" ></i></a>
+                        <li className="nav-item">
+                            <form className="form-inline mt-3">
+                                <SearchWrapper>
+                                    <Search
+                                        className="form-control mr-sm-2"
+                                        type="search"
+                                        placeholder="Search"
+                                        aria-label="Search"
+                                        name="search"
+                                        id="search"
+                                    />
+                                    <Lupa className="fa fa-search" id="lupa" />
+                                </SearchWrapper>
                             </form>
                         </li>
                     </ul>

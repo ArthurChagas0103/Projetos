@@ -1,10 +1,8 @@
-//import { useState } from 'react'
-
-function Home() {
+function HomeBody() {
   return (
     <>
     </>
   )
 }
 
-export default Home
+export default HomeBody
