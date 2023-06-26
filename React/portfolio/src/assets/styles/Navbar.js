@@ -28,7 +28,7 @@ const NavbarStyle = {
         margin-right: 50px;
 
         &:hover {
-            color: #D89BF2;
+            color: #f0f0f0 !important;
             cursor: pointer;
         }
     `,
