@@ -14,6 +14,16 @@ const animacaoCores = keyframes`
   }
 `;
 
+const animacaoSoftSkills = keyframes`
+  from {
+    height: 0%;
+  }
+
+  to {
+    height: 100%;
+  }
+`;
+
 const HomeStyle = {
   Banner: styled.div`
     width: 50%;
@@ -136,6 +146,59 @@ const HomeStyle = {
     position: relative;
     animation: 10s linear infinite alternate ${animacaoCores};
     background-size: 400% 400%;
+  `,
+
+  ContainerSoftSkills: styled.div`
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+  `,
+
+  SoftSkills: styled.div`
+    border-radius: 10px;
+    background-color: #8284c050;
+    width: 70%;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    &:hover {
+      .TextoSoftSkills {
+        display: grid;
+        animation-name: ${animacaoSoftSkills};
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      };
+
+      .fa {
+        opacity: 0.1;
+        color: white;
+      }
+    }
+  `,
+
+  IconesSoftSkills: styled.i`
+    color: #8284c0;
+    position: absolute;
+    font-size: 80px;
+  `,
+
+  TextoSoftSkills: styled.div`
+    border-radius: 10px;
+    background-color: #8284c0cd;
+    display: none;
+    align-items: center;
+    justify-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
   `
 };
 
