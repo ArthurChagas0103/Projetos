@@ -12,14 +12,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func CallScreen(_ sender: Any) {
-        if let para = txtPara.text, let assunto = txtAssunto.text, let mensagem = txtMensagem.text, para.count > 0 && assunto.count > 0, mensagem.count > 0{
+        if let para = txtPara.text, let assunto = txtAssunto.text,
+            let mensagem = txtMensagem.text,
+           para.count > 0 && assunto.count > 0, mensagem.count > 0 {
             let email = Email(para: para, assunto: assunto, mensagem: mensagem)
             performSegue(withIdentifier: "GoToResumo", sender: email)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let segundaView = segue.destination as? SegundaViewController, let texto = sender as? Email {
+        if let segundaView = segue.destination as? SegundaViewController,
+            let texto = sender as? Email {
             segundaView.mensagem = texto
         }
     }

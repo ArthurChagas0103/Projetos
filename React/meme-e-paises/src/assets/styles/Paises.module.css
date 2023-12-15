@@ -1,0 +1,8 @@
+.btnVoltar {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+}

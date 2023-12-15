@@ -1,0 +1,52 @@
+{
+    "dadosCarros":[
+        {
+            "nome" : "Kwid",
+            "marca" : "Renault",
+            "placa" : "QWC-1023",
+            "cambio" : "Manual"
+        },
+        {
+            "nome" : "City",
+            "marca" : "Honda",
+            "placa" : "IJP-2302",
+            "cambio" : "Automatico"
+        },
+        {
+            "nome" : "Civic",
+            "marca" : "Honda",
+            "placa" : "POE-2910",
+            "cambio" : "Automatico"
+        },
+        {
+            "nome" : "Uno",
+            "marca" : "Fiat",
+            "placa" : "LAQ-2039",
+            "cambio" : "Manual"
+        },
+        {
+            "nome" : "Gol",
+            "marca" : "Volkswagen",
+            "placa" : "BCH-3856",
+            "cambio" : "Manual"
+        },
+        {
+            "nome" : "Palio",
+            "marca" : "Fiat",
+            "placa" : "QGQ-2734",
+            "cambio" : "Manual"
+        },
+        {
+            "nome" : "Corolla",
+            "marca" : "Toyota",
+            "placa" : "LXZ-3223",
+            "cambio" : "Automatico"
+        },
+        {
+            "nome" : "Opala",
+            "marca" : "Chevrolet",
+            "placa" : "LLA-1202",
+            "cambio" : "Manual"
+        }
+    ]
+}

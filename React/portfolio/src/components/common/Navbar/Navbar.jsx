@@ -1,99 +1,95 @@
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarStyle from '../../../assets/styles/Navbar';
-import { useEffect } from 'react';
 
-const { Nav, NavbarButtonResponsive, Barras, TextAC, NavLinks, SearchWrapper, Search, Lupa } = NavbarStyle
+const { Nav, NavbarButtonResponsive, Barras, TextAC, NavLinks } = NavbarStyle;
 
-function Navbar({ currentPage, setCurrentPage }) {
+function Navbar() {
+  const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
+  const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        $('#navbarTogglerButton').click(function () {
-            $('#navbarSupportedContent').collapse('toggle');
-        });
+  const handleNavigation = (route) => {
+    navigate(route);
+    setIsNavbarExpanded(false);
+  };
 
-        $('#lupa').click(function () {
-            let texto = $('#search').val();
-            let strFound = false;
+  const handleNavbarToggle = () => {
+    setIsNavbarExpanded(!isNavbarExpanded);
+  };
 
-            if (window.find) {
-                strFound = window.find(texto);
-                if (!strFound) {
-                    strFound = window.find(texto, 0, 1);
-                    while (window.find(texto, 0, 1)) {
-                        continue;
-                    }
-                }
-            } else if (navigator.appName.indexOf("Microsoft") !== -1) {
-                var TRange = null;
-                if (TRange !== null) {
-                    TRange.collapse(false);
-                    strFound = TRange.findText(texto);
-                    if (strFound) {
-                        TRange.select();
-                    }
-                }
-                if (TRange === null || strFound === 0) {
-                    TRange = window.document.body.createTextRange();
-                    strFound = TRange.findText(texto);
-                    if (strFound) {
-                        TRange.select();
-                    }
-                }
-            } else if (navigator.appName === "Opera") {
-                bootbox.alert("Opera não suportado");
-                return;
-            }
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setIsNavbarScrolled(isScrolled);
+    };
 
-            if (!strFound) {
-                bootbox.alert("Texto '" + texto + "' não encontrado!");
-            }
-        });
-    }, []);
+    window.addEventListener('scroll', handleScroll);
 
-    return (
-        <>
-            <Nav className="navbar navbar-expand-lg">
-                <NavbarButtonResponsive className="navbar-toggler" type="button" id="navbarTogglerButton" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon" id="menu">
-                        <Barras className="fa fa-bars"></Barras>
-                    </span>
-                </NavbarButtonResponsive>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav col-12 justify-content-center">
-                        <li className="nav-item">
-                            <TextAC className="nav-link" onClick={() => setCurrentPage('home')}>AC</TextAC>
-                        </li>
-                        <li className="nav-item">
-                            <NavLinks className={`nav-link ${currentPage === 'home' ? 'ativo' : ''}`} onClick={() => setCurrentPage('home')}>Home</NavLinks>
-                        </li>
-                        <li className="nav-item">
-                            <NavLinks className={`nav-link ${currentPage === 'about' ? 'ativo' : ''}`} onClick={() => setCurrentPage('about')}>About Me</NavLinks>
-                        </li>
-                        <li className="nav-item">
-                            <NavLinks className={`nav-link ${currentPage === 'contact' ? 'ativo' : ''}`} onClick={() => setCurrentPage('contact')}>Contact</NavLinks>
-                        </li>
-                        <li className="nav-item">
-                            <NavLinks className={`nav-link ${currentPage === 'portfolio' ? 'ativo' : ''}`} onClick={() => setCurrentPage('portfolio')}>Portfolio</NavLinks>
-                        </li>
-                        <li className="nav-item">
-                            <form className="form-inline mt-3">
-                                <SearchWrapper>
-                                    <Search
-                                        className="form-control mr-sm-2"
-                                        type="search"
-                                        placeholder="Search"
-                                        aria-label="Search"
-                                        name="search"
-                                        id="search"
-                                    />
-                                    <Lupa className="fa fa-search" id="lupa" />
-                                </SearchWrapper>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </Nav>
-        </>
-    );
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <>
+      <Nav className={`navbar navbar-expand-lg ${isNavbarScrolled || isNavbarExpanded ? 'scrolled' : ''}`}>
+        <NavbarButtonResponsive
+          className={`navbar-toggler ${isNavbarExpanded ? 'active' : ''}`}
+          type="button"
+          id="navbarTogglerButton"
+          aria-label="Toggle navigation"
+          onClick={handleNavbarToggle}
+        >
+          <span className="navbar-toggler-icon" id="menu">
+            <Barras className="fa fa-bars"></Barras>
+          </span>
+        </NavbarButtonResponsive>
+        <div className={`collapse navbar-collapse ${isNavbarExpanded ? 'show' : ''}`} id="navbarSupportedContent">
+          <ul className="navbar-nav col-12 justify-content-center">
+            <li className="nav-item">
+              <TextAC className="nav-link" onClick={() => handleNavigation('/')}>
+                AC
+              </TextAC>
+            </li>
+            <li className="nav-item">
+              <NavLinks
+                className={`nav-link ${location.pathname === '/' ? 'ativo' : ''}`}
+                onClick={() => handleNavigation('/')}
+              >
+                Home
+              </NavLinks>
+            </li>
+            <li className="nav-item">
+              <NavLinks
+                className={`nav-link ${location.pathname === '/sobremim' ? 'ativo' : ''}`}
+                onClick={() => handleNavigation('/sobremim')}
+              >
+                About Me
+              </NavLinks>
+            </li>
+            <li className="nav-item">
+              <NavLinks
+                className={`nav-link ${location.pathname === '/contato' ? 'ativo' : ''}`}
+                onClick={() => handleNavigation('/contato')}
+              >
+                Contact
+              </NavLinks>
+            </li>
+            <li className="nav-item">
+              <NavLinks
+                className={`nav-link ${location.pathname === '/portfolio' ? 'ativo' : ''}`}
+                onClick={() => handleNavigation('/portfolio')}
+              >
+                Portfolio
+              </NavLinks>
+            </li>
+          </ul>
+        </div>
+      </Nav>
+    </>
+  );
 }
 
 export default Navbar;

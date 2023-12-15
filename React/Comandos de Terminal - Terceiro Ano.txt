@@ -1,0 +1,37 @@
+﻿= Configurações para fazer um projeto .ts de Dev.Web II = = Letícia França 3D1 - Terceira Etapa = 
+Dentro da Pasta do Projeto no Visual Studio Code: 
+Abrir Terminal: Ctrl + J e dentro dele digitar: 
+● npm init -y 
+● npm install typescript@4.9.5 -D 
+● npx tsc --init 
+● Atualize o local onde está a pasta dentro do Visual Studio Code ● Entre no arquivo “tsconfig” 
+● Apenas as seguintes configurações devem estar habilitadas (cuidado, algumas devem ser alteradas, confira se está igual!) : 
+- "compilerOptions": 
+- "target": "es2016" 
+- "module": "commonjs" 
+- "rootDir": "./src" 
+- "moduleResolution": "node" 
+- "outDir": "./dist" 
+- "esModuleInterop": true 
+- "forceConsistentCasingInFileNames": true 
+- "strict": true 
+- "noImplicitAny": true 
+- "strictNullChecks": true 
+- "strictFunctionTypes": true 
+- "skipLibCheck": true 
+● Agora, dentro do projeto, crie 2 pastas. Uma com o nome “src” e outra com o nome “dist” 
+Bons Estudos❤
+= Configurações para fazer um projeto React de Framework = = Letícia França 3D1 - Terceira Etapa = 
+Dentro da Pasta do Projeto no Visual Studio Code: 
+Abrir Terminal: Ctrl + J e dentro dele digitar: 
+● node -v 
+● npm create vite@latest nome-do-projeto 
+● y 
+● selecione : react 
+● selecione : javascript 
+● cd nome-do-projeto 
+● npm install 
+● npm run dev 
+● Dentro do Terminal, abra a pasta “vite”, segure Ctrl e clique no IP que está dentro do Terminal 
+Observação importante : Caso você traga a pasta React de casa e for zipá-la, apague a pasta node_modules e pode zipar! Quando precisar tirar a pasta do .zip e usar, digite “npm install” no terminal da pasta novamente e pronto! 
+Bons Estudos❤

@@ -3,45 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC3FAFA12A029C690002963E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3FAFA02A029C690002963E /* AppDelegate.swift */; };
-		DC3FAFA32A029C690002963E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3FAFA22A029C690002963E /* SceneDelegate.swift */; };
-		DC3FAFA52A029C690002963E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3FAFA42A029C690002963E /* ViewController.swift */; };
-		DC3FAFA82A029C690002963E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3FAFA62A029C690002963E /* Main.storyboard */; };
-		DC3FAFAB2A029C690002963E /* _D_ARTHUR_08.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC3FAFA92A029C690002963E /* _D_ARTHUR_08.xcdatamodeld */; };
-		DC3FAFAD2A029C700002963E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3FAFAC2A029C700002963E /* Assets.xcassets */; };
-		DC3FAFB02A029C700002963E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3FAFAE2A029C700002963E /* LaunchScreen.storyboard */; };
-		DC3FAFBD2A029DDC0002963E /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3FAFBC2A029DDC0002963E /* Filme.swift */; };
-		DC3FAFC02A029E200002963E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3FAFBF2A029E200002963E /* CustomCell.swift */; };
-		DC9788092A27730F004907DC /* TerceiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9788072A27730F004907DC /* TerceiraViewController.swift */; };
-		DC97880A2A27730F004907DC /* TerceiraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC9788082A27730F004907DC /* TerceiraViewController.xib */; };
-		DCA6F4592A1501C600C83786 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA6F4572A1501C600C83786 /* SegundaViewController.swift */; };
-		DCA6F45A2A1501C600C83786 /* SegundaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA6F4582A1501C600C83786 /* SegundaViewController.xib */; };
+		DC01A0582A9F7E8E0028BC6A /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC01A0562A9F7E8E0028BC6A /* SegundaViewController.swift */; };
+		DC01A0592A9F7E8E0028BC6A /* SegundaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC01A0572A9F7E8E0028BC6A /* SegundaViewController.xib */; };
+		DCE9A4E92A9F69F7005554FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9A4E82A9F69F7005554FB /* AppDelegate.swift */; };
+		DCE9A4EB2A9F69F7005554FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9A4EA2A9F69F7005554FB /* SceneDelegate.swift */; };
+		DCE9A4ED2A9F69F7005554FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9A4EC2A9F69F7005554FB /* ViewController.swift */; };
+		DCE9A4F02A9F69F7005554FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9A4EE2A9F69F7005554FB /* Main.storyboard */; };
+		DCE9A4F22A9F69F9005554FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9A4F12A9F69F9005554FB /* Assets.xcassets */; };
+		DCE9A4F52A9F69F9005554FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9A4F32A9F69F9005554FB /* LaunchScreen.storyboard */; };
+		DCE9A4FE2A9F6A50005554FB /* MinhaStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9A4FD2A9F6A50005554FB /* MinhaStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC3FAF9D2A029C690002963E /* 3D_ARTHUR_08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3D_ARTHUR_08.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC3FAFA02A029C690002963E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC3FAFA22A029C690002963E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC3FAFA42A029C690002963E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC3FAFA72A029C690002963E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC3FAFAA2A029C690002963E /* _D_ARTHUR_08.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _D_ARTHUR_08.xcdatamodel; sourceTree = "<group>"; };
-		DC3FAFAC2A029C700002963E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC3FAFAF2A029C700002963E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC3FAFB12A029C700002963E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC3FAFBC2A029DDC0002963E /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
-		DC3FAFBF2A029E200002963E /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		DC9788072A27730F004907DC /* TerceiraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceiraViewController.swift; sourceTree = "<group>"; };
-		DC9788082A27730F004907DC /* TerceiraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TerceiraViewController.xib; sourceTree = "<group>"; };
-		DCA6F4572A1501C600C83786 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
-		DCA6F4582A1501C600C83786 /* SegundaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegundaViewController.xib; sourceTree = "<group>"; };
+		DC01A0562A9F7E8E0028BC6A /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		DC01A0572A9F7E8E0028BC6A /* SegundaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegundaViewController.xib; sourceTree = "<group>"; };
+		DCE9A4E52A9F69F7005554FB /* 3D_ARTHUR_08.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3D_ARTHUR_08.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE9A4E82A9F69F7005554FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCE9A4EA2A9F69F7005554FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DCE9A4EC2A9F69F7005554FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCE9A4EF2A9F69F7005554FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCE9A4F12A9F69F9005554FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCE9A4F42A9F69F9005554FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCE9A4F62A9F69F9005554FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE9A4FD2A9F6A50005554FB /* MinhaStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC3FAF9A2A029C690002963E /* Frameworks */ = {
+		DCE9A4E22A9F69F7005554FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,93 +43,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC3FAF942A029C690002963E = {
+		DC01A0542A9F6F230028BC6A /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				DC3FAF9F2A029C690002963E /* 3D_ARTHUR_08 */,
-				DC3FAF9E2A029C690002963E /* Products */,
+				DCE9A4FD2A9F6A50005554FB /* MinhaStruct.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DC01A0552A9F7DA80028BC6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC01A0562A9F7E8E0028BC6A /* SegundaViewController.swift */,
+				DC01A0572A9F7E8E0028BC6A /* SegundaViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCE9A4DC2A9F69F7005554FB = {
+			isa = PBXGroup;
+			children = (
+				DCE9A4E72A9F69F7005554FB /* 3D_ARTHUR_08 */,
+				DCE9A4E62A9F69F7005554FB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DC3FAF9E2A029C690002963E /* Products */ = {
+		DCE9A4E62A9F69F7005554FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC3FAF9D2A029C690002963E /* 3D_ARTHUR_08.app */,
+				DCE9A4E52A9F69F7005554FB /* 3D_ARTHUR_08.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC3FAF9F2A029C690002963E /* 3D_ARTHUR_08 */ = {
+		DCE9A4E72A9F69F7005554FB /* 3D_ARTHUR_08 */ = {
 			isa = PBXGroup;
 			children = (
-				DC3FAFBA2A029CAC0002963E /* Components */,
-				DC3FAFB92A029CA40002963E /* Controllers */,
-				DC3FAFB82A029C980002963E /* Core */,
-				DC3FAFA62A029C690002963E /* Main.storyboard */,
-				DC3FAFAC2A029C700002963E /* Assets.xcassets */,
-				DC3FAFAE2A029C700002963E /* LaunchScreen.storyboard */,
-				DC3FAFB12A029C700002963E /* Info.plist */,
-				DC3FAFA92A029C690002963E /* _D_ARTHUR_08.xcdatamodeld */,
+				DC01A0552A9F7DA80028BC6A /* Views */,
+				DC01A0542A9F6F230028BC6A /* Data */,
+				DCE9A4E82A9F69F7005554FB /* AppDelegate.swift */,
+				DCE9A4EA2A9F69F7005554FB /* SceneDelegate.swift */,
+				DCE9A4EC2A9F69F7005554FB /* ViewController.swift */,
+				DCE9A4EE2A9F69F7005554FB /* Main.storyboard */,
+				DCE9A4F12A9F69F9005554FB /* Assets.xcassets */,
+				DCE9A4F32A9F69F9005554FB /* LaunchScreen.storyboard */,
+				DCE9A4F62A9F69F9005554FB /* Info.plist */,
 			);
 			path = 3D_ARTHUR_08;
-			sourceTree = "<group>";
-		};
-		DC3FAFB82A029C980002963E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				DC3FAFBC2A029DDC0002963E /* Filme.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		DC3FAFB92A029CA40002963E /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DC9788062A27729E004907DC /* AddView */,
-				DCA6F4552A15005E00C83786 /* DetalhesView */,
-				DC3FAFA02A029C690002963E /* AppDelegate.swift */,
-				DC3FAFA22A029C690002963E /* SceneDelegate.swift */,
-				DC3FAFA42A029C690002963E /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DC3FAFBA2A029CAC0002963E /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				DC3FAFBF2A029E200002963E /* CustomCell.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		DC9788062A27729E004907DC /* AddView */ = {
-			isa = PBXGroup;
-			children = (
-				DC9788072A27730F004907DC /* TerceiraViewController.swift */,
-				DC9788082A27730F004907DC /* TerceiraViewController.xib */,
-			);
-			path = AddView;
-			sourceTree = "<group>";
-		};
-		DCA6F4552A15005E00C83786 /* DetalhesView */ = {
-			isa = PBXGroup;
-			children = (
-				DCA6F4572A1501C600C83786 /* SegundaViewController.swift */,
-				DCA6F4582A1501C600C83786 /* SegundaViewController.xib */,
-			);
-			path = DetalhesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC3FAF9C2A029C690002963E /* 3D_ARTHUR_08 */ = {
+		DCE9A4E42A9F69F7005554FB /* 3D_ARTHUR_08 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC3FAFB42A029C700002963E /* Build configuration list for PBXNativeTarget "3D_ARTHUR_08" */;
+			buildConfigurationList = DCE9A4F92A9F69F9005554FB /* Build configuration list for PBXNativeTarget "3D_ARTHUR_08" */;
 			buildPhases = (
-				DC3FAF992A029C690002963E /* Sources */,
-				DC3FAF9A2A029C690002963E /* Frameworks */,
-				DC3FAF9B2A029C690002963E /* Resources */,
+				DCE9A4E12A9F69F7005554FB /* Sources */,
+				DCE9A4E22A9F69F7005554FB /* Frameworks */,
+				DCE9A4E32A9F69F7005554FB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,87 +109,84 @@
 			);
 			name = 3D_ARTHUR_08;
 			productName = 3D_ARTHUR_08;
-			productReference = DC3FAF9D2A029C690002963E /* 3D_ARTHUR_08.app */;
+			productReference = DCE9A4E52A9F69F7005554FB /* 3D_ARTHUR_08.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DC3FAF952A029C690002963E /* Project object */ = {
+		DCE9A4DD2A9F69F7005554FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					DC3FAF9C2A029C690002963E = {
-						CreatedOnToolsVersion = 12.0.1;
+					DCE9A4E42A9F69F7005554FB = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = DC3FAF982A029C690002963E /* Build configuration list for PBXProject "3D_ARTHUR_08" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = DCE9A4E02A9F69F7005554FB /* Build configuration list for PBXProject "3D_ARTHUR_08" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DC3FAF942A029C690002963E;
-			productRefGroup = DC3FAF9E2A029C690002963E /* Products */;
+			mainGroup = DCE9A4DC2A9F69F7005554FB;
+			productRefGroup = DCE9A4E62A9F69F7005554FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC3FAF9C2A029C690002963E /* 3D_ARTHUR_08 */,
+				DCE9A4E42A9F69F7005554FB /* 3D_ARTHUR_08 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DC3FAF9B2A029C690002963E /* Resources */ = {
+		DCE9A4E32A9F69F7005554FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA6F45A2A1501C600C83786 /* SegundaViewController.xib in Resources */,
-				DC3FAFB02A029C700002963E /* LaunchScreen.storyboard in Resources */,
-				DC3FAFAD2A029C700002963E /* Assets.xcassets in Resources */,
-				DC97880A2A27730F004907DC /* TerceiraViewController.xib in Resources */,
-				DC3FAFA82A029C690002963E /* Main.storyboard in Resources */,
+				DC01A0592A9F7E8E0028BC6A /* SegundaViewController.xib in Resources */,
+				DCE9A4F52A9F69F9005554FB /* LaunchScreen.storyboard in Resources */,
+				DCE9A4F22A9F69F9005554FB /* Assets.xcassets in Resources */,
+				DCE9A4F02A9F69F7005554FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DC3FAF992A029C690002963E /* Sources */ = {
+		DCE9A4E12A9F69F7005554FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3FAFAB2A029C690002963E /* _D_ARTHUR_08.xcdatamodeld in Sources */,
-				DC3FAFA52A029C690002963E /* ViewController.swift in Sources */,
-				DCA6F4592A1501C600C83786 /* SegundaViewController.swift in Sources */,
-				DC3FAFBD2A029DDC0002963E /* Filme.swift in Sources */,
-				DC3FAFA12A029C690002963E /* AppDelegate.swift in Sources */,
-				DC9788092A27730F004907DC /* TerceiraViewController.swift in Sources */,
-				DC3FAFC02A029E200002963E /* CustomCell.swift in Sources */,
-				DC3FAFA32A029C690002963E /* SceneDelegate.swift in Sources */,
+				DCE9A4ED2A9F69F7005554FB /* ViewController.swift in Sources */,
+				DCE9A4E92A9F69F7005554FB /* AppDelegate.swift in Sources */,
+				DC01A0582A9F7E8E0028BC6A /* SegundaViewController.swift in Sources */,
+				DCE9A4FE2A9F6A50005554FB /* MinhaStruct.swift in Sources */,
+				DCE9A4EB2A9F69F7005554FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC3FAFA62A029C690002963E /* Main.storyboard */ = {
+		DCE9A4EE2A9F69F7005554FB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DC3FAFA72A029C690002963E /* Base */,
+				DCE9A4EF2A9F69F7005554FB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DC3FAFAE2A029C700002963E /* LaunchScreen.storyboard */ = {
+		DCE9A4F32A9F69F9005554FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DC3FAFAF2A029C700002963E /* Base */,
+				DCE9A4F42A9F69F9005554FB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -233,14 +194,13 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DC3FAFB22A029C700002963E /* Debug */ = {
+		DCE9A4F72A9F69F9005554FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -284,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -294,14 +254,13 @@
 			};
 			name = Debug;
 		};
-		DC3FAFB32A029C700002963E /* Release */ = {
+		DCE9A4F82A9F69F9005554FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -339,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -349,37 +308,55 @@
 			};
 			name = Release;
 		};
-		DC3FAFB52A029C700002963E /* Debug */ = {
+		DCE9A4FA2A9F69F9005554FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 3D_ARTHUR_08/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cotemig.-D-ARTHUR-08";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cotemig.-D-ARTHUR-08";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DC3FAFB62A029C700002963E /* Release */ = {
+		DCE9A4FB2A9F69F9005554FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 3D_ARTHUR_08/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cotemig.-D-ARTHUR-08";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cotemig.-D-ARTHUR-08";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,38 +365,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC3FAF982A029C690002963E /* Build configuration list for PBXProject "3D_ARTHUR_08" */ = {
+		DCE9A4E02A9F69F7005554FB /* Build configuration list for PBXProject "3D_ARTHUR_08" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC3FAFB22A029C700002963E /* Debug */,
-				DC3FAFB32A029C700002963E /* Release */,
+				DCE9A4F72A9F69F9005554FB /* Debug */,
+				DCE9A4F82A9F69F9005554FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC3FAFB42A029C700002963E /* Build configuration list for PBXNativeTarget "3D_ARTHUR_08" */ = {
+		DCE9A4F92A9F69F9005554FB /* Build configuration list for PBXNativeTarget "3D_ARTHUR_08" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC3FAFB52A029C700002963E /* Debug */,
-				DC3FAFB62A029C700002963E /* Release */,
+				DCE9A4FA2A9F69F9005554FB /* Debug */,
+				DCE9A4FB2A9F69F9005554FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DC3FAFA92A029C690002963E /* _D_ARTHUR_08.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DC3FAFAA2A029C690002963E /* _D_ARTHUR_08.xcdatamodel */,
-			);
-			currentVersion = DC3FAFAA2A029C690002963E /* _D_ARTHUR_08.xcdatamodel */;
-			path = _D_ARTHUR_08.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = DC3FAF952A029C690002963E /* Project object */;
+	rootObject = DCE9A4DD2A9F69F7005554FB /* Project object */;
 }

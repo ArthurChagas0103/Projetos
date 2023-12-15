@@ -8,6 +8,10 @@ const NavbarStyle = {
         z-index: 1;
         width: 100%;
         border-bottom: #929CC5 solid 1px;
+
+        &.scrolled {
+            background-color: rgb(103, 89, 194);
+        }
     `,
 
     NavbarButtonResponsive: styled.button `
@@ -87,6 +91,10 @@ const NavbarStyle = {
         color: #929CC5;
         font-size: 20px;
         cursor: pointer;
+    `,
+
+    Scrolled: styled.div `
+        background-color: rgb(103, 89, 194) !important;
     `
 }
 

@@ -1,0 +1,44 @@
+{
+    "dadosAlunos":[
+        {
+            "nome" : "Arthur Chagas",
+            "turma" : "3D1",
+            "disciplina" : "DevWeb"
+        },
+        {
+            "nome" : "Lucas Sena",
+            "turma" : "3D1",
+            "disciplina" : "Android"
+        },
+        {
+            "nome" : "Leticia Franca",
+            "turma" : "3D1",
+            "disciplina" : "Educação Fisica"
+        },
+        {
+            "nome" : "BomTempo",
+            "turma" : "3D1",
+            "disciplina" : "IOS"
+        },
+        {
+            "nome" : "Jefrey Tamagoshi",
+            "turma" : "3D1",
+            "disciplina" : "Xingoutun"
+        },
+        {
+            "nome" : "Melol",
+            "turma" : "3D1",
+            "disciplina" : "Empreendedorismo"
+        },
+        {
+            "nome" : "Mozao",
+            "turma" : "3D1",
+            "disciplina" : "Portugues"
+        },
+        {
+            "nome" : "Jerson Jonas",
+            "turma" : "3D1",
+            "disciplina" : "Matematica"
+        }
+    ]
+}

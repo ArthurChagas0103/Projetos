@@ -1,0 +1,234 @@
+1- Criar o projeto 
+- Clicar em iOS
+- Clicar em App
+- Next
+- Nome pedido
+- Next
+- Salvar em local pedido
+- Next
+
+2- Clicar em Main.storyboard (nosso projeto gira em torno dele)
+// Vamos adicionar uma Navigation Controller
+- Clicar no primeiro item da barra (View Controller)
+- Clicar em Editor, na barra de funções
+- Clicar em Embed In 
+- Clicar em Naviation Controller
+// Vai transformar na tela inicial da aplicação
+
+3- Clicar no (+), que vai brir as funções pra gente colocar
+- Pesquisar Button e arrastar ele pra tela vazia
+- Clicar no primeiro item da barra (View Controller)
+- Clicar no icon (que esta na mesma linha dos nomes da pagina), o do meio (tracinhos)
+- Clicar em Assistant
+- Arrastar o Button para linha de codigo
+- nomear de (navegar)
+// Vai gerar um @IBAction
+
+4- Clicar no arquivo de baixo do primeiro (tem o mesmo nome)
+- Clicar em New Group
+- Nomear de Views 
+- arrastar a ViewController.swift pra Views que criamos
+- Clicar com o botão direito em New File...
+- Clicar em Cocoa Touch Class
+- Clicar em Next
+- Nomear de SegundaViewController
+- Marcar o botão (Also create XIB file)
+- Clicar em Next
+- Clicar em Create
+
+5- Clicar em Views 
+- Cicar em New Group
+- Nomear de Segunda
+- Selecionar as duas Views segunda (SegundaViewController.Swift e SegundaViewController.xib), e arrastar pro arquivo Segunda
+
+6- Clicar na SegundaViewController.xib
+- Clicar no (+), que vai brir as funções pra gente colocar
+- Pesquisar Label e arrastar ele pra tela vazia (Colocar no meio da tela) 
+- Clicar no primeiro icon da direita (parece um livro) 
+- Clicar no quinto icon (tracinhos com bolinhas) 
+- Clicar no lugar onde esta escrito label (em baixo de Plain)
+- Escrever (Segunda Tela)
+
+7- Clicar no final da tela no segundo icon (dois retangulos, um maior que o outro)
+- Clicara no botão que esta escrito Horizontal
+- Clicara no botão que esta escrito Vertically
+- Clicar em Add 2 Constraints
+
+8- Clicar em ViewController.Swift
+- Escrever: 
+
+ let vc = SegundaViewController()
+ self.navigationController?.pushViewController(vc, //trocar e colocar isso// animated: true) //Só escrever push e clicar na primeira opção//
+ 
+9- Compilar clicando no botão do play
+- Ver se vai dar certo a navegação de pagina 
+- Clicar em SegundaViewController.Swift
+- Escrever: 
+
+ var nome: String
+
+-Clicar em ViewController.Swift
+- Escrever: 
+
+vc.nome = "Bruna"
+
+- Clicar em SegundaViewController.Swift
+- Escrever embaixo do super.viewDidLoad(): 
+
+ if let item = nome, item.count > 0 {
+  
+ }
+
+- Clicar em SegundaViewController.xib
+- Clicar no icon (que esta na mesma linha dos nomes da pagina), o do meio (tracinhos)
+- Clicar em Assistant
+- Arrastar o texto (Segunda Tela) para linha de codigo (em baixo de var nome: String?)
+- nomear de (lblNome)
+- Escrever embaixo do if let item = nome, item.count > 0: 
+
+ if let item = nome, item.count > 0 {
+   lblNome.text = item 
+ }
+
+10- Clicar no Main.storyboard
+- Jogar o Button fora
+- Clicar no primeiro item da barra (View Controller)
+- Clicar no primeiro icon da direita (parece um livro) 
+- Clicar no ultimo icon (um circulo com uma bola no meio), procurar referencia amarela 
+- Clicar em ViewController.Swift
+- Comentar o codigo do button (comentar com /**/)
+
+11- Clicar em Main.storyboard
+- Clicar no (+), que vai brir as funções pra gente colocar
+- Pesquisar table view e arrastar ele pra tela vazia (Colocar no meio da tela)
+- Clicar no final da tela no icon do meio (um quadrado com traços de todos os lados)
+- Ecrever 0 em todos os lados
+- Clicar em Add 4 Constraints
+- Clicar em Table View 
+- Clicar no quinto icon (tracinhos com bolinhas) 
+- Ir em Prototype Cells e adicionar 1
+- Clicar em Table View Cell 
+- Dentro do quinto icon (tracinhos com bolinhas), vai ter o Identifier, nomear de cell
+- Clicar no icon (que esta na mesma linha dos nomes da pagina), o do meio (tracinhos)
+- Clicar em Assistant
+- Arrastar a Table View para linha de codigo (em baixo de class viewController: UIViewController)
+- nomear de (tabela)
+- Vai criar um @IBOutlet 
+
+12- Clicar no arquivo debaixo do primeiro (tem o mesmo nome)
+- Cicar em New Group
+- Nomear de Data
+- Clicar com o botão direito em New File...
+- Clicar em Cocoa Touch Class
+- Clicar em Next
+- Nomear de CustomTableViewCell
+- Selecionar no Subclass of: UITableViewCell
+- Clicar em Next
+- Clicar em Create
+13- No CustomTableViewCell.swift
+- Apagar os override func 
+- Escrever embaixo de class CustomTableViewCell: UITableViewCell
+
+ func popularDados(item: String) {
+  
+ } 
+
+- Clicar em Main.storyboard 
+- Clicar em cell
+- Clicar no quarto icon (o quadrado que parece um jornal) 
+- Escrever no Class CustomTableViewCell
+- Clicar no sexto icon (um triangulo) 
+- Clicar no Row Height e digitar 100
+14- Clicar em ViewController.Swift
+- Escrever embaixo do @IBOutlet 
+
+ var lista: [String] = []
+
+- Escrever embaixo do super.viewDidLoad()
+
+ tabela.dataSource = self
+
+ self.carregarLista()
+
+- Escrever embaixo do self.carregarLista() }
+
+ private func carregarLista() {
+  self.lista = ["Pedro", "Maria", "Marcos"]
+ }
+
+- Escrever o lado do class ViewController: UIViewController (, UITableViewDataSource)
+- Clicar na faixa de erro e dar um Fix
+-Vai criar linhas de codigos
+15- Escrever na primeira linha de codigo
+
+ return self.lista.count
+
+- Escrever na segunda linha de codigo
+
+ guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CustomTableViewCell else {
+  return UITableViewCell()
+ }
+ let item = self.lista[indexPath.row]
+ cell.popularDados(item: item)
+ return cell
+
+- Colocar pra rodar clicando no play
+16- Colocar 3 Label na Table View
+- Clicar na primeira
+- Clicar no final da tela no icon do meio (um quadrado com traços de todos os lados)
+- Ecrever 5 na de cima
+- Escreve 10 na esquerda
+- Clicar em Add 2 Constraints
+- Clicar na segunda
+- Ecrever 3 na de cima
+- Escreve 10 na esquerda
+- Clicar em Add 1 Constraints
+- Clicar no final da tela no segundo icon (dois retangulos, um maior que o outro)
+- Clicara no botão que esta escrito Vertically
+- Clicar em Add 1 Constraints
+- Clicar na terceira
+- Clicar no final da tela no icon do meio (um quadrado com traços de todos os lados)
+- Ecrever 5 na de baixo
+- Escreve 10 na direita
+- Clicar em Add 2 Constraints
+17- Clicar na Label e arrastar pro codigo (CustomTableViewCell.swift) em baixo do class CustomTableViewCell: UITableViewCell
+- Nomear com lblTitulo, lblSubtitulo, lblDetalhe
+- Escrever embaixo de func popularDados(item: String) {
+
+ if item.count > 0 {
+  lblSubtitulo.text = item
+ }
+
+18- Escrever em ViewController.swift em baixo de tabela.dataSource = self
+
+ tabela.delagate = self
+
+- Escrever uma exenção 
+
+ extension ViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath)-> CGFloat {
+   return 100.0 
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
